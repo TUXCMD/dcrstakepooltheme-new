@@ -6377,11 +6377,16 @@ body {
       font-weight: 600;
       color: #2970ff; }
   body .container .voiting--white-block .btn {
+    padding: 2px 5px 2px 18px;
     line-height: 1.23;
     letter-spacing: normal;
     color: #2971ff;
     border-radius: 2px;
     border: 1px solid #2971ff; }
+    body .container .voiting--white-block .btn span {
+      position: absolute;
+      top: -2px;
+      left: 3px; }
   body .container .voiting--input-block {
     background-color: #d4f0fd; }
     body .container .voiting--input-block label {
@@ -6417,7 +6422,19 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
-    line-height: 60px;
     height: 104px;
     background-color: #ffffff;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1); }
+    body .footer .btn-outline-primary {
+      margin: 0 80px;
+      padding: 14px 44px;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.23;
+      letter-spacing: normal;
+      color: #2970ff;
+      border-radius: 5px;
+      border: solid 1px #2970ff; }
+      body .footer .btn-outline-primary:hover {
+        background-color: #2970ff;
+        color: #fff; }
