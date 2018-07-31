@@ -1,0 +1,19 @@
+/*!
+Theme Name: Stake Pool Theme
+Theme URI: https://www.goodhands.co/
+Author: Good Hands
+Author URI: https://www.goodhands.co/
+Description: A custom theme for Good Hands clients.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: goodhands
+*/
+
+@import "bootstrap/bootstrap";
+
+@import "partials/typography";
+
+@import "partials/header";
+@import "partials/body";
+@import "partials/footer";
