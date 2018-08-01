@@ -12,7 +12,7 @@
 			color: #2ed8a3;
 		}
 
-		&:hover, &:focus, &:active {
+		&:hover, &:focus, &.active {
 			text-decoration: none;
 			border-bottom: 5px solid #2ed8a3;
 		}
