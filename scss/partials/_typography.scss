@@ -13,3 +13,12 @@ h2 {
 	letter-spacing: normal;
 	color: #0c1e3e;
 }
+
+.text {
+
+	&--size-11 {
+		font-size: 11px;
+		line-height: 1.27;
+		letter-spacing: normal;
+	}
+}

@@ -6336,6 +6336,11 @@ h2 {
   letter-spacing: normal;
   color: #0c1e3e; }
 
+.text--size-11 {
+  font-size: 11px;
+  line-height: 1.27;
+  letter-spacing: normal; }
+
 .site-header {
   height: 60px;
   background-color: #f9fafa; }
@@ -6367,6 +6372,11 @@ body {
     background-color: #edeff1; }
     body .container .voiting--block__description {
       color: #0c1e3e; }
+    body .container .voiting--block code {
+      font-size: 11px;
+      line-height: 1.55;
+      letter-spacing: normal;
+      color: #545c6b; }
   body .container .voiting--white-block__description {
     color: #596d81; }
     body .container .voiting--white-block__description span {
@@ -6420,6 +6430,24 @@ body {
         height: 10px;
         border-radius: 50%;
         background: #8997a5; }
+  body .modal-backdrop {
+    background-color: transparent; }
+  body .modal-content {
+    background-color: #ffffff;
+    box-shadow: 0 15px 34px 0 rgba(9, 20, 64, 0.21);
+    border: 0;
+    border-radius: 0; }
+  body .modal-title {
+    font-size: 27px;
+    line-height: 1.26;
+    letter-spacing: normal;
+    color: #48566e; }
+  body .modal-header {
+    border: 0; }
+    body .modal-header button:focus {
+      outline: none; }
+    body .modal-header .close {
+      margin: -3rem -1rem -1rem auto; }
   body .public-key--address {
     font-size: 13px;
     line-height: 1.31;

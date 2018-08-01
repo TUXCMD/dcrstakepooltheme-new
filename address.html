@@ -44,8 +44,50 @@
 		 <div class="container voiting" style="margin-bottom: 136px;">
 	    	<div class="row">
 	    		<div class="col-12 mb-3 px-5">
-	    			<h1>Connect via API Key</h1>
+	    			<h1 class="d-flex justify-content-between align-items-center">Connect via API Key <img src="img/info-icon.png" data-toggle="modal" data-target="#connectApiKey" alt=""></h1>
 	    		</div>
+
+				<div class="modal fade pt-5" id="connectApiKey" tabindex="-1" role="dialog" aria-labelledby="connectApiKeyTitle" aria-hidden="true">
+					<div class="container voiting modal-dialog px-0" role="document">
+						<div class="modal-content py-4">
+							<div class="modal-header">
+								<h1 class="modal-title d-flex justify-content-between align-items-center" id="connectApiKeyTitle"><img src="img/info-icon.png" alt=""> <span class="px-3">Connect via API Key</span></h1>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								  <span aria-hidden="true"><img src="img/close-cross-icon.png" alt=""></span>
+								</button>
+							</div>
+							<div class="modal-body px-5">
+								<p class="voiting--white-block__agendas">When you submit an address, the stake pool  blinds that address from your wallet together with an address from the stake pool’s voting wallet. When you submit an address, the stake pool  blinds that address from your wallet together with an address from the stake pool’s voting wallet.</p>
+
+								<p class="voiting--white-block__agendas">The official Decred GUI wallet <a href="#">Decrediton</a> is the recommended way to use stake pools. All you need to get started is to cope and past the API Token. A more comprehencive guide is available for <a href="#">Decrediton</a>. There is also a more general overview of the staking process available <a href="#">here</a>.</p>
+
+								<p class="voiting--white-block__agendas">It’s recommended to use the latest versions of the Decred software before starting. <a class="text--size-11" href="#">&darr; Decred Downloads Page</a></p>
+
+								<p class="voiting--white-block__agendas">The official Decred GUI wallet <a href="#">Decrediton</a> is the recommended way to use stake pools. All you need to get started is to cope and past the API Token. A more comprehencive guide is available for <a href="#">Decrediton</a>. There is also a more general overview of the staking process available <a href="#">here</a>.</p>
+
+								<p class="voiting--white-block__agendas">To generate a public key address , create a new wallet address with <strong>getnewaddress</strong>. Then, call <strong>validateaddress &lt;yourAddress&gt;</strong> and retrieve the address listed  in the <strong>pubkeyaddr</strong> field of the response. The <strong>pubkeyaddr</strong> atsrts with <strong>Tk</strong>.</p>
+
+								<p class="voiting--block px-5 py-4">
+									<code>
+										$ dcrctl -- testnet -- wallet getnewaddress<br>
+										TsExampleAddr1For2Demo3PurposeOnly<br>
+										$   dcrctl -- testnet -- wallet validateaddress TsExampleAddr1For2Demo3PurposeOnly<br>
+										{<br>
+										     “isvalid”: true,<br>
+										     “address”: “TsExampleAddr1For2Demo3PurposeOnly”,<br>
+										     “ismine”: true,<br>
+										     “pubkeyaddr”:  “TkExampleAddr1For2Demo3PurposeOnly6Do7Not8Use9Pls0”,<br>
+										     “pubkey”: “026587gggesc168424srdfgfgsxdvdghdzdcc8sgfgzxdfgsdfg575s54f5asd”,<br>
+										     “iscompressed”: true,<br>
+										     “account”: “default”<br>
+										}
+									</code>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
 	    		<div class="col-12 mb-4 px-5 pt-3 pb-1 voiting--block">
 	    			<p class="voiting--block__description">To connect the stakepool to your wallet, copy and paste this API key to Decrediton.</p>
 	    		</div>
@@ -55,7 +97,7 @@
 	    			</div>
 	    		</div>
 	    		<div class="col-12 mb-3 px-5">
-	    			<h1>Connect Manually</h1>
+	    			<h1 class="d-flex justify-content-between align-items-center">Connect Manually <img src="img/info-icon.png" data-toggle="modal" data-target="#connectManually" alt=""></h1>
 	    		</div>
 	    		<div class="col-12 mb-0 px-5 pt-3 pb-1 voiting--block">
 	    			<p class="voiting--block__description">To connect manually using the command-line tools, copy and paste <strong>pubkeyaddr</strong> that start’s with <strong>Tk</strong> into the form below. </p>

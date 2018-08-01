@@ -25,6 +25,13 @@ body {
 				&__description {
 					color: #0c1e3e;
 				}
+
+				code {
+					font-size: 11px;
+					line-height: 1.55;
+					letter-spacing: normal;
+					color: #545c6b;
+				}
 			}
 
 			&--white-block {
@@ -108,6 +115,36 @@ body {
 					}
 				}
 			}
+		}
+	}
+
+	.modal-backdrop {
+		background-color: transparent;
+	}
+
+	.modal-content {
+		background-color: #ffffff;
+  		box-shadow: 0 15px 34px 0 rgba(9, 20, 64, 0.21);
+  		border: 0;
+  		border-radius: 0;
+	}
+
+	.modal-title {
+		font-size: 27px;
+		line-height: 1.26;
+		letter-spacing: normal;
+		color: #48566e;
+	}
+
+	.modal-header{
+		border: 0;
+
+		button:focus {
+			outline: none;
+		}
+
+		.close {
+			margin: -3rem -1rem -1rem auto;
 		}
 	}
 
