@@ -6493,6 +6493,11 @@ body {
     background-color: #fff;
     border-top: 1px solid #edeff1;
     color: #48566e; }
+  body .warning {
+    font-size: 11px;
+    line-height: 1.27;
+    letter-spacing: normal;
+    color: #fd704a; }
   body .footer {
     position: absolute;
     bottom: 0;
