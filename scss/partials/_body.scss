@@ -118,6 +118,16 @@ body {
 		}
 	}
 
+	.status {
+		padding: 5px 8px;
+		border-radius: 5px;
+  		background-color: #d4f0fd;
+  		font-size: 13px;
+		line-height: 1.31;
+		letter-spacing: normal;
+		color: #0c1e3e;
+	}
+
 	.modal-backdrop {
 		background-color: transparent;
 	}
@@ -185,6 +195,24 @@ body {
 			line-height: 1.23;
 			letter-spacing: normal;
 			color: #8997a5;	
+		}
+	}
+
+	.table {
+
+		.thead-light { 
+
+			th {
+				background-color: #edeff1;
+				border-color: #edeff1;
+				color: #0c1e3e;
+			}
+		}
+
+		td {
+			background-color: #fff;
+			border-top: 1px solid #edeff1;
+			color: #48566e;
 		}
 	}
 
