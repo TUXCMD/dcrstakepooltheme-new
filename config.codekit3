@@ -145,6 +145,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/img\/warning-sign.png": {
+		"ft": 32768,
+		"iS": 295,
+		"oA": 0,
+		"oAP": "\/img\/warning-sign.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/img\/warning-sign.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -154,6 +165,28 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/img\/warning-sign@2x.png": {
+		"ft": 32768,
+		"iS": 488,
+		"oA": 0,
+		"oAP": "\/img\/warning-sign@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/warning-sign@3x.png": {
+		"ft": 32768,
+		"iS": 691,
+		"oA": 0,
+		"oAP": "\/img\/warning-sign@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/index.html": {
 		"cB": 0,
@@ -1429,6 +1462,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/settings.html",
+		"oF": 0
+		},
+	"\/stats.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/stats.html",
 		"oF": 0
 		},
 	"\/status.html": {
