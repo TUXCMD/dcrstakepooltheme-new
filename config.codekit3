@@ -1424,6 +1424,13 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/tickets.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/tickets.html",
+		"oF": 0
+		},
 	"\/voiting.html": {
 		"cB": 0,
 		"ft": 8192,
