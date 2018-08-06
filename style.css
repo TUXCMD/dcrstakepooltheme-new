@@ -6516,13 +6516,28 @@ body {
     height: auto;
     padding: 0 2px;
     background: transparent;
-    color: #c4cbd2;
-    opacity: 0.8;
+    color: #48566e;
     border: 0;
-    border-bottom: 1px solid #48566e;
+    border-bottom: 1px solid #c4cbd2;
     border-radius: 0; }
     body .public-key .form-control:focus {
       box-shadow: none; }
+    body .public-key .form-control::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: #c4cbd2;
+      opacity: 0.5; }
+    body .public-key .form-control::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #c4cbd2;
+      opacity: 0.5; }
+    body .public-key .form-control:-ms-input-placeholder {
+      /* IE 10+ */
+      color: #c4cbd2;
+      opacity: 0.5; }
+    body .public-key .form-control:-moz-placeholder {
+      /* Firefox 18- */
+      color: #c4cbd2;
+      opacity: 0.5; }
   body .public-key .btn-primary {
     padding: 14px 19px;
     border-radius: 5px;

@@ -225,14 +225,30 @@ body {
 			height: auto;
 			padding: 0 2px;
 			background: transparent;
-			color: #c4cbd2;
-			opacity: 0.8;
+			color: #48566e;
 			border: 0;
-			border-bottom: 1px solid #48566e;
+			border-bottom: 1px solid #c4cbd2;
 			border-radius: 0;
 
 			&:focus {
 				box-shadow: none;
+			}
+
+			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+				color: #c4cbd2;
+				opacity: 0.5;
+			}
+			&::-moz-placeholder { /* Firefox 19+ */
+				color: #c4cbd2;
+				opacity: 0.5;
+			}
+			&:-ms-input-placeholder { /* IE 10+ */
+				color: #c4cbd2;
+				opacity: 0.5;
+			}
+			&:-moz-placeholder { /* Firefox 18- */
+				color: #c4cbd2;
+				opacity: 0.5;
 			}
 		}
 
