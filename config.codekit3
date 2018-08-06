@@ -16,6 +16,56 @@
 		"oAP": "\/address.html",
 		"oF": 0
 		},
+	"\/email-verification-successfully.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/email-verification-successfully.html",
+		"oF": 0
+		},
+	"\/img\/arrow-back.png": {
+		"ft": 32768,
+		"iS": 271,
+		"oA": 0,
+		"oAP": "\/img\/arrow-back.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/arrow-back.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/arrow-back.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/arrow-back@2x.png": {
+		"ft": 32768,
+		"iS": 394,
+		"oA": 0,
+		"oAP": "\/img\/arrow-back@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/arrow-back@3x.png": {
+		"ft": 32768,
+		"iS": 514,
+		"oA": 0,
+		"oAP": "\/img\/arrow-back@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/img\/close-cross-icon.png": {
 		"ft": 32768,
 		"iS": 214,
@@ -139,6 +189,49 @@
 		"iS": 2712,
 		"oA": 0,
 		"oAP": "\/img\/primary-positive-full-color@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/recaptcha-logo.png": {
+		"ft": 32768,
+		"iS": 457,
+		"oA": 0,
+		"oAP": "\/img\/recaptcha-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/recaptcha-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/recaptcha-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/recaptcha-logo@2x.png": {
+		"ft": 32768,
+		"iS": 850,
+		"oA": 0,
+		"oAP": "\/img\/recaptcha-logo@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/recaptcha-logo@3x.png": {
+		"ft": 32768,
+		"iS": 1227,
+		"oA": 0,
+		"oAP": "\/img\/recaptcha-logo@3x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -318,6 +411,41 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/login.html",
+		"oF": 0
+		},
+	"\/password-update.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/password-update.html",
+		"oF": 0
+		},
+	"\/password-updated.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/password-updated.html",
+		"oF": 0
+		},
+	"\/register.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/register.html",
+		"oF": 0
+		},
+	"\/reset-password-link.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/reset-password-link.html",
+		"oF": 0
+		},
+	"\/reset-password.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/reset-password.html",
 		"oF": 0
 		},
 	"\/scss\/bootstrap\/_alert.scss": {

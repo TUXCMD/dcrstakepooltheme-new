@@ -6400,6 +6400,8 @@ body {
     body .container .voiting--white-block__agendas a {
       font-weight: 600;
       color: #2970ff; }
+      body .container .voiting--white-block__agendas a.mail {
+        color: #48566e; }
   body .container .voiting--white-block .btn {
     padding: 2px 5px 2px 18px;
     line-height: 1.23;
@@ -6444,6 +6446,8 @@ body {
         height: 10px;
         border-radius: 50%;
         background: #8997a5; }
+  body .container .voiting--shadow-block {
+    box-shadow: 0 15px 34px 0 rgba(9, 20, 64, 0.21); }
   body .status {
     padding: 5px 8px;
     border-radius: 5px;
@@ -6508,6 +6512,11 @@ body {
       border-radius: 0 0.25rem 0.25rem 0; }
     body .public-key--login .form-control {
       padding: 0 10px !important; }
+    body .public-key--login .checkbox label {
+      font-size: 11px;
+      line-height: 1.27;
+      letter-spacing: normal;
+      color: #8795a2; }
   body .public-key .form-control {
     font-size: 13px;
     font-weight: normal;
