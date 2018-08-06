@@ -313,6 +313,13 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/login.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/login.html",
+		"oF": 0
+		},
 	"\/scss\/bootstrap\/_alert.scss": {
 		"aP": 0,
 		"bl": 0,

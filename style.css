@@ -6336,6 +6336,14 @@ h2 {
   letter-spacing: normal;
   color: #0c1e3e; }
 
+.text--size-27 {
+  font-size: 27px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.26;
+  letter-spacing: normal; }
+
 .text--size-11 {
   font-size: 11px;
   line-height: 1.27;
@@ -6467,6 +6475,39 @@ body {
     line-height: 1.31;
     letter-spacing: normal;
     color: #48566e; }
+  body .public-key--login {
+    box-shadow: 0 15px 34px 0 rgba(9, 20, 64, 0.21); }
+    body .public-key--login a {
+      font-size: 11px;
+      line-height: 1.27;
+      letter-spacing: normal;
+      color: #8795a2; }
+    body .public-key--login .btn-primary {
+      padding: 14px 47px !important; }
+    body .public-key--login .position-absolute {
+      top: -20px;
+      left: calc(50% - 175px); }
+    body .public-key--login .btn--login {
+      padding: 12px 71px;
+      font-size: 13px;
+      line-height: 1.31;
+      letter-spacing: normal;
+      color: #091440;
+      background-color: #ffffff;
+      border: solid 1px #e7eaed;
+      border-radius: 0.25rem 0 0 0.25rem; }
+    body .public-key--login .btn--register {
+      padding: 12px 64px;
+      font-size: 13px;
+      line-height: 1.31;
+      letter-spacing: normal;
+      color: #8997a5;
+      background-color: #f7f8f9;
+      border: solid 1px #e7eaed;
+      border-left: 0;
+      border-radius: 0 0.25rem 0.25rem 0; }
+    body .public-key--login .form-control {
+      padding: 0 10px !important; }
   body .public-key .form-control {
     font-size: 13px;
     font-weight: normal;
@@ -6474,6 +6515,7 @@ body {
     letter-spacing: normal;
     height: auto;
     padding: 0 2px;
+    background: transparent;
     color: #c4cbd2;
     opacity: 0.8;
     border: 0;
