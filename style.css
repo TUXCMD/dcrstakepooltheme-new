@@ -6562,7 +6562,6 @@ body {
     border-color: #edeff1;
     color: #0c1e3e; }
   body .table td {
-    background-color: #fff;
     border-top: 1px solid #edeff1;
     color: #48566e; }
   body .warning {
@@ -6590,3 +6589,61 @@ body {
       body .footer .btn-outline-primary:hover {
         background-color: #2970ff;
         color: #fff; }
+
+.control {
+  font-family: arial;
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 5px;
+  padding-top: 3px;
+  cursor: pointer;
+  font-size: 13px; }
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0; }
+
+.control_indicator {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  height: 12px;
+  width: 12px;
+  background: #ffffff;
+  border: 1px solid #8997a5; }
+
+.control-radio .control_indicator {
+  border-radius: 0; }
+
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+  border: 1px solid #2979ff; }
+
+.control input:checked ~ .control_indicator {
+  border: 1px solid #2979ff; }
+
+.control input:not(:checked) ~ .control_indicator {
+  border: 1px solid #8997a5; }
+
+.control_indicator:after {
+  box-sizing: unset;
+  content: '';
+  position: absolute;
+  display: none; }
+
+.control input:checked ~ .control_indicator:after {
+  display: block; }
+
+.control-checkbox .control_indicator:after {
+  left: 3px;
+  top: 0px;
+  width: 3px;
+  height: 7px;
+  border: solid #2970ff;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg); }
+
+.bg-checked {
+  background-color: #e9f8fe; }
