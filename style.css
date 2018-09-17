@@ -6371,6 +6371,14 @@ h2 {
     .site-header a:hover, .site-header a:focus, .site-header a.active {
       text-decoration: none;
       border-bottom: 5px solid #2ed8a3; }
+  .site-header .logo--logo {
+    padding-right: 5px;
+    border-right: 0.3px solid #091440; }
+  .site-header .logo--text {
+    padding-left: 5px;
+    font-size: 13px;
+    line-height: 1;
+    color: #091440; }
 
 html {
   position: relative;

@@ -17,4 +17,19 @@
 			border-bottom: 5px solid #2ed8a3;
 		}
 	}
+
+	.logo {
+
+		&--logo {
+			padding-right: 5px;
+			border-right: 0.3px solid #091440;
+		}
+
+		&--text {
+			padding-left: 5px;
+			font-size: 13px;
+			line-height: 1;
+			color: #091440;
+		}
+	}
 }
