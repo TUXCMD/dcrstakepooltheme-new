@@ -191,13 +191,11 @@ body {
 
 			.position-absolute {
 				top: -20px;
-				left: calc(50% - 175px);
 			}
 
 			.btn {
 
 				&--login {
-					padding: 12px 71px;
 					font-size: 13px;
 					line-height: 1.31;
 					letter-spacing: normal;
@@ -205,10 +203,12 @@ body {
 					background-color: #ffffff;
 					border: solid 1px #e7eaed;
 					border-radius: 0.25rem 0 0 0.25rem;
+
+					@include fluid-props(padding-top padding-bottom, $sm, $xl, 10px, 12px);
+					@include fluid-props(padding-left padding-right, $sm, $xl, 34px, 71px);
 				}
 
 				&--register {
-					padding: 12px 64px;
 					font-size: 13px;
 					line-height: 1.31;
 					letter-spacing: normal;
@@ -217,6 +217,9 @@ body {
 					border: solid 1px #e7eaed;
 					border-left: 0;
 					border-radius: 0 0.25rem 0.25rem 0;
+
+					@include fluid-props(padding-top padding-bottom, $sm, $xl, 10px, 12px);
+					@include fluid-props(padding-left padding-right, $sm, $xl, 26px, 64px);
 				}
 			}
 

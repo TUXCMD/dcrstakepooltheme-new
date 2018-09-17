@@ -12,6 +12,8 @@ Text Domain: goodhands
 
 @import "bootstrap/bootstrap";
 
+@import "partials/variables";
+@import "partials/mixins";
 @import "partials/typography";
 
 @import "partials/header";
