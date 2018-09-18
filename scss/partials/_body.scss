@@ -221,6 +221,12 @@ body {
 					@include fluid-props(padding-top padding-bottom, $sm, $xl, 10px, 12px);
 					@include fluid-props(padding-left padding-right, $sm, $xl, 26px, 64px);
 				}
+
+				&:hover {
+					color: #fff;
+					background-color: #1a59f7;
+					border-color: #1a59f7;
+				}
 			}
 
 			.form-control {
@@ -253,6 +259,7 @@ body {
 
 			&:focus {
 				box-shadow: none;
+				border-color: #1a59f7;
 			}
 
 			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -270,6 +277,16 @@ body {
 			&:-moz-placeholder { /* Firefox 18- */
 				color: #c4cbd2;
 				opacity: 0.5;
+			}
+		}
+
+		input {
+			&:not(:placeholder-shown) {
+				border-color: #1a59f7;
+			}
+
+			&:placeholder-shown {
+				border-bottom: 1px solid #c4cbd2;
 			}
 		}
 
@@ -367,11 +384,7 @@ body {
 
 .control:hover input ~ .control_indicator,
 .control input:focus ~ .control_indicator {
-	border: 1px solid #2979ff;
-}
-
-.control input:checked ~ .control_indicator {
-	border: 1px solid #2979ff;
+	border: 1px solid #2970ff;
 }
 
 .control input:not(:checked) ~ .control_indicator {
@@ -384,9 +397,15 @@ body {
     position: absolute;
     display: none;
 }
+
+.control input:checked ~ .control_indicator {
+	border-color: #1a59f7;
+}
+
 .control input:checked ~ .control_indicator:after {
     display: block;
 }
+
 .control-checkbox .control_indicator:after {
     left: 3px;
     top: 0px;

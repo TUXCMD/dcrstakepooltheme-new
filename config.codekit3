@@ -23,6 +23,17 @@
 		"oAP": "\/email-verification-successfully.html",
 		"oF": 0
 		},
+	"\/favicon.png": {
+		"ft": 32768,
+		"iS": 391,
+		"oA": 0,
+		"oAP": "\/favicon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/img\/arrow-back.png": {
 		"ft": 32768,
 		"iS": 271,
@@ -440,6 +451,43 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/js\/bootstrap.min.js.map",
+		"oF": 0
+		},
+	"\/js\/global-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/global-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/global.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/global.min.js",
+		"oF": 2,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/global.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/global.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/global.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/js\/global.min.js.map",
 		"oF": 0
 		},
 	"\/js\/vendor\/anchor.min.js": {
@@ -1704,7 +1752,7 @@
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 0,
+		"ma": 1,
 		"oA": 0,
 		"oAP": "\/style.css",
 		"oF": 2,
@@ -1741,6 +1789,13 @@
 		"oAP": "\/style-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"\/style.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/style.css.map",
+		"oF": 0
 		},
 	"\/tickets.html": {
 		"cB": 0,

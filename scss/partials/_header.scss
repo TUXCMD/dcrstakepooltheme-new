@@ -26,10 +26,90 @@
 		}
 
 		&--text {
-			padding-left: 5px;
+			padding: 0 5px;
 			font-size: 13px;
 			line-height: 1;
 			color: #091440;
 		}
+	}
+
+	.wrapper{
+		position: absolute;
+		top: 0;
+		text-align: center;
+	}
+
+	.menu-trigger {
+		width: 33px;
+		height: 23px;
+		position: relative;
+		cursor: pointer;
+		display: inline-block;
+		vertical-align: top;
+		margin: 0px;
+		
+		.line {
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 2px;
+			background: #8997a5;   
+		}
+	}
+
+
+	//first menu trigger
+
+	.menu-trigger.first {
+	  	
+	  	.line {
+	    	width: 100%;
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    height: 2px;
+		    background: #8997a5;
+		    transition: 0.3s;
+	    
+		    &.line-1 {
+		      	transition: all 0.3s 0.3s, transform 0.3s 0s;
+		    }
+		    
+		    &.line-2 {
+				top: 50%;
+				margin-top: -1px;
+				left: 0;
+				transition: all 0.3s 0.3s;
+		    }
+		    
+		    &.line-3 {
+				bottom: 0;
+				top: auto;
+				left: 0;
+				transition: all 0.3s 0.3s, transform 0.3s 0s;      
+		    }    
+	  	}
+			&.active {
+
+			.line-1 {
+				top: 50%;
+				margin-top: -1px;
+				transform: rotate(45deg);
+				transition: all 0.3s, transform 0.3s 0.3s;
+			}
+
+			.line-2 {
+				opacity: 0;
+				transition: all 0.3s, opacity 0.3s 0s;      
+			}
+			
+			.line-3 {
+				bottom: 50%;
+				margin-bottom: -1px;
+				transform: rotate(-45deg);
+				transition: all 0.3s, transform 0.3s 0.3s;      
+			}    
+	  	}  
 	}
 }
