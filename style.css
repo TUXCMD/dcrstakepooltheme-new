@@ -6476,6 +6476,19 @@ body {
       position: absolute;
       top: -2px;
       left: 3px; }
+  body .container .voiting--white-block .btn-outline-primary, body .container .home--white-block .btn-outline-primary {
+    margin-right: 20px;
+    padding: 14px 44px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.23;
+    letter-spacing: normal;
+    color: #2970ff;
+    border-radius: 5px;
+    border: solid 1px #2970ff; }
+    body .container .voiting--white-block .btn-outline-primary:hover, body .container .home--white-block .btn-outline-primary:hover {
+      background-color: #2970ff;
+      color: #fff; }
   body .container .voiting--input-block, body .container .home--input-block {
     background-color: #d4f0fd; }
     body .container .voiting--input-block p, body .container .home--input-block p {

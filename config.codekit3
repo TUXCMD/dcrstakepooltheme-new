@@ -77,6 +77,49 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/img\/circular-graphic-with-quarter-portion.png": {
+		"ft": 32768,
+		"iS": 333,
+		"oA": 0,
+		"oAP": "\/img\/circular-graphic-with-quarter-portion.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/circular-graphic-with-quarter-portion.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/circular-graphic-with-quarter-portion.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/circular-graphic-with-quarter-portion@2x.png": {
+		"ft": 32768,
+		"iS": 628,
+		"oA": 0,
+		"oAP": "\/img\/circular-graphic-with-quarter-portion@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/circular-graphic-with-quarter-portion@3x.png": {
+		"ft": 32768,
+		"iS": 836,
+		"oA": 0,
+		"oAP": "\/img\/circular-graphic-with-quarter-portion@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/img\/close-cross-icon.png": {
 		"ft": 32768,
 		"iS": 214,
@@ -120,6 +163,49 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/img\/group-1079.png": {
+		"ft": 32768,
+		"iS": 514,
+		"oA": 0,
+		"oAP": "\/img\/group-1079.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/group-1079.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/group-1079.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/group-1079@2x.png": {
+		"ft": 32768,
+		"iS": 817,
+		"oA": 0,
+		"oAP": "\/img\/group-1079@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/group-1079@3x.png": {
+		"ft": 32768,
+		"iS": 1042,
+		"oA": 0,
+		"oAP": "\/img\/group-1079@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/img\/group-1119.png": {
 		"ft": 32768,
 		"iS": 358,
@@ -157,6 +243,49 @@
 		"iS": 748,
 		"oA": 0,
 		"oAP": "\/img\/group-1119@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/group-1342.png": {
+		"ft": 32768,
+		"iS": 409,
+		"oA": 0,
+		"oAP": "\/img\/group-1342.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/group-1342.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/group-1342.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/group-1342@2x.png": {
+		"ft": 32768,
+		"iS": 683,
+		"oA": 0,
+		"oAP": "\/img\/group-1342@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/group-1342@3x.png": {
+		"ft": 32768,
+		"iS": 983,
+		"oA": 0,
+		"oAP": "\/img\/group-1342@3x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -329,6 +458,92 @@
 		"iS": 1227,
 		"oA": 0,
 		"oAP": "\/img\/recaptcha-logo@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/servers.png": {
+		"ft": 32768,
+		"iS": 176,
+		"oA": 0,
+		"oAP": "\/img\/servers.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/servers.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/servers.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/servers@2x.png": {
+		"ft": 32768,
+		"iS": 266,
+		"oA": 0,
+		"oAP": "\/img\/servers@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/servers@3x.png": {
+		"ft": 32768,
+		"iS": 398,
+		"oA": 0,
+		"oAP": "\/img\/servers@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/status.png": {
+		"ft": 32768,
+		"iS": 317,
+		"oA": 0,
+		"oAP": "\/img\/status.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/status.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/status.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/status@2x.png": {
+		"ft": 32768,
+		"iS": 468,
+		"oA": 0,
+		"oAP": "\/img\/status@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/status@3x.png": {
+		"ft": 32768,
+		"iS": 648,
+		"oA": 0,
+		"oAP": "\/img\/status@3x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
