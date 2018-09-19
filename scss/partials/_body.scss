@@ -17,7 +17,7 @@ body {
 			max-width: 860px;
 		}
 
-		.voiting {
+		.voiting, .home {
 
 			&--block {
 				background-color: #edeff1;
@@ -256,6 +256,7 @@ body {
 			border: 0;
 			border-bottom: 1px solid #c4cbd2;
 			border-radius: 0;
+			cursor: pointer;
 
 			&:focus {
 				box-shadow: none;
