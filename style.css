@@ -6687,11 +6687,11 @@ body {
     line-height: 1.23;
     letter-spacing: normal;
     color: #8997a5; }
-  body .table-wrapper-scroll-y .table {
+  body .table-scroll-y .table {
     margin-bottom: 0; }
-    body .table-wrapper-scroll-y .table .thead-light th {
+    body .table-scroll-y .table .thead-light th {
       color: #091440; }
-    body .table-wrapper-scroll-y .table a {
+    body .table-scroll-y .table a {
       color: #2970ff; }
   body .table .thead-light th {
     background-color: #edeff1;
