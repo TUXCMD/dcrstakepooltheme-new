@@ -24,6 +24,13 @@ body {
 
 				&__description {
 					color: #0c1e3e;
+
+					.span--box {
+						border-radius: 2px;
+					    background-color: #d4f0fd;
+					    padding: 0 5px;
+					    color: #48566e;
+					}
 				}
 
 				code {
@@ -436,4 +443,63 @@ body {
 
 .bg-checked {
 	background-color: #e9f8fe;
+}
+
+.main-carousel {
+
+	.carousel-cell {
+		width: 100%;
+		height: auto;
+		margin-right: 20px;
+	}
+
+	/* position dots in carousel */
+	.flickity-page-dots {
+		left: 23%;
+		bottom: 20px;
+	}
+	/* white circles */
+	.flickity-page-dots .dot {
+		width: 10px;
+		height: 10px;
+		opacity: 1;
+		background: #e6eaed;
+		vertical-align: middle;
+	}
+	/* fill-in selected dot */
+	.flickity-page-dots .dot.is-selected {
+		background: transparent;
+		width: 16px;
+		height: 16px;
+		border: solid 2px #2970ff;
+	}
+
+	.flickity-button {
+		background: transparent;
+		z-index: 2;
+	}
+	.flickity-button:hover {
+		background: transparent;
+	}
+
+	.flickity-prev-next-button {
+		width: 16px;
+		height: 16px;
+		border-radius: 0;
+	}
+	/* icon color */
+	.flickity-button-icon {
+		fill: #2970ff;
+	}
+	.flickity-prev-next-button {
+		bottom: 12px;
+		top: auto;
+	}
+	/* position outside */
+	.flickity-prev-next-button.previous {
+		left: 330px;
+	}
+	.flickity-prev-next-button.next {
+		right: 92px;
+	}
 }
