@@ -25,12 +25,17 @@ body {
 				&__description {
 					color: #0c1e3e;
 
-					.span--box {
-						border-radius: 2px;
-					    background-color: #d4f0fd;
-					    padding: 0 5px;
-					    color: #48566e;
-					}
+				}
+
+				.span--box {
+					border-radius: 2px;
+				    background-color: #d4f0fd;
+				    padding: 0 5px;
+				    color: #48566e;
+				}
+
+				&__agendas {
+					color: #48566e;
 				}
 
 				code {
@@ -325,6 +330,24 @@ body {
 			line-height: 1.23;
 			letter-spacing: normal;
 			color: #8997a5;	
+		}
+	}
+
+	.table-wrapper-scroll-y {
+		
+		.table {
+			margin-bottom: 0;
+
+			.thead-light { 
+			
+				th{
+					color: #091440;
+				}
+			}
+
+			a {
+				color: #2970ff;
+			}
 		}
 	}
 

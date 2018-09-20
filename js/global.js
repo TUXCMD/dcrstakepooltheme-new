@@ -13,3 +13,15 @@ $('.main-carousel').flickity({
 		x3: 60
 	}
 });
+
+$(document).ready(function () {
+	$('#dtVerticalScrollExample').DataTable({
+		"scrollY": "291px",
+		"scrollX": false,
+		"scrollCollapse": true,
+		"paging": false,
+		"searching": false,
+		"info": false,
+	});
+	$('.dataTables_length').addClass('bs-select');
+});
