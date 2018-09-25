@@ -6801,6 +6801,7 @@ body {
   background-color: #e9f8fe; }
 
 .main-carousel {
+  margin-bottom: 20px;
   /* position dots in carousel */
   /* white circles */
   /* fill-in selected dot */
@@ -6812,7 +6813,7 @@ body {
     margin-right: 20px; }
     @media (max-width: 991.98px) {
       .main-carousel .carousel-cell {
-        height: 579px;
+        height: 491px;
         background-color: #fff;
         padding-left: 15px;
         padding-right: 15px; } }

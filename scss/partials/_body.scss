@@ -478,6 +478,7 @@ body {
 }
 
 .main-carousel {
+	margin-bottom: 20px;
 
 	.carousel-cell {
 		width: 100%;
@@ -485,7 +486,7 @@ body {
 		margin-right: 20px;
 
 		@include media-breakpoint-down(md) {
-			height: 579px;
+			height: 491px;
 			background-color: #fff;
 			padding-left: 15px;
 			padding-right: 15px;
