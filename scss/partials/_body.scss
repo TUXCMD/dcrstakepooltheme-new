@@ -27,15 +27,16 @@ body {
 
 				}
 
-				.span--box {
-					border-radius: 2px;
-				    background-color: #d4f0fd;
-				    padding: 0 5px;
-				    color: #48566e;
-				}
-
 				&__agendas {
 					color: #48566e;
+					line-height: 1.31;
+
+					.span--box {
+						border-radius: 2px;
+					    background-color: #d4f0fd;
+					    padding: 0 5px;
+					    color: #48566e;
+					}
 				}
 
 				code {
@@ -362,6 +363,14 @@ body {
 			}
 		}
 
+		tr {
+			
+			&:hover {
+				background-color: #e9f8fe;
+				cursor: pointer;
+			}
+		}
+
 		td {
 			border-top: 1px solid #edeff1;
 			color: #48566e;
@@ -472,7 +481,7 @@ body {
 
 	.carousel-cell {
 		width: 100%;
-		height: auto;
+		height: 321px;
 		margin-right: 20px;
 	}
 
@@ -480,6 +489,7 @@ body {
 	.flickity-page-dots {
 		left: 23%;
 		bottom: 20px;
+		cursor: pointer;
 	}
 	/* white circles */
 	.flickity-page-dots .dot {
@@ -520,9 +530,11 @@ body {
 	}
 	/* position outside */
 	.flickity-prev-next-button.previous {
-		left: 330px;
+		left: auto;
+		right: 186px;
 	}
 	.flickity-prev-next-button.next {
-		right: 92px;
+		left: auto;
+		right: 86px;
 	}
 }

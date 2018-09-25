@@ -16,11 +16,12 @@ $('.main-carousel').flickity({
 
 $(document).ready(function () {
 	$('#dtVerticalScroll').DataTable({
-		"scrollY": "291px",
+		"scrollY": "251px",
+		"scrollX": true,
 		"scrollCollapse": true,
 		"paging": false,
 		"searching": false,
-		"info": false,
+		"info": false
 	});
 	$('.dataTables_length').addClass('bs-select');
 });
