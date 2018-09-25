@@ -5,7 +5,8 @@ html {
 
 body {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 13px;
+	@include fluid-props(font-size, $sm, $xl, 13px, 15px);
+	@include fluid-props(line-height, $sm, $xl, 17px, 21px);
 	font-weight: normal;
 	font-style: normal;
 	font-stretch: normal;
@@ -29,7 +30,6 @@ body {
 
 				&__agendas {
 					color: #48566e;
-					line-height: 1.31;
 
 					.span--box {
 						border-radius: 2px;
@@ -485,16 +485,21 @@ body {
 		margin-right: 20px;
 
 		@include media-breakpoint-down(md) {
-			height: 521px;
+			height: 579px;
 			background-color: #fff;
+			padding-left: 15px;
+			padding-right: 15px;
 		}
 	}
 
 	/* position dots in carousel */
 	.flickity-page-dots {
 		left: 20%;
-		bottom: 20px;
+		bottom: 15px;
 		cursor: pointer;
+		@include media-breakpoint-down(md) {
+			left: auto;
+		}
 	}
 	/* white circles */
 	.flickity-page-dots .dot {
@@ -503,6 +508,11 @@ body {
 		opacity: 1;
 		background: #e6eaed;
 		vertical-align: middle;
+
+		@include media-breakpoint-down(md) {
+			width: 20px;
+			height: 20px;
+		}
 	}
 	/* fill-in selected dot */
 	.flickity-page-dots .dot.is-selected {
@@ -510,6 +520,11 @@ body {
 		width: 16px;
 		height: 16px;
 		border: solid 2px #2970ff;
+
+		@include media-breakpoint-down(md) {
+			width: 26px;
+			height: 26px;
+		}
 	}
 
 	.flickity-button {
@@ -530,16 +545,27 @@ body {
 		fill: #2970ff;
 	}
 	.flickity-prev-next-button {
-		bottom: 12px;
+		bottom: 7px;
 		top: auto;
+		@include media-breakpoint-down(md) {
+			bottom: 12px;
+		}
 	}
 	/* position outside */
 	.flickity-prev-next-button.previous {
 		left: 216px;
 		right: auto;
+
+		@include media-breakpoint-down(md) {
+			left: 36px;
+		}
 	}
 	.flickity-prev-next-button.next {
 		left: auto;
 		right: 16px;
+
+		@include media-breakpoint-down(md) {
+			right: 36px;
+		}
 	}
 }
