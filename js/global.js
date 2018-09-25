@@ -14,6 +14,7 @@ $('.main-carousel').flickity({
 	}
 });
 
+
 $(document).ready(function () {
 	$('#dtVerticalScroll').DataTable({
 		"scrollY": "251px",
