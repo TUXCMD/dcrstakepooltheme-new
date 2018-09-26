@@ -6444,18 +6444,6 @@ body {
   font-style: normal;
   font-stretch: normal;
   background-color: #f3f5f6; }
-  @media screen and (min-width: 576px) {
-    body {
-      font-size: calc(13px + 2 * (100vw - 576px) / 864); } }
-  @media screen and (min-width: 1440px) {
-    body {
-      font-size: 15px; } }
-  @media screen and (min-width: 576px) {
-    body {
-      line-height: calc(17px + 4 * (100vw - 576px) / 864); } }
-  @media screen and (min-width: 1440px) {
-    body {
-      line-height: 21px; } }
   body .container.voiting {
     max-width: 860px; }
   body .container .voiting--block, body .container .home--block {
@@ -6855,20 +6843,26 @@ body {
   .main-carousel .flickity-button-icon {
     fill: #2970ff; }
   .main-carousel .flickity-prev-next-button {
-    bottom: 7px;
-    top: auto; }
+    top: auto;
+    bottom: 7px; }
     @media (max-width: 991.98px) {
       .main-carousel .flickity-prev-next-button {
         bottom: 12px; } }
   .main-carousel .flickity-prev-next-button.previous {
-    left: 216px;
+    left: 306px;
     right: auto; }
+    @media (max-width: 1199.98px) {
+      .main-carousel .flickity-prev-next-button.previous {
+        left: 256px; } }
     @media (max-width: 991.98px) {
       .main-carousel .flickity-prev-next-button.previous {
         left: 36px; } }
   .main-carousel .flickity-prev-next-button.next {
     left: auto;
-    right: 16px; }
+    right: 90px; }
+    @media (max-width: 1199.98px) {
+      .main-carousel .flickity-prev-next-button.next {
+        right: 76px; } }
     @media (max-width: 991.98px) {
       .main-carousel .flickity-prev-next-button.next {
         right: 36px; } }
