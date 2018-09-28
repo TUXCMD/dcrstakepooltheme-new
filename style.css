@@ -6468,6 +6468,8 @@ body {
     background-color: #edeff1; }
     body .container .voiting--block__description, body .container .home--block__description {
       color: #0c1e3e; }
+      body .container .voiting--block__description a, body .container .home--block__description a {
+        color: #2971ff; }
     body .container .voiting--block__agendas, body .container .home--block__agendas {
       color: #48566e; }
       body .container .voiting--block__agendas .span--box, body .container .home--block__agendas .span--box {
@@ -6493,6 +6495,7 @@ body {
         color: #48566e; }
   body .container .voiting--white-block .btn, body .container .home--white-block .btn {
     padding: 2px 5px 2px 18px;
+    font-size: 13px;
     line-height: 1.23;
     letter-spacing: normal;
     color: #2971ff;
@@ -6728,14 +6731,15 @@ body {
     line-height: 1.27;
     letter-spacing: normal;
     color: #fd704a; }
-  body .footer {
+  body .update-btn {
+    display: none !important;
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 104px;
     background-color: #ffffff;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1); }
-    body .footer .btn-outline-primary {
+    body .update-btn .btn-outline-primary {
       margin: 0 80px;
       padding: 14px 44px;
       font-size: 13px;
@@ -6745,7 +6749,7 @@ body {
       color: #2970ff;
       border-radius: 5px;
       border: solid 1px #2970ff; }
-      body .footer .btn-outline-primary:hover {
+      body .update-btn .btn-outline-primary:hover {
         background-color: #2970ff;
         color: #fff; }
 

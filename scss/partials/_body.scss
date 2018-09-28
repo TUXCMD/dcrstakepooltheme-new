@@ -33,7 +33,10 @@ body {
 
 				&__description {
 					color: #0c1e3e;
-
+					
+					a {
+						color: #2971ff;
+					}
 				}
 
 				&__agendas {
@@ -80,6 +83,7 @@ body {
 
 				.btn {
 					padding: 2px 5px 2px 18px;
+					font-size: 13px;
 					line-height: 1.23;
 					letter-spacing: normal;
 					color: #2971ff;
@@ -393,7 +397,8 @@ body {
 		color: #fd704a;
 	}
 
-	.footer {
+	.update-btn {
+		display: none !important;
 		position: absolute;
 		bottom: 0;
 		width: 100%;

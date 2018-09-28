@@ -57,16 +57,17 @@
 	    </nav>
 
 	    <div class="container voiting mb-5" style="min-height: calc(100vh - 284px);">
-	    	<div class="row">
+	    	<div class="row mx-3">
 	    		<div class="col-12 mb-3 px-5">
 	    			<h1>Voting Preferences (v6)</h1>
 	    		</div>
 	    		<div class="col-12 mb-4 px-5 pt-3 pb-1 voiting--block">
-	    			<p class="voiting--block__description">Lorem ipsum dolor sit amet, viris inermis maiestatis vim ne, lorem lucilius rationibus in cum. Vel decore persecuti ad, et vix option oblique, mundi populo nominavi ad vis.</p>
+	    			<p class="voiting--block__description">Select the option for your tickets to vote for. On-going agendas can be tracked at <a href="#">voting.decred.org.</a></p>
 	    		</div>
-
-	    		<div class="col-6 mb-4">
-	    			<div class="row p-4 mr-2 bg-white voiting--white-block">
+	    	</div>
+	    	<div class="row">
+	    		<div class="col-lg-6 col-12 mb-4">
+	    			<div class="row p-4 mr-lg-2 mx-3 bg-white voiting--white-block">
 	    				<div class="col-6">
 	    					<h2 class="mb-0 mt-1">Title</h2>
 	    				</div>
@@ -80,7 +81,7 @@
 	    					<p class="voiting--white-block__description">Description lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum.</p>
 	    				</div>
 	    			</div>
-	    			<div class="row p-4 mr-2 voiting--input-block">
+	    			<div class="row p-4 mr-lg-2 mx-3 voiting--input-block">
 	    				<div class="col-12 position-relative">
 	    					<div class="form-check form-check-inline pr-3">
 	    						<label class="form-check-label" for="inlineRadio1">Yes
@@ -103,8 +104,8 @@
 	    				</div>
 	    			</div>
 	    		</div>
-	    		<div class="col-6 mb-4">
-	    			<div class="row p-4 ml-2 bg-white voiting--white-block">
+	    		<div class="col-lg-6 col-12 mb-4">
+	    			<div class="row p-4 ml-lg-2 mx-3 bg-white voiting--white-block">
 	    				<div class="col-6">
 	    					<h2 class="mb-0 mt-1">Title</h2>
 	    				</div>
@@ -119,8 +120,8 @@
 	    				</div>
 	    			</div>
 	    		</div>
-	    		<div class="col-6 mb-4">
-	    			<div class="row p-4 mr-2 bg-white voiting--white-block">
+	    		<div class="col-lg-6 col-12 mb-4">
+	    			<div class="row p-4 mr-lg-2 mx-3 bg-white voiting--white-block">
 	    				<div class="col-6">
 	    					<h2 class="mb-0 mt-1">Title</h2>
 	    				</div>
@@ -135,8 +136,8 @@
 	    				</div>
 	    			</div>
 	    		</div>
-	    		<div class="col-6 mb-4">
-	    			<div class="row p-4 ml-2 bg-white voiting--white-block">
+	    		<div class="col-lg-6 col-12 mb-4">
+	    			<div class="row p-4 ml-lg-2 mx-3 bg-white voiting--white-block">
 	    				<div class="col-6">
 	    					<h2 class="mb-0 mt-1">Title</h2>
 	    				</div>
@@ -151,8 +152,8 @@
 	    				</div>
 	    			</div>
 	    		</div>
-	    		<div class="col-6 mb-4">
-	    			<div class="row p-4 mr-2 bg-white voiting--white-block">
+	    		<div class="col-lg-6 col-12 mb-4">
+	    			<div class="row p-4 mr-lg-2 mx-3 bg-white voiting--white-block">
 	    				<div class="col-6">
 	    					<h2 class="mb-0 mt-1">Title</h2>
 	    				</div>
@@ -167,8 +168,8 @@
 	    				</div>
 	    			</div>
 	    		</div>
-	    		<div class="col-6 mb-4">
-	    			<div class="row p-4 ml-2 bg-white voiting--white-block">
+	    		<div class="col-lg-6 col-12 mb-4">
+	    			<div class="row p-4 ml-lg-2 mx-3 bg-white voiting--white-block">
 	    				<div class="col-6">
 	    					<h2 class="mb-0 mt-1">Title</h2>
 	    				</div>
@@ -182,22 +183,42 @@
 	    					<p class="voiting--white-block__description">Description lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum.</p>
 	    				</div>
 	    			</div>
-	    		</div>
-				<div class="col-12 mb-3 px-5">
-	    			<h1>Agendas</h1>
-	    		</div>
-	    		<div class="col-12 mb-4 px-5 pt-3 pb-1 bg-white voiting--white-block">
-	    			<p class="voiting--white-block__agendas">See the <a href="#">Decred Voting Site</a> for more information.</p>
 	    		</div>
 	    	</div>
 	    </div>
 		
-		<footer class="footer d-flex align-items-center">
+		<div class="update-btn d-flex align-items-center">
 			<div class="container d-flex justify-content-center">
 				<a href="#" class="btn btn-outline-primary">Cancel</a>
 				<a href="#" class="btn btn-outline-primary">Update</a>
 			</div>
-	    </footer>
+	    </div>
+
+	    <footer>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-7 offset-md-1 col-12 footer--content">
+						<p class="footer--content__text pr-md-5">The easiest way to run the stakepool code is to run it directly from the root of the source tree:</p>
+						<div class="row justify-content-center justify-content-md-start">
+							<div class="col-sm-9 col-12 footer--content__bg pt-3">
+								<blockquote class="footer--content__text">
+									$ cd $GOPATH/src/github.com/decred/dcrstakepool<br>
+									$ go build<br>
+									$ ./dcrstakepool
+								</blockquote>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-12 footer--content footer--content__bgx">
+						<div class="d-flex justify-content-center h-100">
+							<div class="align-self-center">
+								<p class="footer--content__text text-right">Decred developers | 2016-2018<br>The source sode is available at <a href="3">GitHub</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 
 
 		<!-- Bootstrap core JavaScript
