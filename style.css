@@ -6464,6 +6464,9 @@ body {
     @media (max-width: 767.98px) {
       body .container.voiting {
         max-width: 540px; } }
+    body .container.voiting .info-icon:hover {
+      opacity: 0.6;
+      cursor: pointer; }
   body .container .voiting--block, body .container .home--block {
     background-color: #edeff1; }
     body .container .voiting--block__description, body .container .home--block__description {

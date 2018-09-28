@@ -7,7 +7,7 @@
 		<meta name="author" content="">
 		<link rel="icon" href="favicon.png">
 
-		<title>Address</title>
+		<title>Connected to Wallet</title>
 
 		<!-- Custom styles for this template -->
 		<link href="style.css" rel="stylesheet">
@@ -36,7 +36,7 @@
 			        <div class="col-7 px-0">
 			        	<a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="index.html">Home</a>
 				        <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="stats.html">Stats</a>
-				        <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block active" href="#">Connect to Wallet</a>
+				        <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block active" href="connect-to-wallet.html">Connect to Wallet</a>
 				        <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="settings.html">Settings</a>
 			        </div>
 			        <div class="col-3 position-relative d-flex justify-content-end align-items-center">
@@ -57,71 +57,48 @@
 		 <div class="container voiting" style="min-height: calc(100vh - 284px);">
 	    	<div class="row">
 	    		<div class="col-12 mb-3 px-5">
-	    			<h1 class="d-flex justify-content-between align-items-center">Connect via API Key <img src="img/info-icon.png" data-toggle="modal" data-target="#connectApiKey" alt=""></h1>
+	    			<div  class="d-flex justify-content-between align-items-center">
+		    			<h1>Connected to Wallet <img class="pl-3" src="img/wallet-icon.png" alt=""></h1>
+		    			<img class="info-icon" src="img/info-icon.png" data-toggle="modal" data-target="#connectApiKey" alt="">
+		    		</div>
 	    		</div>
 
 				<div class="modal fade pt-5" id="connectApiKey" tabindex="-1" role="dialog" aria-labelledby="connectApiKeyTitle" aria-hidden="true">
 					<div class="container voiting modal-dialog px-0" role="document">
 						<div class="modal-content px-3 py-4">
 							<div class="modal-header">
-								<h1 class="modal-title d-flex justify-content-between align-items-center" id="connectApiKeyTitle"><img src="img/info-icon-lg.png" alt=""> <span class="px-3">Connect via API Key</span></h1>
+								<h1 class="modal-title d-flex justify-content-between align-items-center" id="connectApiKeyTitle"><img src="img/info-icon-lg.png" alt=""> <span class="px-3">Submitted Address</span></h1>
 								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 								  <span aria-hidden="true"><img src="img/close-cross-icon.png" alt=""></span>
 								</button>
 							</div>
 							<div class="modal-body mx-3 px-5">
-								<p class="voiting--white-block__agendas">The official Decred GUI wallet Decrediton is the recommended way to use stakepools. All you need to get started is to copy and paste the API Token below when prompted. More comprehensive guides are available for Decrediton as well a general overview of the staking process.</p>
+								<p class="voiting--white-block__agendas">When you submit an address, the stake pool binds that address from your wallet together with an address from the stake pool’s voting wallet. This is done by creating a 1-of-2 multisignature script which lets you, the pool, or both parties vote. This “binding” of the wallets means that if you ever delete your current wallet and create a new wallet with a different seed, importing your multisignature script will not work because it contains an address that is not present in your new wallet.</p>
 
-								<h2>Submit your API key</h2>
-
-								<p class="voiting--white-block__agendas">The official Decred GUI wallet Decrediton is the recommended way to use stakepools. All you need to get started is to copy and paste the API Token below when prompted. More comprehensive guides are available for Decrediton as well a general overview of the staking process.</p>
+								<p class="voiting--white-block__agendas">If you wish to verify that this address belongs to your wallet, you may run the following command:</p>
 
 								<p class="voiting--block px-5 py-4">
 									<code>
-										$ dcrctl -- testnet -- wallet getnewaddress<br>
-										TsExampleAddr1For2Demo3PurposeOnly<br>
-										$   dcrctl -- testnet -- wallet validateaddress TsExampleAddr1For2Demo3PurposeOnly<br>
-										{<br>
-										     “isvalid”: true,<br>
-										     “address”: “TsExampleAddr1For2Demo3PurposeOnly”,<br>
-										     “ismine”: true,<br>
-										     “pubkeyaddr”:  “TkExampleAddr1For2Demo3PurposeOnly6Do7Not8Use9Pls0”,<br>
-										     “pubkey”: “026587gggesc168424srdfgfgsxdvdghdzdcc8sgfgzxdfgsdfg575s54f5asd”,<br>
-										     “iscompressed”: true,<br>
-										     “account”: “default”<br>
-										}
+										$ dcrctl — testnet — wallet getnewaddress dcrctl — testnet — wallet <br>
+										getnewaddress import script <br>121029a6e2ab4298353e42119f22568Fdf96e8faeb9b.ey5121029a6e2ab4298353e42119f2f96e8faeb9b
 									</code>
 								</p>
+
+								<p class="voiting--white-block__agendas">In the result, you will see fields such as “ismine” and “account” if the address is present.</p>
 							</div>
 						</div>
 					</div>
 				</div>
 
-	    		<div class="col-12 mb-4 px-5 pt-3 pb-1 voiting--block">
-	    			<p class="voiting--block__description">To connect the stakepool to your wallet, copy and paste this API key to Decrediton.</p>
+	    		<div class="col-12 mb-4 px-5 pt-3 pb-1 bg-white">
+	    			<p class="voiting--block__description">Your public key address has been accepted and registration is complete. Please, contact your stake pool administrator or support staff if you need to re-register with a new address from a new wallet.</p>
 	    		</div>
 	    		<div class="col-12 mb-5 p-4 bg-white">
-	    			<div class="p-4 voiting--input-block">
-	    				<p class="mb-0">5121029a6e2ab4298353e42119f2f96e8faeb9b.ey5121029a6e2ab4298353e42119f2f96e8faeb9b5121029a6e2ab4298353e42119f2f96e8faeb9bhuThfty.wRtghyIo5phJJy2hfldChRs.fjjko4jkFvmm6ud77lkoP</p>
+	    			<h2 class="px-4">Public Key Address</h2>
+	    			<div class="py-3 px-4  voiting--input-block">
+	    				<p class="mb-0">5121029a6e2ab4298353e42119f2f96e8faeb9b.ey5121029a6e2ab4298353e42119f2f96e8faeb9b</p>
 	    			</div>
 	    		</div>
-	    		<div class="col-12 mb-3 px-5">
-	    			<h1 class="d-flex justify-content-between align-items-center">Connect Manually <img src="img/info-icon.png" data-toggle="modal" data-target="#connectManually" alt=""></h1>
-	    		</div>
-	    		<div class="col-12 mb-0 px-5 pt-3 pb-1 voiting--block">
-	    			<p class="voiting--block__description">To connect manually using the command-line tools, copy and paste <strong>pubkeyaddr</strong> that start’s with <strong>Tk</strong> into the form below. </p>
-	    		</div>
-	    		<form class="w-100 public-key">
-		    		<div class="col-12 mb-4 px-5 py-4 bg-white">
-		    			<div class="form-group row mb-0 align-items-center">
-							<label for="inputAddress" class="col-3 public-key--address mb-0">Public Key Address:</label>
-							<div class="col-9">
-							  <input type="text" class="form-control" id="inputAddress" placeholder="Enter address">
-							</div>
-						</div>
-		    		</div>
-		    		<button type="submit" class="btn btn-primary mb-2">Submit Address</button>
-		    	</form>
 	    	</div>
 	    </div>
 

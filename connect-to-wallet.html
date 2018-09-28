@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="favicon.png">
+
+		<title>Connect to Wallet</title>
+
+		<!-- Custom styles for this template -->
+		<link href="style.css" rel="stylesheet">
+	</head>
+
+	<body>
+    
+	    <nav class="site-header sticky-top py-3 mb-5">
+		    <div class="container">
+		      	<div class="row">
+			        <div class="col-2">
+			        	<a class="py-1 border-0 d-flex justify-content-start align-items-center" href="index.html">
+			        		<div class="logo--logo">
+					          	<svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" fill="none" viewBox="0 0 23 20">
+								    <path fill="#000" fill-opacity="0" d="M0 0h23v19.167H0z"/>
+								    <path fill="#091440" d="M4.792 4.792L0 0h5.175l7.667 7.667H7.667a3.834 3.834 0 1 0 0 7.666h1.917l3.833 3.834h-5.75A7.667 7.667 0 0 1 0 11.5c0-3.11 1.533-5.615 4.792-6.708z"/>
+								    <path fill="#091440" d="M18.208 14.375L23 19.167h-5.175L10.158 11.5h5.175a3.834 3.834 0 0 0 0-7.667h-1.917L9.583 0h5.75A7.667 7.667 0 0 1 23 7.667c0 3.109-1.533 5.615-4.792 6.708z"/>
+								</svg>
+							</div>
+			        		<div class="logo--text">
+								Stakepool<br>
+								<b>Alpha</b>
+							</div>
+				        </a>
+			        </div>
+			        <div class="col-7 px-0">
+			        	<a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="index.html">Home</a>
+				        <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="stats.html">Stats</a>
+				        <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block active" href="connect-to-wallet.html">Connect to Wallet</a>
+				        <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="settings.html">Settings</a>
+			        </div>
+			        <div class="col-3 position-relative d-flex justify-content-end align-items-center">
+			        	<a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="#">Hello, <span class="e-mail">maria@gr.co</span></a>
+			        	<a class="pt-2 pb-3 d-none d-xl-inline-block" href="#">Logout</a>
+			        	<div class="wrapper py-1 d-inline-block d-xl-none">
+							<div class="menu-trigger first">
+								<span class="line line-1"></span>
+								<span class="line line-2"></span>
+								<span class="line line-3"></span>
+							</div>
+						</div>
+			        </div>
+			    </div>
+		    </div>
+	    </nav>
+
+		 <div class="container voiting" style="min-height: calc(100vh - 284px);">
+	    	<div class="row">
+	    		<div class="col-12 mb-3 px-5">
+	    			<h1 class="d-flex justify-content-between align-items-center">Connect via API Key <img class="info-icon" src="img/info-icon.png" data-toggle="modal" data-target="#connectApiKey" alt=""></h1>
+	    		</div>
+
+				<div class="modal fade pt-5" id="connectApiKey" tabindex="-1" role="dialog" aria-labelledby="connectApiKeyTitle" aria-hidden="true">
+					<div class="container voiting modal-dialog px-0" role="document">
+						<div class="modal-content px-3 py-4">
+							<div class="modal-header">
+								<h1 class="modal-title d-flex justify-content-between align-items-center" id="connectApiKeyTitle"><img src="img/info-icon-lg.png" alt=""> <span class="px-3">Connect via API Key</span></h1>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								  <span aria-hidden="true"><img src="img/close-cross-icon.png" alt=""></span>
+								</button>
+							</div>
+							<div class="modal-body mx-3 px-5">
+								<p class="voiting--white-block__agendas">The official Decred GUI wallet Decrediton is the recommended way to use stakepools. All you need to get started is to copy and paste the API Token below when prompted. More comprehensive guides are available for Decrediton as well a general overview of the staking process.</p>
+
+								<h2>Submit your API key</h2>
+
+								<p class="voiting--white-block__agendas">The official Decred GUI wallet Decrediton is the recommended way to use stakepools. All you need to get started is to copy and paste the API Token below when prompted. More comprehensive guides are available for Decrediton as well a general overview of the staking process.</p>
+
+								<p class="voiting--block px-5 py-4">
+									<code>
+										$ dcrctl -- testnet -- wallet getnewaddress<br>
+										TsExampleAddr1For2Demo3PurposeOnly<br>
+										$   dcrctl -- testnet -- wallet validateaddress TsExampleAddr1For2Demo3PurposeOnly<br>
+										{<br>
+										     “isvalid”: true,<br>
+										     “address”: “TsExampleAddr1For2Demo3PurposeOnly”,<br>
+										     “ismine”: true,<br>
+										     “pubkeyaddr”:  “TkExampleAddr1For2Demo3PurposeOnly6Do7Not8Use9Pls0”,<br>
+										     “pubkey”: “026587gggesc168424srdfgfgsxdvdghdzdcc8sgfgzxdfgsdfg575s54f5asd”,<br>
+										     “iscompressed”: true,<br>
+										     “account”: “default”<br>
+										}
+									</code>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+	    		<div class="col-12 mb-4 px-5 pt-3 pb-1 voiting--block">
+	    			<p class="voiting--block__description">To connect the stakepool to your wallet, copy and paste this API key to Decrediton.</p>
+	    		</div>
+	    		<div class="col-12 mb-5 p-4 bg-white">
+	    			<div class="p-4 voiting--input-block">
+	    				<p class="mb-0">5121029a6e2ab4298353e42119f2f96e8faeb9b.ey5121029a6e2ab4298353e42119f2f96e8faeb9b5121029a6e2ab4298353e42119f2f96e8faeb9bhuThfty.wRtghyIo5phJJy2hfldChRs.fjjko4jkFvmm6ud77lkoP</p>
+	    			</div>
+	    		</div>
+	    		<div class="col-12 mb-3 px-5">
+	    			<h1 class="d-flex justify-content-between align-items-center">Connect Manually <img class="info-icon" src="img/info-icon.png" data-toggle="modal" data-target="#connectManually" alt=""></h1>
+	    		</div>
+
+				<div class="modal fade pt-5" id="connectManually" tabindex="-1" role="dialog" aria-labelledby="connectManuallyTitle" aria-hidden="true">
+					<div class="container voiting modal-dialog px-0" role="document">
+						<div class="modal-content px-3 py-4">
+							<div class="modal-header">
+								<h1 class="modal-title d-flex justify-content-between align-items-center" id="connectManuallyTitle"><img src="img/info-icon-lg.png" alt=""> <span class="px-3">Connect Manually</span></h1>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								  <span aria-hidden="true"><img src="img/close-cross-icon.png" alt=""></span>
+								</button>
+							</div>
+							<div class="modal-body mx-3 px-5">
+								<p class="voiting--white-block__agendas">To join the pool, provide a public key address which will be used to generate a 1-of-2 multisignature script. The multisignature script will be generated by the pool and returned to you along with a P2SH address to give voting rights to. The P2SH address has the prefix Dc.</p>
+
+								<p class="voiting--white-block__agendas">To generate a public key address, create a new wallet address with getnewaddress. Then, call validateaddress &lt;yourAddress&gt; and retrieve the address listed in the pubkeyaddr field of the response. The pubkeyaddr starts with Dk.</p>
+
+								<p class="voiting--white-block__agendas">The following is an example:</p>
+
+								<p class="voiting--block px-5 py-4">
+									<code>
+										$ dcrctl  —wallet getnewaddress<br>
+										DsExampleAddr1For2Demo3PurposesOnly <br>
+										$ dcrctl  —wallet validateaddress DsExampleAddr1For2Demo3PurposesOnly <br>
+										{ <br>
+										    “isvalid”: true, <br>
+										    “address”: “DsExampleAddr1For2Demo3PurposesOnly”,<br>
+										    “ismine”: true,<br>
+										    “pubkeyaddr”: <br>
+										    “DkExample0Addr1For2Demo4Purposes5Only6Do7Not8Use9Pls0”,<br>
+										    “pubkey”: <br>
+										    “022801337beefc0ffee1dab8d4ffa898a782466c9a1fc00ca8863de5438dc07dcc”,<br>
+										    “iscompressed”: true,<br>
+										    “account”: “default” <br>
+										}
+									</code>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+	    		<div class="col-12 mb-0 px-5 pt-3 pb-1 voiting--block">
+	    			<p class="voiting--block__description">To connect manually using the command-line tools, copy and paste <strong>pubkeyaddr</strong> that start’s with <strong>Tk</strong> into the form below. </p>
+	    		</div>
+	    		<form class="w-100 public-key">
+		    		<div class="col-12 mb-4 px-5 py-4 bg-white">
+		    			<div class="form-group row mb-0 align-items-center">
+							<label for="inputAddress" class="col-3 public-key--address mb-0">Public Key Address:</label>
+							<div class="col-9">
+							  <input type="text" class="form-control" id="inputAddress" placeholder="Enter address">
+							</div>
+						</div>
+		    		</div>
+		    		<button type="submit" class="btn btn-primary mb-2">Submit Address</button>
+		    	</form>
+	    	</div>
+	    </div>
+
+	    <footer>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-7 offset-md-1 col-12 footer--content">
+						<p class="footer--content__text pr-md-5">The easiest way to run the stakepool code is to run it directly from the root of the source tree:</p>
+						<div class="row justify-content-center justify-content-md-start">
+							<div class="col-sm-9 col-12 footer--content__bg pt-3">
+								<blockquote class="footer--content__text">
+									$ cd $GOPATH/src/github.com/decred/dcrstakepool<br>
+									$ go build<br>
+									$ ./dcrstakepool
+								</blockquote>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-12 footer--content footer--content__bgx">
+						<div class="d-flex justify-content-center h-100">
+							<div class="align-self-center">
+								<p class="footer--content__text text-right">Decred developers | 2016-2018<br>The source sode is available at <a href="3">GitHub</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-slim.min.js"><\/script>')</script>
+		<script src="js/vendor/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/vendor/holder.min.js"></script>
+		<script src="js/global.min.js"></script>
+		<script>
+		  Holder.addTheme('thumb', {
+		    bg: '#55595c',
+		    fg: '#eceeef',
+		    text: 'Thumbnail'
+		  });
+		</script>
+	</body>
+</html>

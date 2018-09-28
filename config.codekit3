@@ -9,11 +9,18 @@
 	],
 "creatorBuild": "28901",
 "files": {
-	"/address.html": {
+	"/connect-to-wallet.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/address.html",
+		"oAP": "/connect-to-wallet.html",
+		"oF": 0
+		},
+	"/connected-to-wallet.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/connected-to-wallet.html",
 		"oF": 0
 		},
 	"/email-verification-successfully.html": {
@@ -810,7 +817,7 @@
 		},
 	"/img/info-icon.png": {
 		"ft": 32768,
-		"iS": 325,
+		"iS": 322,
 		"oA": 0,
 		"oAP": "/img/info-icon.png",
 		"oF": 0,
@@ -831,7 +838,7 @@
 		},
 	"/img/info-icon@2x.png": {
 		"ft": 32768,
-		"iS": 485,
+		"iS": 500,
 		"oA": 0,
 		"oAP": "/img/info-icon@2x.png",
 		"oF": 0,
@@ -842,7 +849,7 @@
 		},
 	"/img/info-icon@3x.png": {
 		"ft": 32768,
-		"iS": 731,
+		"iS": 735,
 		"oA": 0,
 		"oAP": "/img/info-icon@3x.png",
 		"oF": 0,
@@ -1060,6 +1067,49 @@
 		"iS": 648,
 		"oA": 0,
 		"oAP": "/img/status@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/wallet-icon.png": {
+		"ft": 32768,
+		"iS": 539,
+		"oA": 0,
+		"oAP": "/img/wallet-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/wallet-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/wallet-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/wallet-icon@2x.png": {
+		"ft": 32768,
+		"iS": 952,
+		"oA": 0,
+		"oAP": "/img/wallet-icon@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/wallet-icon@3x.png": {
+		"ft": 32768,
+		"iS": 1325,
+		"oA": 0,
+		"oAP": "/img/wallet-icon@3x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

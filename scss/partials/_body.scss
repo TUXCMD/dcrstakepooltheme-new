@@ -24,6 +24,14 @@ body {
 			@include media-breakpoint-down(sm) {
 				max-width: 540px;
 			}
+
+			.info-icon {
+
+				&:hover {
+					opacity: 0.6;
+					cursor: pointer;
+				}
+			}
 		}
 
 		.voiting, .home {
