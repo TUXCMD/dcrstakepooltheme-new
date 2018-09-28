@@ -5,8 +5,8 @@ html {
 
 body {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 13px;
-	line-height: 17px;
+	@include fluid-props(font-size, $sm, $xl, 15px, 13px);
+	@include fluid-props(line-height, $sm, $xl, 21px, 17px);
 	font-weight: normal;
 	font-style: normal;
 	font-stretch: normal;

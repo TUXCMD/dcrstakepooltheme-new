@@ -19,7 +19,7 @@
 	      	<div class="container">
 		      	<div class="row">
 			        <div class="col-2">
-			        	<a class="py-1 border-0 d-flex justify-content-start align-items-center" href="#">
+			        	<a class="py-1 border-0 d-flex justify-content-start align-items-center" href="index.html">
 			        		<div class="logo--logo">
 					          	<svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" fill="none" viewBox="0 0 23 20">
 								    <path fill="#000" fill-opacity="0" d="M0 0h23v19.167H0z"/>
@@ -34,17 +34,24 @@
 				        </a>
 			        </div>
 			        <div class="col-9 px-0">
-			        	<a class="mr-5 pt-2 pb-3 d-none d-md-inline-block" href="#">Low Fee Tickets</a>
-			        	<a class="mr-5 pt-2 pb-3 d-none d-md-inline-block active" href="status.html">Status</a>
-				        <a class="mr-5 pt-2 pb-3 d-none d-md-inline-block" href="#">Home</a>
-				        <a class="mr-5 pt-2 pb-3 d-none d-md-inline-block" href="stats.html">Stats</a>
-				        <a class="mr-5 pt-2 pb-3 d-none d-md-inline-block" href="address.html">Connect to Wallet</a>
-				        <a class="mr-5 pt-2 pb-3 d-none d-md-inline-block" href="settings.html">Settings</a>
-				        <a class="mr-5 pt-2 pb-3 d-none d-md-inline-block" href="tickets.html">Tickets</a>
-				        <a class="pt-2 pb-3 d-none d-md-inline-block" href="voiting.html">Voiting</a>
+			        	<a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="#">Low Fee Tickets</a>
+			        	<a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block active" href="status.html">Status</a>
+				        <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="index.html">Home</a>
+				        <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="stats.html">Stats</a>
+				        <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="address.html">Connect to Wallet</a>
+				        <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="settings.html">Settings</a>
+				        <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="tickets.html">Tickets</a>
+				        <a class="pt-2 pb-3 d-none d-xl-inline-block" href="voiting.html">Voiting</a>
 				    </div>
-				    <div class="col-1">
-			        	<a class="pt-2 pb-3 d-none d-md-inline-block" href="#">Logout</a>
+				    <div class="col-1 position-relative d-flex justify-content-end align-items-center">
+			        	<a class="pt-2 pb-3 d-none d-xl-inline-block" href="#">Logout</a>
+			        	<div class="wrapper py-1 d-inline-block d-xl-none">
+							<div class="menu-trigger first">
+								<span class="line line-1"></span>
+								<span class="line line-2"></span>
+								<span class="line line-3"></span>
+							</div>
+						</div>
 			        </div>
 			    </div>
 			</div>
@@ -55,59 +62,65 @@
 	    		<div class="col-12 mb-3 px-5">
 	    			<h1 class="d-flex justify-content-between align-items-center">Status <div class="status">RPC Status: OK</div></h1>
 	    		</div>
-	    		<div class="table-scroll-y table-responsive text-nowrap mb-4">
-	    		<table class="dtVerticalScroll table" cellspacing="0" width="100%">
-					<thead class="thead-light">
-						<tr>
-							<th scope="col" class="text-center">Stakepool Number</th>
-							<th scope="col" class="text-center">GRPC Connection Number</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr class="table-light">
-							<td class="text-center">0</td>
-							<td class="text-center">Ready</td>
-						</tr>
-						<tr class="table-light">
-							<td class="text-center">1</td>
-							<td class="text-center">Ready</td>
-						</tr>
-						<tr class="table-light">
-							<td class="text-center">2</td>
-							<td class="text-center">Ready</td>
-						</tr>
-					</tbody>
-				</table>
-				<table class="dtVerticalScroll table" cellspacing="0" width="100%">
-					<thead class="thead-light">
-						<tr>
-							<th scope="col" class="text-center">Wallet Number</th>
-							<th scope="col" class="text-center">Connected</th>
-							<th scope="col" class="text-center">DaemonConnected</th>
-							<th scope="col" class="text-center">EnableVoting</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr class="table-light">
-							<td class="text-center">0</td>
-							<td class="text-center">True</td>
-							<td class="text-center">True</td>
-							<td class="text-center">True</td>
-						</tr>
-						<tr class="table-light">
-							<td class="text-center">1</td>
-							<td class="text-center">True</td>
-							<td class="text-center">True</td>
-							<td class="text-center">True</td>
-						</tr>
-						<tr class="table-light">
-							<td class="text-center">2</td>
-							<td class="text-center">True</td>
-							<td class="text-center">True</td>
-							<td class="text-center">True</td>
-						</tr>
-					</tbody>
-				</table>
+	    		<div class="col-12 mb-md-0 mb-3 px-3">
+	    			<div class="table-scroll-y table-responsive text-nowrap">
+			    		<table class="dtVerticalScroll table" cellspacing="0" width="100%">
+							<thead class="thead-light">
+								<tr>
+									<th scope="col" class="text-center">Stakepool Number</th>
+									<th scope="col" class="text-center">GRPC Connection Number</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="table-light">
+									<td class="text-center">0</td>
+									<td class="text-center">Ready</td>
+								</tr>
+								<tr class="table-light">
+									<td class="text-center">1</td>
+									<td class="text-center">Ready</td>
+								</tr>
+								<tr class="table-light">
+									<td class="text-center">2</td>
+									<td class="text-center">Ready</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+	    		</div>
+	    		<div class="col-12 px-3">
+	    			<div class="table-scroll-y table-responsive text-nowrap">
+						<table class="dtVerticalScroll table" cellspacing="0" width="100%">
+							<thead class="thead-light">
+								<tr>
+									<th scope="col" class="text-center">Wallet Number</th>
+									<th scope="col" class="text-center">Connected</th>
+									<th scope="col" class="text-center">DaemonConnected</th>
+									<th scope="col" class="text-center">EnableVoting</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="table-light">
+									<td class="text-center">0</td>
+									<td class="text-center">True</td>
+									<td class="text-center">True</td>
+									<td class="text-center">True</td>
+								</tr>
+								<tr class="table-light">
+									<td class="text-center">1</td>
+									<td class="text-center">True</td>
+									<td class="text-center">True</td>
+									<td class="text-center">True</td>
+								</tr>
+								<tr class="table-light">
+									<td class="text-center">2</td>
+									<td class="text-center">True</td>
+									<td class="text-center">True</td>
+									<td class="text-center">True</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 	    	</div>
 	    </div>
@@ -147,6 +160,7 @@
 		<script src="js/vendor/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/vendor/holder.min.js"></script>
+    	<script src="js/vendor/datatables.min.js"></script>
 		<script src="js/global.min.js"></script>
 		<script>
 		  Holder.addTheme('thumb', {

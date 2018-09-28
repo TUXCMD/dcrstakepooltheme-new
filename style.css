@@ -6438,12 +6438,24 @@ html {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 13px;
-  line-height: 17px;
+  font-size: 15px;
+  line-height: 21px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   background-color: #f3f5f6; }
+  @media screen and (min-width: 576px) {
+    body {
+      font-size: calc(15px + -2 * (100vw - 576px) / 864); } }
+  @media screen and (min-width: 1440px) {
+    body {
+      font-size: 13px; } }
+  @media screen and (min-width: 576px) {
+    body {
+      line-height: calc(21px + -4 * (100vw - 576px) / 864); } }
+  @media screen and (min-width: 1440px) {
+    body {
+      line-height: 17px; } }
   body .container.voiting {
     max-width: 860px; }
     @media (max-width: 991.98px) {
