@@ -37,18 +37,34 @@
             <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="index.html">Home</a>
             <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="stats.html">Stats</a>
         </div>
-        <div class="col-3 position-relative d-flex justify-content-end align-items-center">
+        <div class="col-3 position-relative d-flex justify-content-end">
             <a class="pt-2 pb-3 d-none d-xl-inline-block active" href="login.html">Login/Register</a>
-            <div class="wrapper py-1 d-inline-block d-xl-none">
-          <div class="menu-trigger first">
-            <span class="line line-1"></span>
-            <span class="line line-2"></span>
-            <span class="line line-3"></span>
-          </div>
-        </div>
+            <div id="sidebarCollapse" class="wrapper py-1 d-inline-block d-xl-none">
+              <div class="menu-trigger first">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+              </div>
+            </div>
           </div>
       </div>
     </div>
+  </nav>
+  <nav id="sidebar" class="d-block d-xl-none">
+    <div id="dismiss">
+      <div class="wrapper py-1">
+        <div class="menu-trigger first active">
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </div>
+      </div>
+    </div>
+      <ul>
+        <li><a href="login.html">Login/Register</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="stats.html">Stats</a></li>
+      </ul>
   </nav>
 
     <div class="container home mb-5" style="min-height: calc(100vh - 284px);">

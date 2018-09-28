@@ -1,13 +1,9 @@
-$('.menu-trigger').on('click', function(){
-   $(this).toggleClass('active');
-});
-        
 $('#dismiss').on('click', function () {
-    $('#sidebar').removeClass('active');
+    $('#sidebar, .menu-trigger').removeClass('active');
 });
 
 $('#sidebarCollapse').on('click', function () {
-    $('#sidebar').addClass('active');
+    $('#sidebar, .menu-trigger').addClass('active');
 });
 
 

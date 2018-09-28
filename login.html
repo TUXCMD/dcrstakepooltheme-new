@@ -37,7 +37,7 @@
 				        <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="index.html">Home</a>
 				        <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="stats.html">Stats</a>
 				    </div>
-				    <div class="col-3 position-relative d-flex justify-content-end align-items-center">
+				    <div class="col-3 position-relative d-flex justify-content-end">
 			        	<a class="pt-2 pb-3 d-none d-xl-inline-block active" href="login.html">Login/Register</a>
 			        	<div id="sidebarCollapse" class="wrapper py-1 d-inline-block d-xl-none">
 							<div class="menu-trigger first">
@@ -61,11 +61,9 @@
 				</div>
             </div>
             <ul>
-            	<li><a href="#">home</a></li>
-            	<li><a href="#">home</a></li>
-            	<li><a href="#">home</a></li>
-            	<li><a href="#">home</a></li>
-            	<li><a href="#">home</a></li>
+            	<li><a class="active" href="login.html">Login/Register</a></li>
+            	<li><a href="index.html">Home</a></li>
+            	<li><a href="stats.html">Stats</a></li>
             </ul>
         </nav>
 
@@ -128,19 +126,5 @@
 		    text: 'Thumbnail'
 		  });
 		</script>
-		<script type="text/javascript">
-        	$(document).ready(function () {
-
-            $('#dismiss').on('click', function () {
-                $('#sidebar, .menu-trigger').removeClass('active');
-            });
-
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar, .menu-trigger').addClass('active');
-                $('.collapse.in').toggleClass('in');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-            });
-        });
-    </script>
 	</body>
 </html>

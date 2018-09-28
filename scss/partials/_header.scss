@@ -8,10 +8,6 @@
 		letter-spacing: normal;
 		color: #8997a5;
 
-		.e-mail {
-			color: #2ed8a3;
-		}
-
 		&:hover, &:focus, &.active {
 			text-decoration: none;
 			border-bottom: 5px solid #2ed8a3;
@@ -38,6 +34,10 @@
 		top: 0;
 		text-align: center;
 	}
+}
+
+.e-mail {
+	color: #2ed8a3;
 }
 
 .menu-trigger {
@@ -129,6 +129,32 @@
 
 	&.active {
     	right: 0;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+
+			a {
+				padding: 22px 60px 22px;
+				font-size: 15px;
+				line-height: 1.13;
+				color: #8997a5;
+				display: block;
+
+				&.active, &:hover, &:focus {
+					padding-left: 55px;
+					background-color: #fff;
+					border-left: 5px solid #2ed8a3;
+					color: #091440;
+					text-decoration: none;
+					cursor: pointer;
+				}
+			}
+		}
 	}
 }
 
