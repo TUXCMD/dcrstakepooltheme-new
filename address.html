@@ -19,7 +19,7 @@
 		    <div class="container">
 		      	<div class="row">
 			        <div class="col-2">
-			        	<a class="py-1 border-0 d-flex justify-content-start align-items-center" href="#">
+			        	<a class="py-1 border-0 d-flex justify-content-start align-items-center" href="index.html">
 			        		<div class="logo--logo">
 					          	<svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" fill="none" viewBox="0 0 23 20">
 								    <path fill="#000" fill-opacity="0" d="M0 0h23v19.167H0z"/>
@@ -34,14 +34,21 @@
 				        </a>
 			        </div>
 			        <div class="col-7 px-0">
-			        	<a class="mr-5 pt-2 pb-3 d-none d-md-inline-block" href="#">Home</a>
-				        <a class="mr-5 pt-2 pb-3 d-none d-md-inline-block" href="stats.html">Stats</a>
-				        <a class="mr-5 pt-2 pb-3 d-none d-md-inline-block active" href="#">Connect to Wallet</a>
-				        <a class="mr-5 pt-2 pb-3 d-none d-md-inline-block" href="settings.html">Settings</a>
+			        	<a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="index.html">Home</a>
+				        <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="stats.html">Stats</a>
+				        <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block active" href="#">Connect to Wallet</a>
+				        <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="settings.html">Settings</a>
 			        </div>
-			        <div class="col-3">
-			        	<a class="mr-5 pt-2 pb-3 d-none d-md-inline-block" href="#">Hello, <span class="e-mail">maria@gr.co</span></a>
-			        	<a class="pt-2 pb-3 d-none d-md-inline-block" href="#">Logout</a>
+			        <div class="col-3 position-relative d-flex justify-content-end align-items-center">
+			        	<a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="#">Hello, <span class="e-mail">maria@gr.co</span></a>
+			        	<a class="pt-2 pb-3 d-none d-xl-inline-block" href="#">Logout</a>
+			        	<div class="wrapper py-1 d-inline-block d-xl-none">
+							<div class="menu-trigger first">
+								<span class="line line-1"></span>
+								<span class="line line-2"></span>
+								<span class="line line-3"></span>
+							</div>
+						</div>
 			        </div>
 			    </div>
 		    </div>
@@ -55,23 +62,19 @@
 
 				<div class="modal fade pt-5" id="connectApiKey" tabindex="-1" role="dialog" aria-labelledby="connectApiKeyTitle" aria-hidden="true">
 					<div class="container voiting modal-dialog px-0" role="document">
-						<div class="modal-content py-4">
+						<div class="modal-content px-3 py-4">
 							<div class="modal-header">
-								<h1 class="modal-title d-flex justify-content-between align-items-center" id="connectApiKeyTitle"><img src="img/info-icon.png" alt=""> <span class="px-3">Connect via API Key</span></h1>
+								<h1 class="modal-title d-flex justify-content-between align-items-center" id="connectApiKeyTitle"><img src="img/info-icon-lg.png" alt=""> <span class="px-3">Connect via API Key</span></h1>
 								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 								  <span aria-hidden="true"><img src="img/close-cross-icon.png" alt=""></span>
 								</button>
 							</div>
-							<div class="modal-body px-5">
-								<p class="voiting--white-block__agendas">When you submit an address, the stake pool  blinds that address from your wallet together with an address from the stake pool’s voting wallet. When you submit an address, the stake pool  blinds that address from your wallet together with an address from the stake pool’s voting wallet.</p>
+							<div class="modal-body mx-3 px-5">
+								<p class="voiting--white-block__agendas">The official Decred GUI wallet Decrediton is the recommended way to use stakepools. All you need to get started is to copy and paste the API Token below when prompted. More comprehensive guides are available for Decrediton as well a general overview of the staking process.</p>
 
-								<p class="voiting--white-block__agendas">The official Decred GUI wallet <a href="#">Decrediton</a> is the recommended way to use stake pools. All you need to get started is to cope and past the API Token. A more comprehencive guide is available for <a href="#">Decrediton</a>. There is also a more general overview of the staking process available <a href="#">here</a>.</p>
+								<h2>Submit your API key</h2>
 
-								<p class="voiting--white-block__agendas">It’s recommended to use the latest versions of the Decred software before starting. <a class="text--size-11" href="#">&darr; Decred Downloads Page</a></p>
-
-								<p class="voiting--white-block__agendas">The official Decred GUI wallet <a href="#">Decrediton</a> is the recommended way to use stake pools. All you need to get started is to cope and past the API Token. A more comprehencive guide is available for <a href="#">Decrediton</a>. There is also a more general overview of the staking process available <a href="#">here</a>.</p>
-
-								<p class="voiting--white-block__agendas">To generate a public key address , create a new wallet address with <strong>getnewaddress</strong>. Then, call <strong>validateaddress &lt;yourAddress&gt;</strong> and retrieve the address listed  in the <strong>pubkeyaddr</strong> field of the response. The <strong>pubkeyaddr</strong> atsrts with <strong>Tk</strong>.</p>
+								<p class="voiting--white-block__agendas">The official Decred GUI wallet Decrediton is the recommended way to use stakepools. All you need to get started is to copy and paste the API Token below when prompted. More comprehensive guides are available for Decrediton as well a general overview of the staking process.</p>
 
 								<p class="voiting--block px-5 py-4">
 									<code>
