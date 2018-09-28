@@ -1,6 +1,15 @@
 $('.menu-trigger').on('click', function(){
    $(this).toggleClass('active');
 });
+        
+$('#dismiss').on('click', function () {
+    $('#sidebar').removeClass('active');
+});
+
+$('#sidebarCollapse').on('click', function () {
+    $('#sidebar').addClass('active');
+});
+
 
 $('.main-carousel').flickity({
 	cellAlign: 'left',
