@@ -81,9 +81,88 @@
 		
 		<div class="container voiting mb-5" style="min-height: calc(100vh - 284px);">
 	    	<div class="row">
+				<div class="col-12 mb-3 px-5">
+					<h1>Ticket Groups</h1>
+				</div>
+
+				<div class="col-12 mb-3 px-5">
+					
+				</div>
+
 	    		<div class="col-12 mb-3 px-5">
-	    			<h1>Ticket Information</h1>
+	    			<h1 class="d-flex justify-content-between align-items-center">Ticket Information <img class="info-icon" src="img/info-icon.png" data-toggle="modal" data-target="#connectTicketInfo" alt=""></h1>
 	    		</div>
+
+				<div class="modal fade pt-5" id="connectTicketInfo" tabindex="-1" role="dialog" aria-labelledby="connectTicketInfoTitle" aria-hidden="true">
+					<div class="container voiting modal-dialog px-0" role="document">
+						<div class="modal-content px-3 py-4">
+							<div class="modal-header">
+								<h1 class="modal-title d-flex justify-content-between align-items-center" id="connectTicketInfoTitle"><img src="img/info-icon-lg.png" alt=""> <span class="px-3">Buying Tickets with dcrwallet using command-line tools</span></h1>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								  <span aria-hidden="true"><img src="img/close-cross-icon.png" alt=""></span>
+								</button>
+							</div>
+							<div class="modal-body mx-3 px-5">
+								<blockquote class="voiting--white-block__agendas"><span>Note!</span> <br>
+								For ease of use, it’s recommended to participate in staking by using the <a href="#">Decrediton Wallet &darr;</a><br>
+								For command-line users, in-depth dcrwallet instructions can be founds at <a href="#">docs.decred.org.</a><br>
+								Below is a brief introduction for staking the command line environment.</blockquote>
+
+								<p class="voiting--white-block__agendas">Your multisignature script for delegating votes has been generated. Please first import it locally into your wallet using dcrctl for safe keeping, so you can recover your funds and vote in the unlikely event of a pool failure:</p>
+
+								<p class="voiting--white-block__agendas">dcrctl —wallet importscript “script”
+
+								<p class="voiting--white-block__agendas">For example:</p>
+
+								<p class="voiting--block px-5 py-4">
+									<code>
+										$ dcrctl —testnet —wallet importscript 512102af19809700306946766533df8ce4740449373def39777b4a40400c059f1635c821036cf41f1e201e25fcc94d95b900d1faee4e7434e0eb19b5c1f5a27dc1777bb8ea52ae
+									</code>
+								</p>
+
+								<p class="voiting--white-block__agendas">After successfully importing the script into your wallet, you may purchase tickets with voting rights delegated to the pool in either of two ways:</p>
+
+								<p class="font-weight-bold">Option A - dcrwallet - Automatic purchasing</p>
+
+								<p class="voiting--white-block__agendas">Stop dcrwallet if it is currently running and add the following to dcrwallet.conf:</p>
+
+								<p class="voiting--block px-5 py-4">
+									<code>
+										[Application Options] <br>
+										enableticketbuyer=true <br>
+										pooladdress=TsmA91oRaRJ2U53bP8yzPfb4wN9HgBHYiWu <br>
+										poolfees=7.5 <br>
+										;; DEPRECATED -- use ticketbuyer.votingaddress instead <br>
+										;; ticketaddress=TcaSh53WZdqeFjSeNgb38ztLDTQa2Kb513F <br>
+										[Ticket Buyer Options] <br>
+										ticketbuyer.votingaddress=TcaSh53WZdqeFjSeNgb38ztLDTQa2Kb513F <br>
+										ticketbuyer.maxpriceabsolute=100
+									</code>
+								</p>
+								
+								<p class="font-weight-bold">Option B - dcrwallet - Manual purchasing</p>
+
+								<p class="voiting--white-block__agendas">Start a wallet with funds available and manually purchase tickets with the following command using dcrctl:</p>
+
+								<p class="voiting--white-block__agendas">dcrctl --testnet --wallet purchaseticket "fromaccount" spendlimit minconf ticketaddress numtickets poolfeeaddress poolfeeamt</p>
+
+								<p class="voiting--block px-5 py-4">
+									<code>
+										dcrctl —testnet —wallet purchaseticket “default” 100 1 <br> TcaSh53WZdqeFjSeNgb38ztLDTQa2Kb513F 1 TsmA91oRaRJ2U53bP8yzPfb4wN9HgBHYiWu 7.5
+									</code>
+								</p>
+
+								<p class="voiting--white-block__agendas">Will purchase a ticket delegated to the the multisig address which allows either your or the pool to vote when the ticket is called. This uses funds from the default account only if the current network price for a ticket is less than 100.0 coins.</p>
+
+								<p class="font-weight-bold">Voiting</p>
+
+								<p class="voiting--white-block__agendas">If you wish to cast votes yourself, please review the guides How To Vote and Solo-Voting. The preferences you set on this stake pool's voting page only affect the stake pool's voting wallets and not your own.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
 	    		<div class="col-12 mb-3 p-4 bg-white">
 	    			<h2 class="px-4 mb-3">P2SH Address</h2>
 	    			<div class="p-4 voiting--input-block">
@@ -96,68 +175,6 @@
 	    				<p class="mb-0">5121029a6e2ab4298353e42119f2f96e8faeb9b.ey5121029a6e2ab4298353e42119f2f96e8faeb9b5121029a6e2ab4298353e42119f2f96e8faeb9bhuThfty.wRtghyIo5phJJy2hfldChRs.fjjko4jkFvmm6ud77lkoP</p>
 	    			</div>
 	    		</div>
-	    		<div class="col-12 mb-3 px-5">
-	    			<h1>Ticket Instructions</h1>
-	    		</div>
-	    		<div class="col-12 mb-4 px-4 py-3 bg-white">
-	    			<h2 class="mb-3 px-4">Step 1</h2>
-
-					<p class="voiting--white-block__agendas px-4">The official Decred GUI wallet <a href="#">Decrediton</a> is the recommended way to use stake pools. All you need to get started is to cope and past the API Token. A more comprehencive guide is available for <a href="#">Decrediton</a>. There is also a more general overview of the staking process available <a href="#">here</a>.</p>
-
-					<p class="voiting--white-block__agendas px-4">It’s recommended to use the latest versions of the Decred software before starting. <a class="text--size-11" href="#">&darr; Decred Downloads Page</a><br>The <a href="#">dcrwallet instructions</a> are the most helpful if you wish to continue on the command-line path.</p>
-				</div>
-				<div class="col-12 mb-4 px-4 py-3 bg-white">
-	    			<h2 class="mb-3 px-4">Step 2</h2>
-
-					<p class="voiting--white-block__agendas px-4">The official Decred GUI wallet Decrediton is the recommended way to use stake pools. All you need to get started is to cope and past the API Token. A more comprehencive guide is available for Decrediton. There is also a more general overview of the staking process available <a href="#">here</a>.</p>
-
-					<p class="voiting--white-block__agendas px-4">It’s recommended to use the latest versions of the Decred software before starting. <a class="text--size-11" href="#">&darr; Decred Downloads Page</a><br>The <a href="#">dcrwallet instructions</a> are the most helpful if you wish to continue on the command-line path.</p>
-
-					<p class="voiting--white-block__agendas px-4 mb-2">For example:</p>
-
-					<p class="voiting--block px-3 py-3">
-						<code>
-							$ dcrctl -- testnet -- wallet getnewaddress dcrctl -- testnet -- wallet getnewaddress import script 121029a6e2ab4298353e42119f22568Fdf96e8faeb9b.ey5121029a6e2ab4298353e42119f2f96e8faeb9b
-						</code>
-					</p>
-				</div>
-				<div class="col-12 mb-4 px-4 py-3 bg-white">
-	    			<h2 class="mb-3 px-4">Step 3</h2>
-
-	    			<p class="font-weight-bold px-4">Option A - dcrwallet - Automatic purchasing</p>
-
-					<p class="voiting--white-block__agendas px-4 mb-2">Stop dcrwallet if it is currently running and add the following to dcrwallet.conf:</p>
-
-					<p class="voiting--block px-3 py-3">
-						<code>
-							[Application options]<br>
-							“isvalid”: true,<br>
-							“address”: “TsExampleAddr1For2Demo3PurposeOnly”,<br>
-							“ismine”: true,<br>
-							“pubkeyaddr”:  “TkExampleAddr1For2Demo3PurposeOnly6Do7Not8Use9Pls0”,<br>
-							“pubkey”: “026587gggesc168424srdfgfgsxdvdghdzdcc8sgfgzxdfgsdfg575s54f5asd”,<br>
-							“iscompressed”: true
-						</code>
-					</p>
-
-					<p class="voiting--white-block__agendas px-4">Unlock dcrwallet and it will automatically purchase stake tickets delegated to the pool address.</p>
-
-					<p class="font-weight-bold px-4">Option B - dcrwallet - Manual purchasing</p>
-
-					<p class="voiting--white-block__agendas px-4 mb-2">Stop dcrwallet if it is currently running and add the following to dcrwallet.conf:</p>
-
-					<p class="voiting--block px-3 py-3">
-						<code>
-							[Application options]<br>
-							“isvalid”: true,<br>
-							“address”: “TsExampleAddr1For2Demo3PurposeOnly”,<br>
-							“ismine”: true,<br>
-							“pubkeyaddr”:  “TkExampleAddr1For2Demo3PurposeOnly6Do7Not8Use9Pls0”,<br>
-							“pubkey”: “026587gggesc168424srdfgfgsxdvdghdzdcc8sgfgzxdfgsdfg575s54f5asd”,<br>
-							“iscompressed”: true
-						</code>
-					</p>
-				</div>
 	    	</div>
 	    </div>
 

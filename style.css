@@ -6514,6 +6514,12 @@ body {
     body .container.voiting .info-icon:hover {
       opacity: 0.6;
       cursor: pointer; }
+  body .container .voiting blockquote, body .container .home blockquote {
+    padding: 6px 15px;
+    border-left: solid 1px #fd704a;
+    box-shadow: 0 1px 2px 0 rgba(9, 20, 64, 0.21); }
+    body .container .voiting blockquote span, body .container .home blockquote span {
+      color: #fd704a; }
   body .container .voiting--block, body .container .home--block {
     background-color: #edeff1; }
     body .container .voiting--block__description, body .container .home--block__description {
