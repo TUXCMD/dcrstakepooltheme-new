@@ -84,6 +84,49 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/arrow-down.png": {
+		"ft": 32768,
+		"iS": 177,
+		"oA": 0,
+		"oAP": "/img/arrow-down.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/arrow-down.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/arrow-down.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/arrow-down@2x.png": {
+		"ft": 32768,
+		"iS": 209,
+		"oA": 0,
+		"oAP": "/img/arrow-down@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/arrow-down@3x.png": {
+		"ft": 32768,
+		"iS": 237,
+		"oA": 0,
+		"oAP": "/img/arrow-down@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/arrow-next.png": {
 		"ft": 32768,
 		"iS": 179,
@@ -1126,6 +1169,16 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/img/symbol-5-1-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/symbol-5-1-1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"/img/symbol-5-1-1@2x.png": {
 		"ft": 32768,
