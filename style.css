@@ -6505,6 +6505,9 @@ body {
     @media (max-width: 767.98px) {
       body .container.voiting {
         max-width: 540px; } }
+    body .container.voiting h1 a {
+      color: #596d81;
+      text-decoration: none; }
     body .container.voiting .info-icon:hover {
       opacity: 0.6;
       cursor: pointer; }
@@ -6517,7 +6520,7 @@ body {
   body .container .voiting--block, body .container .home--block {
     background-color: #edeff1; }
     body .container .voiting--block__description, body .container .home--block__description {
-      color: #0c1e3e; }
+      color: #48566e; }
       body .container .voiting--block__description a, body .container .home--block__description a {
         color: #2971ff; }
     body .container .voiting--block__agendas, body .container .home--block__agendas {
@@ -6527,11 +6530,14 @@ body {
         background-color: #d4f0fd;
         padding: 0 5px;
         color: #48566e; }
-    body .container .voiting--block code, body .container .home--block code {
+    body .container .voiting--block .code, body .container .home--block .code {
       font-size: 11px;
       line-height: 1.55;
       letter-spacing: normal;
-      color: #545c6b; }
+      color: #545c6b;
+      overflow-wrap: break-word; }
+      body .container .voiting--block .code.border-left, body .container .home--block .code.border-left {
+        border-left: solid 1px #dbdee0 !important; }
   body .container .voiting--white-block__description, body .container .home--white-block__description {
     color: #596d81; }
     body .container .voiting--white-block__description span, body .container .home--white-block__description span {
@@ -6570,7 +6576,8 @@ body {
       color: #fff; }
   body .container .voiting--input-block, body .container .home--input-block {
     font-family: 'Source Code Pro', monospace;
-    background-color: #d4f0fd; }
+    background-color: #d4f0fd;
+    color: #091440; }
     body .container .voiting--input-block p, body .container .home--input-block p {
       word-wrap: break-word; }
     body .container .voiting--input-block label, body .container .home--input-block label {
@@ -6630,7 +6637,7 @@ body {
     body .modal-header button:focus {
       outline: none; }
     body .modal-header .close {
-      margin: 0 14px;
+      margin: -14px 0 4px 0;
       padding: 0;
       cursor: pointer; }
   body .public-key--address {
@@ -6714,7 +6721,7 @@ body {
       padding: 0 10px !important; }
     body .public-key--login .checkbox label {
       font-size: 11px;
-      line-height: 1.27;
+      line-height: 1.7;
       letter-spacing: normal;
       color: #8795a2; }
   body .public-key .form-control {
@@ -6769,6 +6776,16 @@ body {
       color: #091440; }
     body .table-scroll-y .table a {
       color: #2970ff; }
+  body .table-scroll-y ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: #fff; }
+  body .table-scroll-y ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(89, 109, 129, 0.7); }
+  body .table-scroll-y ::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #fff; }
   body .table .thead-light th {
     background-color: #edeff1;
     border-color: #edeff1;
@@ -6960,19 +6977,6 @@ body {
 .tooltip.bs-tooltip-top .arrow:before, .tooltip.bs-tooltip-auto[x-placement^="top"] .arrow:before {
   border-top-color: #e6eaed !important; }
 
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-  background-color: #fff; }
-
-::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  background-color: rgba(89, 109, 129, 0.7); }
-
-::-webkit-scrollbar-track {
-  border-radius: 5px;
-  background-color: #fff; }
-
 footer {
   background-color: #091440; }
   footer .footer--content {
@@ -6983,7 +6987,8 @@ footer {
     footer .footer--content__text {
       font-size: 13px;
       line-height: 1.31;
-      color: #8997a5; }
+      color: #8997a5;
+      overflow-wrap: break-word; }
       @media (max-width: 767.98px) {
         footer .footer--content__text {
           text-align: center !important; } }
@@ -6997,7 +7002,8 @@ footer {
     footer .footer--content blockquote {
       margin-left: 12px;
       padding-left: 14px;
-      border-left: solid 1px #dbdee0; }
+      border-left: solid 1px #dbdee0;
+      overflow-wrap: break-word; }
       @media (max-width: 767.98px) {
         footer .footer--content blockquote {
           text-align: left !important; } }

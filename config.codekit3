@@ -301,7 +301,7 @@
 		},
 	"/img/close-cross-icon.png": {
 		"ft": 32768,
-		"iS": 241,
+		"iS": 214,
 		"oA": 0,
 		"oAP": "/img/close-cross-icon.png",
 		"oF": 0,
@@ -322,7 +322,7 @@
 		},
 	"/img/close-cross-icon@2x.png": {
 		"ft": 32768,
-		"iS": 358,
+		"iS": 292,
 		"oA": 0,
 		"oAP": "/img/close-cross-icon@2x.png",
 		"oF": 0,
@@ -333,7 +333,7 @@
 		},
 	"/img/close-cross-icon@3x.png": {
 		"ft": 32768,
-		"iS": 478,
+		"iS": 346,
 		"oA": 0,
 		"oAP": "/img/close-cross-icon@3x.png",
 		"oF": 0,

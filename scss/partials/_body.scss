@@ -29,6 +29,14 @@ body {
 				max-width: 540px;
 			}
 
+			h1 {
+
+				a {
+					color: #596d81;
+					text-decoration: none;
+				}
+			}
+
 			.info-icon {
 
 				&:hover {
@@ -54,7 +62,7 @@ body {
 				background-color: #edeff1;
 
 				&__description {
-					color: #0c1e3e;
+					color: #48566e;
 					
 					a {
 						color: #2971ff;
@@ -72,11 +80,16 @@ body {
 					}
 				}
 
-				code {
+				.code {
 					font-size: 11px;
 					line-height: 1.55;
 					letter-spacing: normal;
 					color: #545c6b;
+					overflow-wrap: break-word;
+
+					&.border-left {
+						border-left: solid 1px #dbdee0 !important;
+					}
 				}
 			}
 
@@ -140,6 +153,7 @@ body {
 			&--input-block {
 				font-family: 'Source Code Pro', monospace;
 				background-color: #d4f0fd;
+				color: #091440;
 
 				p {
 					word-wrap: break-word;
@@ -228,7 +242,7 @@ body {
 		}
 
 		.close {
-			margin: 0 14px;
+			margin: -14px 0 4px 0;
 			padding: 0;
 			cursor: pointer;
 		}
@@ -305,7 +319,7 @@ body {
 
 				label {
 					font-size: 11px;
-					line-height: 1.27;
+					line-height: 1.7;
 					letter-spacing: normal;
 					color: #8795a2;
 				}
@@ -387,6 +401,21 @@ body {
 			a {
 				color: #2970ff;
 			}
+		}
+
+		::-webkit-scrollbar {
+			width: 6px;
+			height: 6px;
+			background-color: #fff;
+		}
+		::-webkit-scrollbar-thumb {
+			border-radius: 5px;
+			background-color: rgba(89, 109, 129, 0.7);
+		}
+
+		::-webkit-scrollbar-track {
+			border-radius: 5px;
+			background-color: #fff;
 		}
 	}
 
@@ -636,17 +665,3 @@ body {
     border-top-color: #e6eaed !important;
 }
 
-::-webkit-scrollbar {
-	width: 6px;
-	height: 6px;
-	background-color: #fff;
-}
-::-webkit-scrollbar-thumb {
-	border-radius: 5px;
-	background-color: rgba(89, 109, 129, 0.7);
-}
-
-::-webkit-scrollbar-track {
-	border-radius: 5px;
-	background-color: #fff;
-}

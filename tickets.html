@@ -234,11 +234,11 @@
 
 								<p class="voiting--white-block__agendas">For example:</p>
 
-								<p class="voiting--block px-5 py-4">
-									<code>
+								<div class="voiting--block p-4 mb-3">
+									<p class="code border-left pl-3 mb-0">
 										$ dcrctl —testnet —wallet importscript 512102af19809700306946766533df8ce4740449373def39777b4a40400c059f1635c821036cf41f1e201e25fcc94d95b900d1faee4e7434e0eb19b5c1f5a27dc1777bb8ea52ae
-									</code>
-								</p>
+									</p>
+								</div>
 
 								<p class="voiting--white-block__agendas">After successfully importing the script into your wallet, you may purchase tickets with voting rights delegated to the pool in either of two ways:</p>
 
@@ -246,8 +246,8 @@
 
 								<p class="voiting--white-block__agendas">Stop dcrwallet if it is currently running and add the following to dcrwallet.conf:</p>
 
-								<p class="voiting--block px-5 py-4">
-									<code>
+								<div class="voiting--block p-4 mb-3">
+									<p class="code border-left pl-3 mb-0">
 										[Application Options] <br>
 										enableticketbuyer=true <br>
 										pooladdress=TsmA91oRaRJ2U53bP8yzPfb4wN9HgBHYiWu <br>
@@ -257,8 +257,8 @@
 										[Ticket Buyer Options] <br>
 										ticketbuyer.votingaddress=TcaSh53WZdqeFjSeNgb38ztLDTQa2Kb513F <br>
 										ticketbuyer.maxpriceabsolute=100
-									</code>
-								</p>
+									</p>
+								</div>
 								
 								<p class="font-weight-bold">Option B - dcrwallet - Manual purchasing</p>
 
@@ -266,11 +266,11 @@
 
 								<p class="voiting--white-block__agendas">dcrctl --testnet --wallet purchaseticket "fromaccount" spendlimit minconf ticketaddress numtickets poolfeeaddress poolfeeamt</p>
 
-								<p class="voiting--block px-5 py-4">
-									<code>
+								<div class="voiting--block p-4 mb-3">
+									<p class="code border-left pl-3 mb-0">
 										dcrctl —testnet —wallet purchaseticket “default” 100 1 <br> TcaSh53WZdqeFjSeNgb38ztLDTQa2Kb513F 1 TsmA91oRaRJ2U53bP8yzPfb4wN9HgBHYiWu 7.5
-									</code>
-								</p>
+									</p>
+								</div>
 
 								<p class="voiting--white-block__agendas">Will purchase a ticket delegated to the the multisig address which allows either your or the pool to vote when the ticket is called. This uses funds from the default account only if the current network price for a ticket is less than 100.0 coins.</p>
 
