@@ -16,6 +16,7 @@ Text Domain: goodhands
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600&subset=latin-ext");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -6368,6 +6369,7 @@ h2 {
     color: #8997a5; }
     .site-header a:hover, .site-header a:focus, .site-header a.active {
       text-decoration: none;
+      color: #091440;
       border-bottom: 5px solid #2ed8a3; }
   .site-header .logo--logo {
     padding-right: 5px;
@@ -6485,24 +6487,16 @@ html {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 15px;
-  line-height: 21px;
+  font-size: 13px;
+  line-height: 19px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   background-color: #f3f5f6; }
-  @media screen and (min-width: 576px) {
+  @media (max-width: 767.98px) {
     body {
-      font-size: calc(15px + -2 * (100vw - 576px) / 864); } }
-  @media screen and (min-width: 1440px) {
-    body {
-      font-size: 13px; } }
-  @media screen and (min-width: 576px) {
-    body {
-      line-height: calc(21px + -4 * (100vw - 576px) / 864); } }
-  @media screen and (min-width: 1440px) {
-    body {
-      line-height: 17px; } }
+      font-size: 15px;
+      line-height: 21px; } }
   body .container.voiting {
     max-width: 860px; }
     @media (max-width: 991.98px) {
@@ -6575,6 +6569,7 @@ body {
       background-color: #2970ff;
       color: #fff; }
   body .container .voiting--input-block, body .container .home--input-block {
+    font-family: 'Source Code Pro', monospace;
     background-color: #d4f0fd; }
     body .container .voiting--input-block p, body .container .home--input-block p {
       word-wrap: break-word; }
@@ -6635,7 +6630,9 @@ body {
     body .modal-header button:focus {
       outline: none; }
     body .modal-header .close {
-      margin: -3rem -1rem -1rem auto; }
+      margin: 0 14px;
+      padding: 0;
+      cursor: pointer; }
   body .public-key--address {
     font-size: 13px;
     line-height: 1.31;
@@ -6945,6 +6942,36 @@ body {
     @media (max-width: 991.98px) {
       .main-carousel .flickity-prev-next-button.next {
         right: 36px; } }
+
+.tooltip-inner {
+  font-size: 11px;
+  background-color: #e6eaed;
+  color: #091440; }
+
+.tooltip.bs-tooltip-right .arrow:before, .tooltip.bs-tooltip-auto[x-placement^="right"] .arrow:before {
+  border-right-color: #e6eaed !important; }
+
+.tooltip.bs-tooltip-left .arrow:before, .tooltip.bs-tooltip-auto[x-placement^="left"] .arrow:before {
+  border-left-color: #e6eaed !important; }
+
+.tooltip.bs-tooltip-bottom .arrow:before, .tooltip.bs-tooltip-auto[x-placement^="bottom"] .arrow:before {
+  border-bottom-color: #e6eaed !important; }
+
+.tooltip.bs-tooltip-top .arrow:before, .tooltip.bs-tooltip-auto[x-placement^="top"] .arrow:before {
+  border-top-color: #e6eaed !important; }
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #fff; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(89, 109, 129, 0.7); }
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #fff; }
 
 footer {
   background-color: #091440; }

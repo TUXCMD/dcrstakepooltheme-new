@@ -19,6 +19,14 @@ $('.main-carousel').flickity({
 	}
 });
 
+$(document).ready(function() {
+  $('.dot').tooltip({
+    placement: 'top',
+    trigger: 'hover',
+    width: '100px',
+    title: 'What are tickets?'
+  });
+});
 
 $(document).ready(function () {
 	$('.dtVerticalScroll').DataTable({
