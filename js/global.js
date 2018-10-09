@@ -6,6 +6,37 @@ $('#sidebarCollapse').on('click', function () {
     $('#sidebar, .menu-trigger').addClass('active');
 });
 
+$("#select_all").click(function(){
+
+    if ($("input[type='checkbox']").prop("checked")) {
+        $(':checkbox').prop('checked', false);
+        $(this).text('Select all');
+    }
+    else {
+        $(':checkbox').prop('checked', true);
+        $(this).text('Deselect all');
+    }    
+
+ });
+
+$(function() {
+    $('td:last-child input').change(function() {
+        $(this).closest('tr').toggleClass("bg-checked", this.checked);
+	});
+});
+
+
+$(document).ready(function () {
+	$('.dtVerticalScroll').DataTable({
+		"scrollY": "251px",
+		"scrollX": true,
+		"scrollCollapse": true,
+		"paging": false,
+		"searching": false,
+		"info": false
+	});
+	$('.dataTables_length').addClass('bs-select');
+});
 
 $('.main-carousel').flickity({
 	cellAlign: 'left',
@@ -26,16 +57,4 @@ $(document).ready(function() {
     width: '100px',
     title: 'What are tickets?'
   });
-});
-
-$(document).ready(function () {
-	$('.dtVerticalScroll').DataTable({
-		"scrollY": "251px",
-		"scrollX": true,
-		"scrollCollapse": true,
-		"paging": false,
-		"searching": false,
-		"info": false
-	});
-	$('.dataTables_length').addClass('bs-select');
 });

@@ -6508,6 +6508,9 @@ body {
     body .container.voiting h1 a {
       color: #596d81;
       text-decoration: none; }
+    body .container.voiting .modal-content {
+      max-height: 660px;
+      overflow-y: auto; }
     body .container.voiting .info-icon:hover {
       opacity: 0.6;
       cursor: pointer; }

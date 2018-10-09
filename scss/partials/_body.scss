@@ -37,6 +37,11 @@ body {
 				}
 			}
 
+			.modal-content {
+				max-height: 660px;
+				overflow-y: auto;
+			}
+
 			.info-icon {
 
 				&:hover {
