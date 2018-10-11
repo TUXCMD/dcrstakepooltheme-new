@@ -6453,17 +6453,21 @@ h2 {
   transition: all 0.6s, transform 0.6s 0.6s; }
 
 #sidebar {
-  width: 175px;
+  width: 309px;
   padding-top: 68px;
   position: fixed;
   top: 0;
-  right: -175px;
+  right: -309px;
   height: 100vh;
   z-index: 2999;
   transition: all 0.4s;
   overflow-y: scroll;
   background-color: #f9fafa;
   box-shadow: -4px 0 8px 0 rgba(0, 0, 0, 0.05); }
+  @media (max-width: 767.98px) {
+    #sidebar {
+      width: 175px;
+      right: -175px; } }
   #sidebar.active {
     right: 0; }
   #sidebar ul {
@@ -6471,11 +6475,14 @@ h2 {
     padding: 0;
     list-style: none; }
     #sidebar ul li a {
-      padding: 22px 30px 22px;
+      padding: 22px 60px 22px;
       font-size: 15px;
       line-height: 1.13;
       color: #8997a5;
       display: block; }
+      @media (max-width: 767.98px) {
+        #sidebar ul li a {
+          padding: 22px 30px 22px; } }
       #sidebar ul li a.active, #sidebar ul li a:hover, #sidebar ul li a:focus {
         padding-left: 25px;
         background-color: #fff;

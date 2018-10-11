@@ -116,17 +116,22 @@
 }
 
 #sidebar {
-    width: 175px;
+    width: 309px;
     padding-top: 68px;
     position: fixed;
     top: 0;
-    right: -175px;
+    right: -309px;
     height: 100vh;
     z-index: 2999;
     transition: all 0.4s;
     overflow-y: scroll;
     background-color: #f9fafa;
 	box-shadow: -4px 0 8px 0 rgba(0, 0, 0, 0.05);
+
+	@include media-breakpoint-down(sm) {
+		width: 175px;
+		right: -175px;
+	}
 
 	&.active {
     	right: 0;
@@ -140,11 +145,15 @@
 		li {
 
 			a {
-				padding: 22px 30px 22px;
+				padding: 22px 60px 22px;
 				font-size: 15px;
 				line-height: 1.13;
 				color: #8997a5;
 				display: block;
+
+				@include media-breakpoint-down(sm) {
+					padding: 22px 30px 22px;
+				}
 
 				&.active, &:hover, &:focus {
 					padding-left: 25px;
