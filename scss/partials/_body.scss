@@ -257,6 +257,10 @@ body {
 		line-height: 1.26;
 		letter-spacing: normal;
 		color: #48566e;
+
+		@include media-breakpoint-down(sm) {
+			font-size: 18px;
+		}
 	}
 
 	.modal-header{
@@ -583,6 +587,10 @@ body {
 			background-color: #fff;
 			padding-left: 15px;
 			padding-right: 15px;
+		}
+
+		@include media-breakpoint-down(sm) {
+			height: 560px;
 		}
 	}
 

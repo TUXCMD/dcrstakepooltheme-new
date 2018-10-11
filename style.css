@@ -6329,16 +6329,28 @@ a.text-dark:hover, a.text-dark:focus {
  * Fluid Props
  */
 h1 {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.25;
   letter-spacing: normal;
   color: #596d81; }
+  @media screen and (min-width: 576px) {
+    h1 {
+      font-size: calc(18px + 2 * (100vw - 576px) / 864); } }
+  @media screen and (min-width: 1440px) {
+    h1 {
+      font-size: 20px; } }
 
 h2 {
-  font-size: 19px;
+  font-size: 17px;
   line-height: 1.26;
   letter-spacing: normal;
   color: #091440; }
+  @media screen and (min-width: 576px) {
+    h2 {
+      font-size: calc(17px + 2 * (100vw - 576px) / 864); } }
+  @media screen and (min-width: 1440px) {
+    h2 {
+      font-size: 19px; } }
 
 .text--size-27 {
   font-size: 27px;
@@ -6441,11 +6453,11 @@ h2 {
   transition: all 0.6s, transform 0.6s 0.6s; }
 
 #sidebar {
-  width: 309px;
+  width: 175px;
   padding-top: 68px;
   position: fixed;
   top: 0;
-  right: -309px;
+  right: -175px;
   height: 100vh;
   z-index: 2999;
   transition: all 0.4s;
@@ -6459,13 +6471,13 @@ h2 {
     padding: 0;
     list-style: none; }
     #sidebar ul li a {
-      padding: 22px 60px 22px;
+      padding: 22px 30px 22px;
       font-size: 15px;
       line-height: 1.13;
       color: #8997a5;
       display: block; }
       #sidebar ul li a.active, #sidebar ul li a:hover, #sidebar ul li a:focus {
-        padding-left: 55px;
+        padding-left: 25px;
         background-color: #fff;
         border-left: 5px solid #2ed8a3;
         color: #091440;
@@ -6649,6 +6661,9 @@ body {
     line-height: 1.26;
     letter-spacing: normal;
     color: #48566e; }
+    @media (max-width: 767.98px) {
+      body .modal-title {
+        font-size: 18px; } }
   body .modal-header {
     border: 0; }
     body .modal-header button:focus {
@@ -6915,6 +6930,9 @@ body {
         background-color: #fff;
         padding-left: 15px;
         padding-right: 15px; } }
+    @media (max-width: 767.98px) {
+      .main-carousel .carousel-cell {
+        height: 560px; } }
   .main-carousel .flickity-page-dots {
     left: 20%;
     bottom: 15px;

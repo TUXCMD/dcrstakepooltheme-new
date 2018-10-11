@@ -116,11 +116,11 @@
 }
 
 #sidebar {
-    width: 309px;
+    width: 175px;
     padding-top: 68px;
     position: fixed;
     top: 0;
-    right: -309px;
+    right: -175px;
     height: 100vh;
     z-index: 2999;
     transition: all 0.4s;
@@ -140,14 +140,14 @@
 		li {
 
 			a {
-				padding: 22px 60px 22px;
+				padding: 22px 30px 22px;
 				font-size: 15px;
 				line-height: 1.13;
 				color: #8997a5;
 				display: block;
 
 				&.active, &:hover, &:focus {
-					padding-left: 55px;
+					padding-left: 25px;
 					background-color: #fff;
 					border-left: 5px solid #2ed8a3;
 					color: #091440;

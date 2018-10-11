@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600&subset=latin-ext');
 
 h1 {
-	font-size: 20px;
+	@include fluid-props(font-size, $sm, $xl, 18px, 20px);
 	line-height: 1.25;
 	letter-spacing: normal;
 	color: #596d81;
 }
 
 h2 {
-	font-size: 19px;
+	@include fluid-props(font-size, $sm, $xl, 17px, 19px);
 	line-height: 1.26;
 	letter-spacing: normal;
 	color: #091440;
