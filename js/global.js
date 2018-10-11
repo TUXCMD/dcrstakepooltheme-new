@@ -10,10 +10,12 @@ $("#select_all").click(function(){
 
     if ($("input[type='checkbox']").prop("checked")) {
         $(':checkbox').prop('checked', false);
+        $('table tr').removeClass('bg-checked');
         $(this).text('Select all');
     }
     else {
         $(':checkbox').prop('checked', true);
+        $('table tr').addClass('bg-checked');
         $(this).text('Deselect all');
     }    
 
