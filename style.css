@@ -6514,6 +6514,20 @@ body {
     body .container.voiting .info-icon:hover {
       opacity: 0.6;
       cursor: pointer; }
+    body .container.voiting .col-x {
+      width: 158px; }
+      @media (min-width: 576px) and (max-width: 768px) {
+        body .container.voiting .col-x {
+          width: 163px; } }
+      @media (min-width: 425px) and (max-width: 575px) {
+        body .container.voiting .col-x {
+          width: 171px; } }
+      @media (min-width: 375px) and (max-width: 424px) {
+        body .container.voiting .col-x {
+          width: 146px; } }
+      @media (min-width: 320px) and (max-width: 374px) {
+        body .container.voiting .col-x {
+          width: 119px; } }
   body .container .voiting blockquote, body .container .home blockquote {
     padding: 6px 15px;
     border-left: solid 1px #fd704a;

@@ -49,6 +49,26 @@ body {
 					cursor: pointer;
 				}
 			}
+
+			.col-x {
+				width: 158px;
+
+				@media (min-width: 576px) and (max-width: 768px) {
+					width: 163px;
+				}
+
+				@media (min-width: 425px) and (max-width: 575px) {
+					width: 171px;
+				}
+
+				@media (min-width: 375px) and (max-width: 424px) {
+					width: 146px;
+				}
+
+				@media (min-width: 320px) and (max-width: 374px) {
+					width: 119px
+				}
+			}
 		}
 
 		.voiting, .home {
