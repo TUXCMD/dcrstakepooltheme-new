@@ -6612,7 +6612,7 @@ body {
     body .container .voiting--input-block label, body .container .home--input-block label {
       display: block;
       position: relative;
-      padding-left: 26px;
+      padding-left: 22px;
       cursor: pointer; }
     body .container .voiting--input-block input, body .container .home--input-block input {
       position: absolute;
@@ -6622,7 +6622,7 @@ body {
         display: block; }
     body .container .voiting--input-block .checkmark, body .container .home--input-block .checkmark {
       position: absolute;
-      top: 1px;
+      top: 3px;
       left: 1px;
       height: 16px;
       width: 16px;
