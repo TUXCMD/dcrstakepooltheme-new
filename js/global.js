@@ -16,7 +16,7 @@ $("#select_all").click(function(){
     else {
         $(':checkbox').prop('checked', true);
         $('table tr').addClass('bg-checked');
-        $(this).text('Deselect all');
+        $(this).text('Discard all');
     }    
 
  });
@@ -27,6 +27,15 @@ $(function() {
 	});
 });
 
+$('.control-checkbox input').change(function(){
+    if($(this).is(":checked")) {
+        $('.update-btn').addClass('d-flex');
+        $('.update-btn').removeClass('d-none');
+    } else {
+        $('.update-btn').addClass('d-none');
+        $('.update-btn').removeClass('d-flex');
+    }
+});
 
 $(document).ready(function () {
 	$('.dtVerticalScroll').DataTable({
