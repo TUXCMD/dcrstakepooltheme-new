@@ -18,7 +18,7 @@ body {
 
 	.container {
 
-		&.voiting {
+		&.voting {
 			max-width: 860px;
 
 			@include media-breakpoint-down(md) {
@@ -103,7 +103,7 @@ body {
 			}
 		}
 
-		.voiting, .home {
+		.voting, .home {
 
 			blockquote {
 				padding: 6px 15px;

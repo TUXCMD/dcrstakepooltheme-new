@@ -75,7 +75,7 @@
             </ul>
         </nav>
 
-		 <div class="container voiting" style="min-height: calc(100vh - 284px);">
+		 <div class="container voting" style="min-height: calc(100vh - 284px);">
 	    	<div class="row mx-3">
 	    		<div class="col-12 mb-3 px-sm-5 px-0">
 	    			<div class="d-sm-flex d-none justify-content-between align-items-center">
@@ -89,7 +89,7 @@
 	    		</div>
 
 				<div class="modal fade pt-5" id="connectApiKey" tabindex="-1" role="dialog" aria-labelledby="connectSubAddressTitle" aria-hidden="true">
-					<div class="container voiting modal-dialog px-0" role="document">
+					<div class="container voting modal-dialog px-0" role="document">
 						<div class="modal-content px-3 py-4">
 							<div class="modal-header d-md-flex d-none">
 								<h1 class="modal-title d-flex justify-content-between align-items-center" id="connectSubAddressTitle"><img src="img/info-icon-lg.png" alt=""> <span class="px-3">Submitted Address</span></h1>
@@ -106,29 +106,29 @@
 								</div>
 							</div>
 							<div class="modal-body mx-3 px-sm-5 px-0">
-								<p class="voiting--white-block__agendas">When you submit an address, the stake pool binds that address from your wallet together with an address from the stake pool’s voting wallet. This is done by creating a 1-of-2 multisignature script which lets you, the pool, or both parties vote. This “binding” of the wallets means that if you ever delete your current wallet and create a new wallet with a different seed, importing your multisignature script will not work because it contains an address that is not present in your new wallet.</p>
+								<p class="voting--white-block__agendas">When you submit an address, the stake pool binds that address from your wallet together with an address from the stake pool’s voting wallet. This is done by creating a 1-of-2 multisignature script which lets you, the pool, or both parties vote. This “binding” of the wallets means that if you ever delete your current wallet and create a new wallet with a different seed, importing your multisignature script will not work because it contains an address that is not present in your new wallet.</p>
 
-								<p class="voiting--white-block__agendas">If you wish to verify that this address belongs to your wallet, you may run the following command:</p>
+								<p class="voting--white-block__agendas">If you wish to verify that this address belongs to your wallet, you may run the following command:</p>
 
-								<div class="voiting--block p-4 mb-3">
+								<div class="voting--block p-4 mb-3">
 									<p class="code border-left pl-3 mb-0">
 										$ dcrctl — testnet — wallet getnewaddress dcrctl — testnet — wallet <br>
 										getnewaddress import script <br>121029a6e2ab4298353e42119f22568Fdf96e8faeb9b.ey5121029a6e2ab4298353e42119f2f96e8faeb9b
 									</p>
 								</div>
 
-								<p class="voiting--white-block__agendas">In the result, you will see fields such as “ismine” and “account” if the address is present.</p>
+								<p class="voting--white-block__agendas">In the result, you will see fields such as “ismine” and “account” if the address is present.</p>
 							</div>
 						</div>
 					</div>
 				</div>
 
 	    		<div class="col-12 mb-4 px-sm-5 px-4 pt-3 pb-1 bg-white">
-	    			<p class="voiting--block__description">Your public key address has been accepted and registration is complete. Please, contact your stake pool administrator or support staff if you need to re-register with a new address from a new wallet.</p>
+	    			<p class="voting--block__description">Your public key address has been accepted and registration is complete. Please, contact your stake pool administrator or support staff if you need to re-register with a new address from a new wallet.</p>
 	    		</div>
 	    		<div class="col-12 mb-5 p-4 bg-white">
 	    			<h2 class="px-sm-4 px-0">Public Key Address</h2>
-	    			<div class="py-3 px-4  voiting--input-block">
+	    			<div class="py-3 px-4 voting--input-block">
 	    				<p class="mb-0">5121029a6e2ab4298353e42119f2f96e8faeb9b.ey5121029a6e2ab4298353e42119f2f96e8faeb9b</p>
 	    			</div>
 	    		</div>
