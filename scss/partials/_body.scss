@@ -74,6 +74,33 @@ body {
 					width: 119px
 				}
 			}
+
+			input[type="submit"] {
+				padding: 14px 19px;
+				border-radius: 5px;
+				background-color: #e7eaed;
+				border-color: #e7eaed;
+				font-size: 13px;
+				font-weight: 600;
+				line-height: 1.23;
+				letter-spacing: normal;
+				color: #8997a5;
+
+				&:not([disabled]) {
+
+					&:hover {
+						color: #fff;
+						background-color: #1a59f7;
+						border-color: #1a59f7;
+					}
+				}
+			}
+
+			input[type="submit"]:disabled {
+				background-color: #e7eaed;
+				border-color: #e7eaed;
+				cursor: not-allowed;
+			}
 		}
 
 		.voiting, .home {
@@ -181,7 +208,6 @@ body {
 			}
 
 			&--input-block {
-				font-family: 'Source Code Pro', monospace;
 				background-color: #d4f0fd;
 				color: #091440;
 
@@ -428,7 +454,14 @@ body {
 			font-weight: 600;
 			line-height: 1.23;
 			letter-spacing: normal;
-			color: #8997a5;	
+			color: #8997a5;
+
+			&--size {
+				width: 125px;
+				height: 44px;
+				text-align: center;
+				padding: 0;
+			}
 		}
 	}
 
@@ -744,5 +777,28 @@ body {
 	}
 	&.color6 {
 		background-color: #2ed8a3;
+	}
+}
+
+.tickets-stat {
+	
+	&:hover {
+		cursor: pointer;
+	}
+
+	&[aria-expanded="true"] {
+		
+		.arrow-down {
+			transform: rotate(180deg);
+			transition: all .5s;
+		}
+	}
+}
+
+.arrow-back {
+
+	&:hover {
+		opacity: 0.6;
+		cursor: pointer;
 	}
 }

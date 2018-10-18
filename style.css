@@ -6554,6 +6554,24 @@ body {
       @media (min-width: 320px) and (max-width: 374px) {
         body .container.voiting .col-x {
           width: 119px; } }
+    body .container.voiting input[type="submit"] {
+      padding: 14px 19px;
+      border-radius: 5px;
+      background-color: #e7eaed;
+      border-color: #e7eaed;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.23;
+      letter-spacing: normal;
+      color: #8997a5; }
+      body .container.voiting input[type="submit"]:not([disabled]):hover {
+        color: #fff;
+        background-color: #1a59f7;
+        border-color: #1a59f7; }
+    body .container.voiting input[type="submit"]:disabled {
+      background-color: #e7eaed;
+      border-color: #e7eaed;
+      cursor: not-allowed; }
   body .container .voiting blockquote, body .container .home blockquote {
     padding: 6px 15px;
     border-left: solid 1px #fd704a;
@@ -6618,7 +6636,6 @@ body {
       background-color: #2970ff;
       color: #fff; }
   body .container .voiting--input-block, body .container .home--input-block {
-    font-family: 'Source Code Pro', monospace;
     background-color: #d4f0fd;
     color: #091440; }
     body .container .voiting--input-block p, body .container .home--input-block p {
@@ -6822,6 +6839,11 @@ body {
     line-height: 1.23;
     letter-spacing: normal;
     color: #8997a5; }
+    body .public-key .btn-primary--size {
+      width: 125px;
+      height: 44px;
+      text-align: center;
+      padding: 0; }
   body .table-scroll-y .table {
     margin-bottom: 0; }
     body .table-scroll-y .table .thead-light th {
@@ -7049,6 +7071,17 @@ body {
     background-color: #2971ff; }
   .circle.color6 {
     background-color: #2ed8a3; }
+
+.tickets-stat:hover {
+  cursor: pointer; }
+
+.tickets-stat[aria-expanded="true"] .arrow-down {
+  transform: rotate(180deg);
+  transition: all .5s; }
+
+.arrow-back:hover {
+  opacity: 0.6;
+  cursor: pointer; }
 
 footer {
   background-color: #091440; }

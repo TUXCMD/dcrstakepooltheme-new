@@ -1625,6 +1625,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/js/vendor/dataTables.bootstrap4.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/vendor/dataTables.bootstrap4.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/js/vendor/datatables.min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1661,6 +1671,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/vendor/jquery-slim.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/vendor/jquery.dataTables.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/vendor/jquery.dataTables.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0

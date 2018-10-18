@@ -69,9 +69,9 @@
 
 	    <div class="container voiting mb-5 mb-sm-0" style="min-height: calc(100vh - 284px);">
 	    	<div class="row justify-content-center">
-    			<form class="col-sm-9 col-11 mt-5 p-sm-5 px-2 py-5 bg-white public-key public-key--login text-center">
+    			<form id="Register" class="col-sm-9 col-11 mt-5 p-sm-5 px-2 py-5 bg-white public-key public-key--login text-center" data-empty="" action="#" method="post">
     				<div class="d-flex justify-content-center" style="margin-top: -68px;">
-						<button class="btn mb-5 btn--login" type="submit">Login</button><button class="btn btn--register mb-5 login" type="submit">Register</button>
+						<a class="btn mb-5 btn--login" href="login.html">Login</a><a class="btn btn--register mb-5 login" href="register.html">Register</a>
 					</div>
 					<h1 class="mb-4 text--size-27">Register</h1>
 					<input type="email" id="inputEmail" class="form-control mb-4 w-75 mx-auto" placeholder="Email" required autofocus>
@@ -84,7 +84,7 @@
 						</label>
 						<img src="img/recaptcha-logo.png" alt="">
 					</div>
-					<button class="btn btn-primary mb-3" type="submit">Register</button>
+					<input class="btn btn-primary mb-3" type="submit" value="Register">
 					
 				</form>
 	    	</div>
