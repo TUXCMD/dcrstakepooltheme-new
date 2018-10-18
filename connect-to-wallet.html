@@ -78,24 +78,24 @@
 		 <div class="container voting mb-5" style="min-height: calc(100vh - 284px);">
 	    	<div class="row mx-3">
 	    		<div class="col-12 mb-3 px-sm-5 px-4">
-	    			<h1 class="d-flex justify-content-between align-items-center">Connect via API Key <img class="info-icon" src="img/info-icon.png" data-toggle="modal" data-target="#connectApiKey" alt=""></h1>
+	    			<h1 class="d-flex justify-content-between align-items-center">Connect via API Key <img class="info-icon" src="img/info-icon.svg" data-toggle="modal" data-target="#connectApiKey" alt=""></h1>
 	    		</div>
 
-				<div class="modal fade pt-5" id="connectApiKey" tabindex="-1" role="dialog" aria-labelledby="connectApiKeyTitle" aria-hidden="true">
+				<div class="modal fade" id="connectApiKey" tabindex="-1" role="dialog" aria-labelledby="connectApiKeyTitle" aria-hidden="true">
 					<div class="container voting modal-dialog px-0" role="document">
-						<div class="modal-content px-3 py-4">
+						<div class="modal-content px-md-3 py-md-4">
 							<div class="modal-header d-md-flex d-none">
-								<h1 class="modal-title d-flex justify-content-between align-items-center" id="connectApiKeyTitle"><img src="img/info-icon-lg.png" alt=""> <span class="px-3">Connect via API Key</span></h1>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								  <span aria-hidden="true"><img src="img/close-cross-icon.png" alt=""></span>
+								<h1 class="modal-title d-flex justify-content-between align-items-center" id="connectApiKeyTitle"><img src="img/info-icon-lg.svg" alt=""> <span class="px-3">Connect via API Key</span></h1>
+								<button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
+								  <span aria-hidden="true"><img src="img/close-cross-icon.svg" alt=""></span>
 								</button>
 							</div>
-							<div class="modal-header d-md-none d-block mb-3">
+							<div class="modal-header d-md-none d-block mb-3 p-4">
 								<div class="d-flex justify-content-between align-items-center">
-									<button type="button" data-dismiss="modal" aria-label="Close">
-									  <span aria-hidden="true"><img src="img/path-548.png" alt=""></span>
+									<button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+									  <span aria-hidden="true"><img src="img/arrow-back--blue.svg" alt=""></span>
 									</button>
-									<h1 class="modal-title" id="connectApiKeyTitle"><img src="img/info-icon-sm.png" alt=""> <span class="pl-1">Connect via API Key</span></h1>
+									<h1 class="modal-title" id="connectApiKeyTitle"><img src="img/info-icon-sm.svg" alt=""> <span class="pl-1">Connect via API Key</span></h1>
 								</div>
 							</div>
 							<div class="modal-body mx-3 px-sm-5 px-0">
@@ -135,24 +135,24 @@
 	    			</div>
 	    		</div>
 	    		<div class="col-12 mb-3 px-sm-5 px-4">
-	    			<h1 class="d-flex justify-content-between align-items-center">Connect Manually <img class="info-icon" src="img/info-icon.png" data-toggle="modal" data-target="#connectManually" alt=""></h1>
+	    			<h1 class="d-flex justify-content-between align-items-center">Connect Manually <img class="info-icon" src="img/info-icon.svg" data-toggle="modal" data-target="#connectManually" alt=""></h1>
 	    		</div>
 
-				<div class="modal fade pt-5" id="connectManually" tabindex="-1" role="dialog" aria-labelledby="connectManuallyTitle" aria-hidden="true">
+				<div class="modal fade" id="connectManually" tabindex="-1" role="dialog" aria-labelledby="connectManuallyTitle" aria-hidden="true">
 					<div class="container voting modal-dialog px-0" role="document">
-						<div class="modal-content px-3 py-4">
+						<div class="modal-content px-md-3 py-md-4">
 							<div class="modal-header d-md-flex d-none">
-								<h1 class="modal-title d-flex justify-content-between align-items-center" id="connectManuallyTitle"><img src="img/info-icon-lg.png" alt=""> <span class="px-3">Connect Manually</span></h1>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								  <span aria-hidden="true"><img src="img/close-cross-icon.png" alt=""></span>
+								<h1 class="modal-title d-flex justify-content-between align-items-center" id="connectManuallyTitle"><img src="img/info-icon-lg.svg" alt=""> <span class="px-3">Connect Manually</span></h1>
+								<button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
+								  <span aria-hidden="true"><img src="img/close-cross-icon.svg" alt=""></span>
 								</button>
 							</div>
-							<div class="modal-header d-md-none d-block mb-3">
+							<div class="modal-header d-md-none d-block mb-3 p-4">
 								<div class="d-flex justify-content-between align-items-center">
-									<button type="button" data-dismiss="modal" aria-label="Close">
-									  <span aria-hidden="true"><img src="img/path-548.png" alt=""></span>
+									<button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
+									  <span aria-hidden="true"><img src="img/arrow-back--blue.svg" alt=""></span>
 									</button>
-									<h1 class="modal-title" id="connectManuallyTitle"><img src="img/info-icon-sm.png" alt=""> <span class="pl-1">Connect Manually</span></h1>
+									<h1 class="modal-title" id="connectManuallyTitle"><img src="img/info-icon-sm.svg" alt=""> <span class="pl-1">Connect Manually</span></h1>
 								</div>
 							</div>
 							<div class="modal-body mx-3 px-sm-5 px-0">
@@ -191,8 +191,8 @@
 	    		<form class="w-100 public-key">
 		    		<div class="col-12 mb-4 px-sm-5 px-4 py-4 bg-white">
 		    			<div class="form-group row mb-0 align-items-center">
-							<label for="inputAddress" class="col-3 public-key--address mb-0">Public Key Address:</label>
-							<div class="col-9">
+							<label for="inputAddress" class="col-md-3 public-key--address mb-3 mb-md-0">Public Key Address:</label>
+							<div class="col-md-9">
 							  <input type="text" class="form-control" id="inputAddress" placeholder="Enter address">
 							</div>
 						</div>

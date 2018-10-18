@@ -210,27 +210,25 @@
 				</div>
 
 	    		<div class="col-12 mb-3 px-4">
-	    			<h1 class="d-flex justify-content-between align-items-center">Ticket Information <img class="info-icon" src="img/info-icon.png" data-toggle="modal" data-target="#connectTicketInfo" alt=""></h1>
+	    			<h1 class="d-flex justify-content-between align-items-center">Ticket Information <img class="info-icon" src="img/info-icon.svg" data-toggle="modal" data-target="#connectTicketInfo" alt=""></h1>
 	    		</div>
 
-				<div class="modal fade pt-5" id="connectTicketInfo" tabindex="-1" role="dialog" aria-labelledby="connectTicketInfoTitle" aria-hidden="true">
+				<div class="modal fade" id="connectTicketInfo" tabindex="-1" role="dialog" aria-labelledby="connectTicketInfoTitle" aria-hidden="true">
 					<div class="container voting modal-dialog px-0" role="document">
-						<div class="modal-content px-3 py-4">
-							<div class="modal-header mb-5 d-md-flex d-none">
-								<h1 class="modal-title d-flex justify-content-between align-items-center" id="connectTicketInfoTitle"><img src="img/info-icon-lg.png" alt=""> <span class="px-3">Buying Tickets with dcrwallet using command-line tools</span></h1>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								  <span aria-hidden="true"><img src="img/close-cross-icon.png" alt=""></span>
+						<div class="modal-content px-md-3 py-md-4">
+							<div class="modal-header d-md-flex d-none">
+								<h1 class="modal-title d-flex justify-content-between align-items-center" id="connectSubAddressTitle"><img src="img/info-icon-lg.svg" alt=""> <span class="px-3">Buying Tickets with dcrwallet using command-line tools</span></h1>
+								<button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
+								  <span aria-hidden="true"><img src="img/close-cross-icon.svg" alt=""></span>
 								</button>
 							</div>
-							<div class="modal-header mb-3 d-md-none d-block">
-								<div class="d-flex justify-content-between align-items-center mb-1">
-									<button type="button" data-dismiss="modal" aria-label="Close">
-								  		<span aria-hidden="true"><img src="img/path-548.png" alt=""></span>
+							<div class="modal-header modal-header--long-title d-md-none d-block mb-3 p-4">
+								<div class="d-flex justify-content-between align-items-start">
+									<button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
+									  <span aria-hidden="true"><img src="img/arrow-back--blue.svg" alt=""></span>
 									</button>
-									<img src="img/info-icon-sm.png" alt="">
+									<h1 class="modal-title" id="connectSubAddressTitle"><img src="img/info-icon-sm.svg" alt=""> <span class="pl-1">Buying Tickets with dcrwallet using command-line tools</span></h1>
 								</div>
-								<h1 class="modal-title text-right" id="connectTicketInfoTitle">Buying Tickets with dcrwallet using command-line tools</h1>
-								
 							</div>
 							<div class="modal-body mx-3 px-sm-5 px-0">
 								<blockquote class="voting--white-block__agendas"><span>Note!</span> <br>
@@ -287,7 +285,6 @@
 								<p class="font-weight-bold">Voting</p>
 
 								<p class="voting--white-block__agendas">If you wish to cast votes yourself, please review the guides How To Vote and Solo-Voting. The preferences you set on this stake pool's voting page only affect the stake pool's voting wallets and not your own.</p>
-
 							</div>
 						</div>
 					</div>

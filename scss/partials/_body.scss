@@ -42,11 +42,6 @@ body {
 				}
 			}
 
-			.modal-content {
-				max-height: 660px;
-				overflow-y: auto;
-			}
-
 			.info-icon {
 
 				&:hover {
@@ -274,42 +269,6 @@ body {
 		line-height: 1.31;
 		letter-spacing: normal;
 		color: #0c1e3e;
-	}
-
-	.modal-backdrop {
-		background-color: transparent;
-	}
-
-	.modal-content {
-		background-color: #ffffff;
-  		box-shadow: 0 15px 34px 0 rgba(9, 20, 64, 0.21);
-  		border: 0;
-  		border-radius: 0;
-	}
-
-	.modal-title {
-		font-size: 27px;
-		line-height: 1.26;
-		letter-spacing: normal;
-		color: #48566e;
-
-		@include media-breakpoint-down(sm) {
-			font-size: 18px;
-		}
-	}
-
-	.modal-header{
-		border: 0;
-
-		button:focus {
-			outline: none;
-		}
-
-		.close {
-			margin: -14px 0 4px 0;
-			padding: 0;
-			cursor: pointer;
-		}
 	}
 
 	.public-key {
