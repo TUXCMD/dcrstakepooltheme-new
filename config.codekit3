@@ -3627,11 +3627,11 @@
 		"oAP": "/tickets.html",
 		"oF": 0
 		},
-	"/voting.html": {
+	"/voiting.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/voting.html",
+		"oAP": "/voiting.html",
 		"oF": 0
 		}
 	},
