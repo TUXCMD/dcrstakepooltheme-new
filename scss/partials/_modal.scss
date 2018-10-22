@@ -1,6 +1,12 @@
 .modal {
 	padding-top: 3.5rem;
 
+	&-blockquote {
+	    padding: 6px 15px;
+	    border-left: solid 1px #fd704a;
+	    box-shadow: 0 1px 2px 0 rgba(9, 20, 64, 0.21);
+	}
+
 	&-close {
 		margin: -14px 0 4px 0;
 		padding: 0;

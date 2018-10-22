@@ -6790,12 +6790,47 @@ input[type="submit"]:disabled {
   .circle.color6 {
     background-color: #2ed8a3; }
 
-.tickets-stat:hover {
-  cursor: pointer; }
-
-.tickets-stat[aria-expanded="true"] .arrow-down {
-  transform: rotate(180deg);
-  transition: all .5s; }
+.accordion__item {
+  background: #fff;
+  border-bottom: 5px solid #f3f5f6; }
+  .accordion__item + .collapse, .accordion__item + .collapsing {
+    margin-top: -3px; }
+    .accordion__item + .collapse div, .accordion__item + .collapsing div {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 60px;
+      padding-right: 60px;
+      border-bottom: 1px solid #edeff1;
+      background-color: #fff; }
+      @media screen and (min-width: 576px) {
+        .accordion__item + .collapse div, .accordion__item + .collapsing div {
+          padding-top: calc(20px + -5 * (100vw - 576px) / 864);
+          padding-bottom: calc(20px + -5 * (100vw - 576px) / 864); } }
+      @media screen and (min-width: 1440px) {
+        .accordion__item + .collapse div, .accordion__item + .collapsing div {
+          padding-top: 15px;
+          padding-bottom: 15px; } }
+      @media screen and (min-width: 576px) {
+        .accordion__item + .collapse div, .accordion__item + .collapsing div {
+          padding-left: calc(60px + 35 * (100vw - 576px) / 864);
+          padding-right: calc(60px + 35 * (100vw - 576px) / 864); } }
+      @media screen and (min-width: 1440px) {
+        .accordion__item + .collapse div, .accordion__item + .collapsing div {
+          padding-left: 95px;
+          padding-right: 95px; } }
+      .accordion__item + .collapse div img, .accordion__item + .collapsing div img {
+        margin-right: 50px; }
+  .accordion__item div {
+    padding: 15px 30px; }
+    .accordion__item div:hover {
+      cursor: pointer; }
+    .accordion__item div[aria-expanded="true"] .arrow-down {
+      transform: rotate(180deg);
+      transition: all .5s; }
+    .accordion__item div span img {
+      margin-right: 50px;
+      max-width: 17px;
+      height: auto; }
 
 .icon--info {
   transition: 0.25s; }
@@ -7089,6 +7124,10 @@ input[type="submit"]:disabled {
 
 .modal {
   padding-top: 3.5rem; }
+  .modal-blockquote {
+    padding: 6px 15px;
+    border-left: solid 1px #fd704a;
+    box-shadow: 0 1px 2px 0 rgba(9, 20, 64, 0.21); }
   .modal-close {
     margin: -14px 0 4px 0;
     padding: 0;

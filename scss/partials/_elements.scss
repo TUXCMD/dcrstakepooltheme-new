@@ -221,17 +221,49 @@
 	}
 }
 
-.tickets-stat {
-	
-	&:hover {
-		cursor: pointer;
-	}
+.accordion {
+	&__item {
+	    background: #fff;
+    	border-bottom: 5px solid #f3f5f6;
 
-	&[aria-expanded="true"] {
-		
-		.arrow-down {
-			transform: rotate(180deg);
-			transition: all .5s;
-		}
+    	& + .collapse, & + .collapsing {
+    		margin-top: -3px;
+
+    		div {
+    			@include fluid-props(padding-top padding-bottom, $sm, $xl, 20px, 15px);
+				@include fluid-props(padding-left padding-right, $sm, $xl, 60px, 95px);
+
+    			border-bottom: 1px solid #edeff1;
+    			background-color: #fff;
+
+    			img {
+    				margin-right: 50px;
+    			}
+    		}
+    	}
+
+    	div {
+    		padding: 15px 30px;
+
+    		&:hover {
+				cursor: pointer;
+			}
+
+			&[aria-expanded="true"] {
+				
+				.arrow-down {
+					transform: rotate(180deg);
+					transition: all .5s;
+				}
+			}
+
+			span {
+				img {
+					margin-right: 50px;
+				    max-width: 17px;
+    				height: auto;
+				}
+			}
+    	}
 	}
 }
