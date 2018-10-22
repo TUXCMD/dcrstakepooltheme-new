@@ -6979,9 +6979,13 @@ input[type="submit"]:disabled {
     .block .col p {
       overflow: hidden;
       text-overflow: ellipsis; }
-  .block .row--stats {
-    margin-left: -30px;
-    margin-right: -60px; }
+
+.row--stats {
+  margin-left: -30px;
+  margin-right: -60px; }
+
+.row--voting {
+  margin-top: 20px; }
 
 .form div.col-12 {
   background: #fff;

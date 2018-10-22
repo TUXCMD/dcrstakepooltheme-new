@@ -201,11 +201,15 @@
     		text-overflow: ellipsis; 
     	}
 	}
+}
 
-	.row {
-		&--stats {
-		    margin-left: -30px;
-		    margin-right: -60px;
-		}
+.row {
+	&--stats {
+	    margin-left: -30px;
+	    margin-right: -60px;
+	}
+
+	&--voting {
+		margin-top: 20px;
 	}
 }
