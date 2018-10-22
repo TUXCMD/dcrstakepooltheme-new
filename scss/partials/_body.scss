@@ -126,31 +126,6 @@
 	}
 }
 
-.table {
-
-	.thead-light { 
-
-		th {
-			background-color: #edeff1;
-			border-color: #edeff1;
-			color: #0c1e3e;
-		}
-	}
-
-	tr {
-		
-		&:hover {
-			background-color: #e9f8fe;
-			cursor: pointer;
-		}
-	}
-
-	td {
-		border-top: 1px solid #edeff1;
-		color: #48566e;
-	}
-}
-
 .update-btn {
 	width: 100%;
 	height: 104px;
