@@ -6624,21 +6624,6 @@ input[type="submit"]:disabled {
 .tooltip .arrow {
   display: none !important; }
 
-.voting blockquote, .home blockquote {
-  padding: 6px 15px;
-  border-left: solid 1px #fd704a;
-  box-shadow: 0 1px 2px 0 rgba(9, 20, 64, 0.21); }
-  .voting blockquote span, .home blockquote span {
-    color: #fd704a; }
-
-.voting--block__agendas, .home--block__agendas {
-  color: #48566e; }
-  .voting--block__agendas .span--box, .home--block__agendas .span--box {
-    border-radius: 2px;
-    background-color: #d4f0fd;
-    padding: 0 5px;
-    color: #48566e; }
-
 .voting--white-block__description, .home--white-block__description {
   color: #596d81; }
   .voting--white-block__description span, .home--white-block__description span {
@@ -6726,7 +6711,7 @@ input[type="submit"]:disabled {
 .control_indicator {
   position: absolute;
   top: 6px;
-  left: 0;
+  right: 20px;
   height: 12px;
   width: 12px;
   background: #ffffff;
@@ -7128,6 +7113,8 @@ input[type="submit"]:disabled {
     padding: 6px 15px;
     border-left: solid 1px #fd704a;
     box-shadow: 0 1px 2px 0 rgba(9, 20, 64, 0.21); }
+    .modal-blockquote span {
+      color: #fd704a; }
   .modal-close {
     margin: -14px 0 4px 0;
     padding: 0;
