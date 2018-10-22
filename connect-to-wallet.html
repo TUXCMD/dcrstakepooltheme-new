@@ -18,7 +18,7 @@
 	    <nav class="site-header sticky-top py-3 mb-5">
 		    <div class="container">
 		      	<div class="row mx-3 mx-lg-0">
-			        <div class="col-2">
+			        <div class="col-2 px-0 px-md-3">
 			        	<a class="py-1 border-0 d-flex justify-content-start align-items-center" href="index.html">
 			        		<div class="logo--logo">
 					          	<svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" fill="none" viewBox="0 0 23 20">
@@ -39,7 +39,7 @@
 				        <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block active" href="connect-to-wallet.html">Connect to Wallet</a>
 				        <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="settings.html">Settings</a>
 			        </div>
-			        <div class="col-3 position-relative d-flex justify-content-end">
+			        <div class="col-3 px-0 position-relative d-flex justify-content-end">
 			        	<a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="#">Hello, <span class="e-mail">maria@gr.co</span></a>
 			        	<a class="pt-2 pb-3 d-none d-xl-inline-block" href="#">Logout</a>
 			        	<div id="sidebarCollapse" class="wrapper py-1 d-inline-block d-xl-none">
@@ -79,7 +79,7 @@
 	    	<div class="row mx-3">
 	    		<section class="block">
 		    		<div class="col-12 block__title">
-		    			<h1 class="d-flex justify-content-between align-items-center">Connect via API Key <img class="icon--info" src="img/info-icon.svg" data-toggle="modal" data-target="#connectApiKey" alt=""></h1>
+		    			<h1 class="d-flex justify-content-between align-items-center"><span>Connect via API Key</span> <img class="icon--info" src="img/info-icon.svg" data-toggle="modal" data-target="#connectApiKey" alt=""></h1>
 		    		</div>
 
 					<div class="modal fade" id="connectApiKey" tabindex="-1" role="dialog" aria-labelledby="connectApiKeyTitle" aria-hidden="true">
@@ -87,27 +87,27 @@
 							<div class="modal-content px-md-3 py-md-4">
 								<div class="modal-header d-md-flex d-none">
 									<h1 class="modal-title d-flex justify-content-between align-items-center" id="connectApiKeyTitle"><img src="img/info-icon-lg.svg" alt=""> <span class="px-3">Connect via API Key</span></h1>
-									<button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
+									<button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
 									  <span aria-hidden="true"><img src="img/close-cross-icon.svg" alt=""></span>
 									</button>
 								</div>
 								<div class="modal-header d-md-none d-block mb-3 p-4">
 									<div class="d-flex justify-content-between align-items-center">
-										<button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+										<button type="button" data-dismiss="modal" aria-label="Close" class="modal-close">
 										  <span aria-hidden="true"><img src="img/arrow-back--blue.svg" alt=""></span>
 										</button>
 										<h1 class="modal-title" id="connectApiKeyTitle"><img src="img/info-icon-sm.svg" alt=""> <span class="pl-1">Connect via API Key</span></h1>
 									</div>
 								</div>
 								<div class="modal-body mx-3 px-sm-5 px-0">
-									<p class="voting--white-block__agendas">The official Decred GUI wallet Decrediton is the recommended way to use stakepools. All you need to get started is to copy and paste the API Token below when prompted. More comprehensive guides are available for Decrediton as well a general overview of the staking process.</p>
+									<p>The official Decred GUI wallet Decrediton is the recommended way to use stakepools. All you need to get started is to copy and paste the API Token below when prompted. More comprehensive guides are available for Decrediton as well a general overview of the staking process.</p>
 
-									<h2 class="text--size-13">Submit your API key</h2>
+									<strong>Submit your API key</strong>
 
-									<p class="voting--white-block__agendas">The official Decred GUI wallet Decrediton is the recommended way to use stakepools. All you need to get started is to copy and paste the API Token below when prompted. More comprehensive guides are available for Decrediton as well a general overview of the staking process.</p>
+									<p>The official Decred GUI wallet Decrediton is the recommended way to use stakepools. All you need to get started is to copy and paste the API Token below when prompted. More comprehensive guides are available for Decrediton as well a general overview of the staking process.</p>
 
-									<div class="voting--block p-4 mb-3">
-										<p class="code border-left pl-3 mb-0">
+									<div class="modal-code">
+										<p>
 											$ dcrctl -- testnet -- wallet getnewaddress<br>
 											TsExampleAddr1For2Demo3PurposeOnly<br>
 											$   dcrctl -- testnet -- wallet validateaddress TsExampleAddr1For2Demo3PurposeOnly<br>
@@ -139,7 +139,7 @@
 				
 				<section class="block">
 		    		<div class="col-12 block__title">
-		    			<h1 class="d-flex justify-content-between align-items-center">Connect Manually <img class="icon--info" src="img/info-icon.svg" data-toggle="modal" data-target="#connectManually" alt=""></h1>
+		    			<h1 class="d-flex justify-content-between align-items-center"><span>Connect Manually</span> <img class="icon--info" src="img/info-icon.svg" data-toggle="modal" data-target="#connectManually" alt=""></h1>
 		    		</div>
 
 					<div class="modal fade" id="connectManually" tabindex="-1" role="dialog" aria-labelledby="connectManuallyTitle" aria-hidden="true">
@@ -147,40 +147,38 @@
 							<div class="modal-content px-md-3 py-md-4">
 								<div class="modal-header d-md-flex d-none">
 									<h1 class="modal-title d-flex justify-content-between align-items-center" id="connectManuallyTitle"><img src="img/info-icon-lg.svg" alt=""> <span class="px-3">Connect Manually</span></h1>
-									<button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
+									<button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
 									  <span aria-hidden="true"><img src="img/close-cross-icon.svg" alt=""></span>
 									</button>
 								</div>
 								<div class="modal-header d-md-none d-block mb-3 p-4">
 									<div class="d-flex justify-content-between align-items-center">
-										<button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
+										<button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
 										  <span aria-hidden="true"><img src="img/arrow-back--blue.svg" alt=""></span>
 										</button>
 										<h1 class="modal-title" id="connectManuallyTitle"><img src="img/info-icon-sm.svg" alt=""> <span class="pl-1">Connect Manually</span></h1>
 									</div>
 								</div>
 								<div class="modal-body mx-3 px-sm-5 px-0">
-									<p class="voting--white-block__agendas">To join the pool, provide a public key address which will be used to generate a 1-of-2 multisignature script. The multisignature script will be generated by the pool and returned to you along with a P2SH address to give voting rights to. The P2SH address has the prefix Dc.</p>
+									<p>To join the pool, provide a public key address which will be used to generate a 1-of-2 multisignature script. The multisignature script will be generated by the pool and returned to you along with a P2SH address to give voting rights to. The P2SH address has the prefix Dc.</p>
 
-									<p class="voting--white-block__agendas">To generate a public key address, create a new wallet address with getnewaddress. Then, call validateaddress &lt;yourAddress&gt; and retrieve the address listed in the pubkeyaddr field of the response. The pubkeyaddr starts with Dk.</p>
+									<p>To generate a public key address, create a new wallet address with getnewaddress. Then, call validateaddress &lt;yourAddress&gt; and retrieve the address listed in the pubkeyaddr field of the response. The pubkeyaddr starts with Dk.</p>
 
-									<p class="voting--white-block__agendas">The following is an example:</p>
+									<p>The following is an example:</p>
 
-									<div class="voting--block p-4 mb-3">
-										<p class="code border-left pl-3 mb-0">
-											$ dcrctl  —wallet getnewaddress<br>
-											DsExampleAddr1For2Demo3PurposesOnly <br>
-											$ dcrctl  —wallet validateaddress DsExampleAddr1For2Demo3PurposesOnly <br>
-											{ <br>
-											    “isvalid”: true, <br>
-											    “address”: “DsExampleAddr1For2Demo3PurposesOnly”,<br>
-											    “ismine”: true,<br>
-											    “pubkeyaddr”: <br>
-											    “DkExample0Addr1For2Demo4Purposes5Only6Do7Not8Use9Pls0”,<br>
-											    “pubkey”: <br>
-											    “022801337beefc0ffee1dab8d4ffa898a782466c9a1fc00ca8863de5438dc07dcc”,<br>
-											    “iscompressed”: true,<br>
-											    “account”: “default” <br>
+									<div class="modal-code">
+										<p>
+											$ dcrctl -- testnet -- wallet getnewaddress<br>
+											TsExampleAddr1For2Demo3PurposeOnly<br>
+											$   dcrctl -- testnet -- wallet validateaddress TsExampleAddr1For2Demo3PurposeOnly<br>
+											{<br>
+											     “isvalid”: true,<br>
+											     “address”: “TsExampleAddr1For2Demo3PurposeOnly”,<br>
+											     “ismine”: true,<br>
+											     “pubkeyaddr”:  “TkExampleAddr1For2Demo3PurposeOnly6Do7Not8Use9Pls0”,<br>
+											     “pubkey”: “026587gggesc168424srdfgfgsxdvdghdzdcc8sgfgzxdfgsdfg575s54f5asd”,<br>
+											     “iscompressed”: true,<br>
+											     “account”: “default”<br>
 											}
 										</p>
 									</div>
@@ -214,7 +212,7 @@
 					<div class="col-md-8 col-12 px-0 px-lg-3 footer__column">
 						<p class="pr-lg-5">The easiest way to run the stakepool code is to run it directly from the root of the source tree:</p>
 						<div class="justify-content-center justify-content-md-start">
-							<div class="col-sm-9 col-12 footer__code py-3">
+							<div class="col-md-9 col-12 footer__code py-3">
 								<blockquote class="mb-0">
 									$ cd $GOPATH/src/github.com/decred/dcrstakepool<br>
 									$ go build<br>

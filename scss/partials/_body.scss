@@ -7,10 +7,6 @@ body {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 13px;
 	line-height: 19px;
-	@include media-breakpoint-down(sm) {
-		font-size: 15px;
-		line-height: 21px;
-	}
 	font-weight: normal;
 	font-style: normal;
 	font-stretch: normal;
@@ -85,18 +81,6 @@ body {
 					    background-color: #d4f0fd;
 					    padding: 0 5px;
 					    color: #48566e;
-					}
-				}
-
-				.code {
-					font-size: 11px;
-					line-height: 1.55;
-					letter-spacing: normal;
-					color: #545c6b;
-					overflow-wrap: break-word;
-
-					&.border-left {
-						border-left: solid 1px #dbdee0 !important;
 					}
 				}
 			}

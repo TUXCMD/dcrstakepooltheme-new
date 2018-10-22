@@ -17,8 +17,8 @@
     
 	    <nav class="site-header sticky-top py-3 mb-5">
 		    <div class="container">
-		      	<div class="row mx-3">
-			        <div class="col-2">
+		      	<div class="row mx-3 mx-lg-0">
+			        <div class="col-2 px-0 px-md-3">
 			        	<a class="py-1 border-0 d-flex justify-content-start align-items-center" href="index.html">
 			        		<div class="logo--logo">
 					          	<svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" fill="none" viewBox="0 0 23 20">
@@ -39,7 +39,7 @@
 				        <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block active" href="connect-to-wallet.html">Connect to Wallet</a>
 				        <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="settings.html">Settings</a>
 			        </div>
-			        <div class="col-3 position-relative d-flex justify-content-end">
+			        <div class="col-3 px-0 position-relative d-flex justify-content-end">
 			        	<a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="#">Hello, <span class="e-mail">maria@gr.co</span></a>
 			        	<a class="pt-2 pb-3 d-none d-xl-inline-block" href="#">Logout</a>
 			        	<div id="sidebarCollapse" class="wrapper py-1 d-inline-block d-xl-none">
@@ -77,61 +77,62 @@
 
 		 <div class="container voting">
 	    	<div class="row mx-3">
-	    		<div class="col-12 mb-3 px-sm-5 px-0">
-	    			<div class="d-sm-flex d-none justify-content-between align-items-center">
-		    			<h1>Connected to Wallet <img class="pl-3" src="img/wallet-icon.svg" alt=""></h1>
-		    			<img class="icon--info" src="img/info-icon.svg" data-toggle="modal" data-target="#connectApiKey" alt="">
+	    		<section class="block">
+		    		<div class="col-12 block__title">
+		    			<div class="d-sm-flex d-none justify-content-between align-items-center">
+			    			<h1><span>Connected to Wallet</span> <img src="img/wallet-icon.svg" alt=""></h1>
+			    			<img class="icon--info" src="img/info-icon.svg" data-toggle="modal" data-target="#connectApiKey" alt="">
+			    		</div>
+			    		<div class="d-flex d-sm-none justify-content-between align-items-start">
+			    			<h1><img src="img/wallet-icon.svg" alt=""> <span>Connected to Wallet</span></h1>
+			    			<img class="icon--info" src="img/info-icon.svg" data-toggle="modal" data-target="#connectApiKey" alt="">
+			    		</div>
 		    		</div>
-		    		<div class="d-flex d-sm-none justify-content-between align-items-start">
-		    			<h1><img class="pr-1" src="img/wallet-icon.svg" alt=""> Connected to Wallet</h1>
-		    			<img class="icon--info" src="img/info-icon.svg" data-toggle="modal" data-target="#connectApiKey" alt="">
-		    		</div>
-	    		</div>
 
-				<div class="modal fade" id="connectApiKey" tabindex="-1" role="dialog" aria-labelledby="connectSubAddressTitle" aria-hidden="true">
-					<div class="container voting modal-dialog px-0" role="document">
-						<div class="modal-content px-md-3 py-md-4">
-							<div class="modal-header d-md-flex d-none">
-								<h1 class="modal-title d-flex justify-content-between align-items-center" id="connectSubAddressTitle"><img src="img/info-icon-lg.svg" alt=""> <span class="px-3">Submitted Address</span></h1>
-								<button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
-								  <span aria-hidden="true"><img src="img/close-cross-icon.svg" alt=""></span>
-								</button>
-							</div>
-							<div class="modal-header d-md-none d-block mb-3 p-4">
-								<div class="d-flex justify-content-between align-items-center">
-									<button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
-									  <span aria-hidden="true"><img src="img/arrow-back--blue.svg" alt=""></span>
+					<div class="modal fade" id="connectApiKey" tabindex="-1" role="dialog" aria-labelledby="connectSubAddressTitle" aria-hidden="true">
+						<div class="container voting modal-dialog px-0" role="document">
+							<div class="modal-content px-md-3 py-md-4">
+								<div class="modal-header d-md-flex d-none">
+									<h1 class="modal-title d-flex justify-content-between align-items-center" id="connectSubAddressTitle"><img src="img/info-icon-lg.svg" alt=""> <span class="px-3">Submitted Address</span></h1>
+									<button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+									  <span aria-hidden="true"><img src="img/close-cross-icon.svg" alt=""></span>
 									</button>
-									<h1 class="modal-title" id="connectSubAddressTitle"><img src="img/info-icon-sm.svg" alt=""> <span class="pl-1">Submitted Address</span></h1>
 								</div>
-							</div>
-							<div class="modal-body mx-3 px-sm-5 px-0">
-								<p class="voting--white-block__agendas">When you submit an address, the stake pool binds that address from your wallet together with an address from the stake pool’s voting wallet. This is done by creating a 1-of-2 multisignature script which lets you, the pool, or both parties vote. This “binding” of the wallets means that if you ever delete your current wallet and create a new wallet with a different seed, importing your multisignature script will not work because it contains an address that is not present in your new wallet.</p>
-
-								<p class="voting--white-block__agendas">If you wish to verify that this address belongs to your wallet, you may run the following command:</p>
-
-								<div class="voting--block p-4 mb-3">
-									<p class="code border-left pl-3 mb-0">
-										$ dcrctl — testnet — wallet getnewaddress dcrctl — testnet — wallet <br>
-										getnewaddress import script <br>121029a6e2ab4298353e42119f22568Fdf96e8faeb9b.ey5121029a6e2ab4298353e42119f2f96e8faeb9b
-									</p>
+								<div class="modal-header d-md-none d-block mb-3 p-4">
+									<div class="d-flex justify-content-between align-items-center">
+										<button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+										  <span aria-hidden="true"><img src="img/arrow-back--blue.svg" alt=""></span>
+										</button>
+										<h1 class="modal-title" id="connectSubAddressTitle"><img src="img/info-icon-sm.svg" alt=""> <span class="pl-1">Submitted Address</span></h1>
+									</div>
 								</div>
+								<div class="modal-body mx-3 px-sm-5 px-0">
+									<p>When you submit an address, the stake pool binds that address from your wallet together with an address from the stake pool’s voting wallet. This is done by creating a 1-of-2 multisignature script which lets you, the pool, or both parties vote. This “binding” of the wallets means that if you ever delete your current wallet and create a new wallet with a different seed, importing your multisignature script will not work because it contains an address that is not present in your new wallet.</p>
 
-								<p class="voting--white-block__agendas">In the result, you will see fields such as “ismine” and “account” if the address is present.</p>
+									<p>If you wish to verify that this address belongs to your wallet, you may run the following command:</p>
+
+									<div class="modal-code">
+										<p>
+											$ dcrctl — testnet — wallet getnewaddress dcrctl — testnet — wallet <br>
+											getnewaddress import script <br>
+											121029a6e2ab4298353e42119f22568Fdf96e8faeb9b.ey5121029a6e2ab4298353e42119f2f96e8faeb9b
+										</p>
+									</div>
+
+									<p>In the result, you will see fields such as “ismine” and “account” if the address is present.</p>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
 
-	    		<div class="col-12 mb-4 px-sm-5 px-4 pt-3 pb-1 bg-white">
-	    			<p class="voting--block__description">Your public key address has been accepted and registration is complete. Please, contact your stake pool administrator or support staff if you need to re-register with a new address from a new wallet.</p>
-	    		</div>
-	    		<div class="col-12 mb-5 p-4 bg-white">
-	    			<h2 class="px-sm-4 px-0">Public Key Address</h2>
-	    			<div class="py-3 px-4 voting--input-block">
-	    				<p class="mb-0">5121029a6e2ab4298353e42119f2f96e8faeb9b.ey5121029a6e2ab4298353e42119f2f96e8faeb9b</p>
-	    			</div>
-	    		</div>
+		    		<div class="col-12 block__description--white">
+		    			<p>Your public key address has been accepted and registration is complete. Please, contact your stake pool administrator or support staff if you need to re-register with a new address from a new wallet.</p>
+		    		</div>
+		    		<div class="col-12 mb-5 block__key">
+		    			<h2>Public Key Address</h2>
+	    				<p>5121029a6e2ab4298353e42119f2f96e8faeb9b.ey5121029a6e2ab4298353e42119f2f96e8faeb9b</p>
+		    		</div>
+		    	</section>
 	    	</div>
 	    </div>
 
@@ -141,7 +142,7 @@
 					<div class="col-md-8 col-12 px-0 px-lg-3 footer__column">
 						<p class="pr-lg-5">The easiest way to run the stakepool code is to run it directly from the root of the source tree:</p>
 						<div class="justify-content-center justify-content-md-start">
-							<div class="col-sm-9 col-12 footer__code py-3">
+							<div class="col-md-9 col-12 footer__code py-3">
 								<blockquote class="mb-0">
 									$ cd $GOPATH/src/github.com/decred/dcrstakepool<br>
 									$ go build<br>

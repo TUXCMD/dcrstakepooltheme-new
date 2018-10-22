@@ -1,7 +1,7 @@
 .modal {
-	padding-top: 4rem;
+	padding-top: 3.5rem;
 
-	&__close {
+	&-close {
 		margin: -14px 0 4px 0;
 		padding: 0;
 		cursor: pointer;
@@ -89,5 +89,33 @@
 		@include media-breakpoint-down(sm) {
 		    max-height: 100vh;
 	    }
+
+	    p {
+	    	color: #48566e;
+	    }
+
+	    strong {
+	    	color: #091440;
+	    	margin-bottom: 1rem;
+	    	display: block;
+	    }
+	}
+
+	&-code {
+		background-color: #edeff1;
+		padding: 15px;
+		margin-bottom: 1rem;
+
+		p {
+			font-family: 'Source Code Pro', sans-serif;
+			@include fluid-props(font-size, $sm, $xl, 9px, 11px);
+			line-height: 1.55;
+			letter-spacing: normal;
+			color: #545c6b;
+			overflow-wrap: break-word;
+			padding: 0 15px;
+			margin-bottom: 0;
+			border-left: solid 1px #dbdee0 !important;
+		}		
 	}
 }

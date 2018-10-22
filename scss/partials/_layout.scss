@@ -4,8 +4,30 @@
 	&__title {
 		padding: 20px 30px;
 
+		@include media-breakpoint-down(sm) {
+			padding: 20px 0;
+		}
+
 		h1, p {
 			margin-bottom: 0;
+		}
+
+		span {
+			vertical-align: middle;
+
+			@include media-breakpoint-down(sm) {
+				margin-left: 30px;
+			}
+		}
+
+		img + span {
+			@include media-breakpoint-down(sm) {
+				margin-left: 5px;
+			}
+		}
+
+		span + img {
+			margin-left: 15px;
 		}
 	}
 
@@ -21,12 +43,23 @@
 		a {
 			color: #2971ff;
 		}
+
+		&--white {
+			@extend .block__description;
+			background-color: #fff;
+			margin-bottom: 20px;
+		}
 	}
 
 	&__key {
 		background-color: #fff;
 		padding: 20px 15px;
 
+		h1, h2, h3, h4, h5 {
+			padding-left: 15px;
+		    padding-bottom: 15px;
+		    margin-bottom: 0;
+		}
 
 		p {
 			background-color: #d4f0fd;

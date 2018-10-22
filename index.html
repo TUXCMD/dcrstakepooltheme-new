@@ -16,56 +16,64 @@
   <body>
     
     <nav class="site-header sticky-top py-3 mb-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-2">
-            <a class="py-1 border-0 d-flex align-items-center" href="index.html">
-              <div class="logo--logo">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" fill="none" viewBox="0 0 23 20">
-                <path fill="#000" fill-opacity="0" d="M0 0h23v19.167H0z"/>
-                <path fill="#091440" d="M4.792 4.792L0 0h5.175l7.667 7.667H7.667a3.834 3.834 0 1 0 0 7.666h1.917l3.833 3.834h-5.75A7.667 7.667 0 0 1 0 11.5c0-3.11 1.533-5.615 4.792-6.708z"/>
-                <path fill="#091440" d="M18.208 14.375L23 19.167h-5.175L10.158 11.5h5.175a3.834 3.834 0 0 0 0-7.667h-1.917L9.583 0h5.75A7.667 7.667 0 0 1 23 7.667c0 3.109-1.533 5.615-4.792 6.708z"/>
-            </svg>
-          </div>
-              <div class="logo--text">
-            Stakepool<br>
-            <b>Alpha</b>
-          </div>
-            </a>
-          </div>
-          <div class="col-7 px-0">
-            <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block active" href="index.html">Home</a>
-            <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="stats.html">Stats</a>
-        </div>
-        <div class="col-3 position-relative d-flex justify-content-end">
-            <a class="pt-2 pb-3 d-none d-xl-inline-block active" href="login.html">Login/Register</a>
-            <div id="sidebarCollapse" class="wrapper py-1 d-inline-block d-xl-none">
+        <div class="container">
+            <div class="row mx-3 mx-lg-0">
+              <div class="col-2 px-0 px-md-3">
+                <a class="py-1 border-0 d-flex justify-content-start align-items-center" href="index.html">
+                  <div class="logo--logo">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" fill="none" viewBox="0 0 23 20">
+                    <path fill="#000" fill-opacity="0" d="M0 0h23v19.167H0z"/>
+                    <path fill="#091440" d="M4.792 4.792L0 0h5.175l7.667 7.667H7.667a3.834 3.834 0 1 0 0 7.666h1.917l3.833 3.834h-5.75A7.667 7.667 0 0 1 0 11.5c0-3.11 1.533-5.615 4.792-6.708z"/>
+                    <path fill="#091440" d="M18.208 14.375L23 19.167h-5.175L10.158 11.5h5.175a3.834 3.834 0 0 0 0-7.667h-1.917L9.583 0h5.75A7.667 7.667 0 0 1 23 7.667c0 3.109-1.533 5.615-4.792 6.708z"/>
+                </svg>
+              </div>
+                  <div class="logo--text">
+                Stakepool<br>
+                <b>Alpha</b>
+              </div>
+                </a>
+              </div>
+              <div class="col-7 px-0">
+                <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="index.html">Home</a>
+                <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="stats.html">Stats</a>
+                <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block active" href="connect-to-wallet.html">Connect to Wallet</a>
+                <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="settings.html">Settings</a>
+              </div>
+              <div class="col-3 px-0 position-relative d-flex justify-content-end">
+                <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="#">Hello, <span class="e-mail">maria@gr.co</span></a>
+                <a class="pt-2 pb-3 d-none d-xl-inline-block" href="#">Logout</a>
+                <div id="sidebarCollapse" class="wrapper py-1 d-inline-block d-xl-none">
               <div class="menu-trigger first">
                 <span class="line line-1"></span>
                 <span class="line line-2"></span>
                 <span class="line line-3"></span>
               </div>
             </div>
+              </div>
           </div>
-      </div>
-    </div>
-  </nav>
-  <nav id="sidebar" class="d-block d-xl-none">
-    <div id="dismiss">
-      <div class="wrapper py-1">
-        <div class="menu-trigger first active">
-          <span class="line line-1"></span>
-          <span class="line line-2"></span>
-          <span class="line line-3"></span>
         </div>
-      </div>
-    </div>
-      <ul>
-        <li><a href="login.html">Login/Register</a></li>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="stats.html">Stats</a></li>
-      </ul>
-  </nav>
+      </nav>
+      <nav id="sidebar" class="d-block d-xl-none">
+            <div id="dismiss">
+                <div class="wrapper py-1">
+          <div class="menu-trigger first active">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </div>
+        </div>
+            </div>
+            <ul class="mb-5">
+              <li><a href="#">Hello, <span class="e-mail">maria@gr.co</span></a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="stats.html">Stats</a></li>
+              <li><a class="active" href="connect-to-wallet.html">Connect to Wallet</a></li>
+              <li><a href="settings.html">Settings</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
 
     <div class="container home mb-5">
       <div class="row">
@@ -263,7 +271,7 @@
           <div class="col-md-8 col-12 px-0 px-lg-3 footer__column">
             <p class="pr-lg-5">The easiest way to run the stakepool code is to run it directly from the root of the source tree:</p>
             <div class="justify-content-center justify-content-md-start">
-              <div class="col-sm-9 col-12 footer__code py-3">
+              <div class="col-md-9 col-12 footer__code py-3">
                 <blockquote class="mb-0">
                   $ cd $GOPATH/src/github.com/decred/dcrstakepool<br>
                   $ go build<br>
