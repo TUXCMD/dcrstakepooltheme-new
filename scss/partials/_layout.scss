@@ -179,4 +179,33 @@
 	    	color: #48566e;
 		}
 	}
+
+	.col {
+        min-width: calc(50% - 30px);
+    	max-width: calc(50% - 30px);
+    	margin-bottom: 20px;
+    	margin-right: 30px;
+
+    	@include media-breakpoint-up(md) {
+    		min-width: calc(33% - 30px);
+    		max-width: calc(33% - 30px);
+    	}
+
+    	@include media-breakpoint-up(lg) {
+    		min-width: calc(20% - 30px);
+    		max-width: calc(20% - 30px);
+    	}
+
+    	p {
+    		overflow: hidden;
+    		text-overflow: ellipsis; 
+    	}
+	}
+
+	.row {
+		&--stats {
+		    margin-left: -30px;
+		    margin-right: -60px;
+		}
+	}
 }

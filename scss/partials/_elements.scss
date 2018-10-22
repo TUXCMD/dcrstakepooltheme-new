@@ -93,38 +93,7 @@
 	color: #0c1e3e;
 }
 
-.table-scroll-y {
-	
-	.table {
-		margin-bottom: 0;
 
-		.thead-light { 
-		
-			th{
-				color: #091440;
-			}
-		}
-
-		a {
-			color: #2970ff;
-		}
-	}
-
-	::-webkit-scrollbar {
-		width: 6px;
-		height: 6px;
-		background-color: #fff;
-	}
-	::-webkit-scrollbar-thumb {
-		border-radius: 5px;
-		background-color: rgba(89, 109, 129, 0.7);
-	}
-
-	::-webkit-scrollbar-track {
-		border-radius: 5px;
-		background-color: #fff;
-	}
-}
 
 .update-btn {
 	width: 100%;
@@ -141,12 +110,12 @@
 		letter-spacing: normal;
 		color: #2970ff;
 		border-radius: 5px;
-			border: solid 1px #2970ff;
+		border: solid 1px #2970ff;
 
-			&:hover {
-				background-color: #2970ff;
-				color: #fff;
-			}
+		&:hover {
+			background-color: #2970ff;
+			color: #fff;
+		}
 	}
 }
 
