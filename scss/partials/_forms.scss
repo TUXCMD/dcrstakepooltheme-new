@@ -30,6 +30,7 @@
 		border-bottom: 1px solid #c4cbd2;
 		border-radius: 0;
 		cursor: pointer;
+		padding: 0 10px;
 
 		&:hover {
 			box-shadow: none;
@@ -60,7 +61,7 @@
 	}
 
 	input {
-		&:not(:placeholder-shown) {
+		&:not(:placeholder-shown):not([type="submit"]) {
 			border-color: #1a59f7;
 		}
 
@@ -69,51 +70,25 @@
 		}
 	}
 
-	&--login {
-		box-shadow: 0 15px 34px 0 rgba(9, 20, 64, 0.21);
+	&__tabs {
+		margin-top: -70px;
+		margin-bottom: 40px;
 
 		a {
-			font-size: 11px;
-			line-height: 1.27;
+			font-size: 13px;
+			line-height: 1.31;
 			letter-spacing: normal;
-			color: #8795a2;
-		}
+			color: #8997a5;
+			background-color: #ffffff;
+			border: solid 1px #e7eaed;
+			border-radius: 0.25rem 0 0 0.25rem;
 
-		.btn-primary {
-			padding: 14px 47px !important;
-		}
+			@include fluid-props(padding-top padding-bottom, $sm, $xl, 10px, 12px);
+			@include fluid-props(padding-left padding-right, $sm, $xl, 34px, 71px);
 
-		.position-absolute {
-			top: -20px;
-		}
-
-		.btn {
-
-			&--login {
-				font-size: 13px;
-				line-height: 1.31;
-				letter-spacing: normal;
-				color: #091440;
-				background-color: #ffffff;
-				border: solid 1px #e7eaed;
-				border-radius: 0.25rem 0 0 0.25rem;
-
-				@include fluid-props(padding-top padding-bottom, $sm, $xl, 10px, 12px);
-				@include fluid-props(padding-left padding-right, $sm, $xl, 34px, 71px);
-			}
-
-			&--register {
-				font-size: 13px;
-				line-height: 1.31;
-				letter-spacing: normal;
-				color: #8997a5;
-				background-color: #f7f8f9;
-				border: solid 1px #e7eaed;
+			&:last-child {
 				border-left: 0;
 				border-radius: 0 0.25rem 0.25rem 0;
-
-				@include fluid-props(padding-top padding-bottom, $sm, $xl, 10px, 12px);
-				@include fluid-props(padding-left padding-right, $sm, $xl, 26px, 64px);
 			}
 
 			&:hover {
@@ -124,30 +99,31 @@
 					border-color: #1a59f7;
 				}
 			}
-		}
 
-		.form-control {
-			padding: 0 10px !important;
-		}
-
-		.checkbox {
-
-			label {
-				font-size: 11px;
-				line-height: 1.7;
-				letter-spacing: normal;
-				color: #8795a2;
+			&[disabled] {
+				pointer-events: none;
+				cursor: normal;
+				background-color: #f7f8f9;
+				color: #091440;
 			}
 		}
 	}
 
-	.btn-primary {
-
-		&--size {
-			width: 125px;
-			height: 44px;
-			text-align: center;
-			padding: 0;
+	.checkbox {
+		label {
+			font-size: 11px;
+			line-height: 1.7;
+			letter-spacing: normal;
+			color: #8795a2;
 		}
+	}
+}
+
+.arrow-back {
+	transition: 0.25s;
+
+	&:hover {
+		opacity: 0.6;
+		cursor: pointer;
 	}
 }

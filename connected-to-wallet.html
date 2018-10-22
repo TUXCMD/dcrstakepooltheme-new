@@ -15,7 +15,7 @@
 
 	<body>
     
-	    <nav class="site-header sticky-top py-3 mb-5">
+	    <nav class="site-header sticky-top py-3">
 		    <div class="container">
 		      	<div class="row mx-3 mx-lg-0">
 			        <div class="col-2 px-0 px-md-3">
@@ -75,66 +75,68 @@
             </ul>
         </nav>
 
-		 <div class="container voting">
-	    	<div class="row mx-3">
-	    		<section class="block">
-		    		<div class="col-12 block__title">
-		    			<div class="d-sm-flex d-none justify-content-between align-items-center">
-			    			<h1><span>Connected to Wallet</span> <img src="img/wallet-icon.svg" alt=""></h1>
-			    			<img class="icon--info" src="img/info-icon.svg" data-toggle="modal" data-target="#connectApiKey" alt="">
+		<section class="site-content">
+			<div class="container container--narrow">
+		    	<div class="row mx-3">
+		    		<section class="block">
+			    		<div class="col-12 block__title">
+			    			<div class="d-sm-flex d-none justify-content-between align-items-center">
+				    			<h1><span>Connected to Wallet</span> <img src="img/wallet-icon.svg" alt=""></h1>
+				    			<img class="icon--info" src="img/info-icon.svg" data-toggle="modal" data-target="#connectApiKey" alt="">
+				    		</div>
+				    		<div class="d-flex d-sm-none justify-content-between align-items-start">
+				    			<h1><img src="img/wallet-icon.svg" alt=""> <span>Connected to Wallet</span></h1>
+				    			<img class="icon--info" src="img/info-icon.svg" data-toggle="modal" data-target="#connectApiKey" alt="">
+				    		</div>
 			    		</div>
-			    		<div class="d-flex d-sm-none justify-content-between align-items-start">
-			    			<h1><img src="img/wallet-icon.svg" alt=""> <span>Connected to Wallet</span></h1>
-			    			<img class="icon--info" src="img/info-icon.svg" data-toggle="modal" data-target="#connectApiKey" alt="">
-			    		</div>
-		    		</div>
 
-					<div class="modal fade" id="connectApiKey" tabindex="-1" role="dialog" aria-labelledby="connectSubAddressTitle" aria-hidden="true">
-						<div class="container voting modal-dialog px-0" role="document">
-							<div class="modal-content px-md-3 py-md-4">
-								<div class="modal-header d-md-flex d-none">
-									<h1 class="modal-title d-flex justify-content-between align-items-center" id="connectSubAddressTitle"><img src="img/info-icon-lg.svg" alt=""> <span class="px-3">Submitted Address</span></h1>
-									<button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
-									  <span aria-hidden="true"><img src="img/close-cross-icon.svg" alt=""></span>
-									</button>
-								</div>
-								<div class="modal-header d-md-none d-block mb-3 p-4">
-									<div class="d-flex justify-content-between align-items-center">
+						<div class="modal fade" id="connectApiKey" tabindex="-1" role="dialog" aria-labelledby="connectSubAddressTitle" aria-hidden="true">
+							<div class="container container--narrow modal-dialog px-0" role="document">
+								<div class="modal-content px-md-3 py-md-4">
+									<div class="modal-header d-md-flex d-none">
+										<h1 class="modal-title d-flex justify-content-between align-items-center" id="connectSubAddressTitle"><img src="img/info-icon-lg.svg" alt=""> <span class="px-3">Submitted Address</span></h1>
 										<button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
-										  <span aria-hidden="true"><img src="img/arrow-back--blue.svg" alt=""></span>
+										  <span aria-hidden="true"><img src="img/close-cross-icon.svg" alt=""></span>
 										</button>
-										<h1 class="modal-title" id="connectSubAddressTitle"><img src="img/info-icon-sm.svg" alt=""> <span class="pl-1">Submitted Address</span></h1>
 									</div>
-								</div>
-								<div class="modal-body mx-3 px-sm-5 px-0">
-									<p>When you submit an address, the stake pool binds that address from your wallet together with an address from the stake pool’s voting wallet. This is done by creating a 1-of-2 multisignature script which lets you, the pool, or both parties vote. This “binding” of the wallets means that if you ever delete your current wallet and create a new wallet with a different seed, importing your multisignature script will not work because it contains an address that is not present in your new wallet.</p>
-
-									<p>If you wish to verify that this address belongs to your wallet, you may run the following command:</p>
-
-									<div class="modal-code">
-										<p>
-											$ dcrctl — testnet — wallet getnewaddress dcrctl — testnet — wallet <br>
-											getnewaddress import script <br>
-											121029a6e2ab4298353e42119f22568Fdf96e8faeb9b.ey5121029a6e2ab4298353e42119f2f96e8faeb9b
-										</p>
+									<div class="modal-header d-md-none d-block mb-3 p-4">
+										<div class="d-flex justify-content-between align-items-center">
+											<button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+											  <span aria-hidden="true"><img src="img/arrow-back--blue.svg" alt=""></span>
+											</button>
+											<h1 class="modal-title" id="connectSubAddressTitle"><img src="img/info-icon-sm.svg" alt=""> <span class="pl-1">Submitted Address</span></h1>
+										</div>
 									</div>
+									<div class="modal-body mx-3 px-sm-5 px-0">
+										<p>When you submit an address, the stake pool binds that address from your wallet together with an address from the stake pool’s voting wallet. This is done by creating a 1-of-2 multisignature script which lets you, the pool, or both parties vote. This “binding” of the wallets means that if you ever delete your current wallet and create a new wallet with a different seed, importing your multisignature script will not work because it contains an address that is not present in your new wallet.</p>
 
-									<p>In the result, you will see fields such as “ismine” and “account” if the address is present.</p>
+										<p>If you wish to verify that this address belongs to your wallet, you may run the following command:</p>
+
+										<div class="modal-code">
+											<p>
+												$ dcrctl — testnet — wallet getnewaddress dcrctl — testnet — wallet <br>
+												getnewaddress import script <br>
+												121029a6e2ab4298353e42119f22568Fdf96e8faeb9b.ey5121029a6e2ab4298353e42119f2f96e8faeb9b
+											</p>
+										</div>
+
+										<p>In the result, you will see fields such as “ismine” and “account” if the address is present.</p>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 
-		    		<div class="col-12 block__description--white">
-		    			<p>Your public key address has been accepted and registration is complete. Please, contact your stake pool administrator or support staff if you need to re-register with a new address from a new wallet.</p>
-		    		</div>
-		    		<div class="col-12 mb-5 block__key">
-		    			<h2>Public Key Address</h2>
-	    				<p>5121029a6e2ab4298353e42119f2f96e8faeb9b.ey5121029a6e2ab4298353e42119f2f96e8faeb9b</p>
-		    		</div>
-		    	</section>
-	    	</div>
-	    </div>
+			    		<div class="col-12 block__description--white">
+			    			<p>Your public key address has been accepted and registration is complete. Please, contact your stake pool administrator or support staff if you need to re-register with a new address from a new wallet.</p>
+			    		</div>
+			    		<div class="col-12 mb-5 block__key">
+			    			<h2>Public Key Address</h2>
+		    				<p>5121029a6e2ab4298353e42119f2f96e8faeb9b.ey5121029a6e2ab4298353e42119f2f96e8faeb9b</p>
+			    		</div>
+			    	</section>
+		    	</div>
+		    </div>
+		</section>
 
 	    <footer class="footer">
 			<div class="container">

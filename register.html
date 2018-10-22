@@ -15,7 +15,7 @@
 
 	<body>
     
-	    <nav class="site-header sticky-top py-3 mb-5">
+	    <nav class="site-header sticky-top py-3">
 		    <div class="container">
 		      	<div class="row mx-3 mx-lg-0">
 			        <div class="col-2 px-0 px-md-3">
@@ -75,28 +75,31 @@
             </ul>
         </nav>
 
-	    <div class="container voting mb-5 mb-sm-0">
-	    	<div class="row justify-content-center">
-    			<form id="Register" class="col-sm-9 col-11 mt-5 p-sm-5 px-2 py-5 bg-white public-key public-key--login text-center" data-empty="" action="#" method="post">
-    				<div class="d-flex justify-content-center" style="margin-top: -68px;">
-						<a class="btn mb-5 btn--login" href="login.html">Login</a><a class="btn btn--register mb-5 login" href="register.html">Register</a>
-					</div>
-					<h1 class="mb-4 text--size-27">Register</h1>
-					<input type="email" id="inputEmail" class="form-control mb-4 w-75 mx-auto" placeholder="Email" required autofocus>
-					<input type="password" id="inputPassword" class="form-control mb-4 w-75 mx-auto" placeholder="Password" required>
-					<input type="password" id="inputPasswordRepeat" class="form-control mb-4 w-75 mx-auto" placeholder="Repeat your new password" required>
-					<div class="d-flex justify-content-between align-items-center w-75 mx-auto mb-5 checkbox">
-						<label class="control control-checkbox align-items-center">
-							<input type="checkbox" value="remember-me" class="mr-3"> I’m not a robot 
-							<div class="control_indicator"></div>
-						</label>
-						<img src="img/recaptcha-logo.svg" alt="">
-					</div>
-					<input class="btn btn-primary mb-3" type="submit" value="Register">
-					
-				</form>
-	    	</div>
-	    </div>
+		<section class="site-content site-content--center-align py-5">
+		    <div class="container container--narrow">
+		    	<div class="row justify-content-center">
+	    			<form id="Register" class="col-sm-9 col-11 p-sm-5 px-2 py-5 form block--shadow text-center" data-empty="" action="#" method="post">
+	    				<div class="d-flex justify-content-center form__tabs">
+							<a class="btn" href="login.html">Login</a>
+							<a class="btn" href="register.html" disabled>Register</a>
+						</div>
+						<h1 class="mb-4 text--size-27">Register</h1>
+						<input type="email" id="inputEmail" class="form-control mb-4 w-75 mx-auto" placeholder="Email" required autofocus>
+						<input type="password" id="inputPassword" class="form-control mb-4 w-75 mx-auto" placeholder="Password" required>
+						<input type="password" id="inputPasswordRepeat" class="form-control mb-4 w-75 mx-auto" placeholder="Repeat your new password" required>
+						<div class="d-flex justify-content-between align-items-center w-75 mx-auto mb-5 checkbox">
+							<label class="control control-checkbox align-items-center">
+								<input type="checkbox" value="remember-me" class="mr-3"> I’m not a robot 
+								<div class="control_indicator"></div>
+							</label>
+							<img src="img/recaptcha-logo.svg" alt="">
+						</div>
+						<input class="btn btn-primary mb-3" type="submit" value="Register">
+						
+					</form>
+		    	</div>
+		    </div>
+		</section>
 
 	    <footer class="footer">
 			<div class="container">

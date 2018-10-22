@@ -3465,6 +3465,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/scss/partials/_carousels.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/partials/_carousels.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/scss/partials/_footer.scss": {
 		"aP": 0,
 		"bl": 0,
