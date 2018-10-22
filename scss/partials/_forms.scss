@@ -1,0 +1,153 @@
+.form {
+
+	.col-12 {
+		background: #fff;
+		padding: 20px 30px;
+	}
+
+	label {
+		font-size: 13px;
+		line-height: 1.31;
+		letter-spacing: normal;
+		color: #48566e;
+		margin-bottom: 10px;
+
+		@include media-breakpoint-up(md) {
+			margin-bottom: 0;
+		}
+	}
+
+	.form-control {
+		font-size: 13px;
+		font-weight: normal;
+		line-height: 1.31;
+		letter-spacing: normal;
+		height: auto;
+		padding: 0 2px;
+		background: transparent;
+		color: #48566e;
+		border: 0;
+		border-bottom: 1px solid #c4cbd2;
+		border-radius: 0;
+		cursor: pointer;
+
+		&:hover {
+			box-shadow: none;
+			border-color: #545c6b;
+		}
+
+		&:focus {
+			box-shadow: none;
+			border-color: #1a59f7;
+		}
+
+		&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+			color: #c4cbd2;
+			opacity: 0.5;
+		}
+		&::-moz-placeholder { /* Firefox 19+ */
+			color: #c4cbd2;
+			opacity: 0.5;
+		}
+		&:-ms-input-placeholder { /* IE 10+ */
+			color: #c4cbd2;
+			opacity: 0.5;
+		}
+		&:-moz-placeholder { /* Firefox 18- */
+			color: #c4cbd2;
+			opacity: 0.5;
+		}
+	}
+
+	input {
+		&:not(:placeholder-shown) {
+			border-color: #1a59f7;
+		}
+
+		&:placeholder-shown {
+			border-bottom: 1px solid #c4cbd2;
+		}
+	}
+
+	&--login {
+		box-shadow: 0 15px 34px 0 rgba(9, 20, 64, 0.21);
+
+		a {
+			font-size: 11px;
+			line-height: 1.27;
+			letter-spacing: normal;
+			color: #8795a2;
+		}
+
+		.btn-primary {
+			padding: 14px 47px !important;
+		}
+
+		.position-absolute {
+			top: -20px;
+		}
+
+		.btn {
+
+			&--login {
+				font-size: 13px;
+				line-height: 1.31;
+				letter-spacing: normal;
+				color: #091440;
+				background-color: #ffffff;
+				border: solid 1px #e7eaed;
+				border-radius: 0.25rem 0 0 0.25rem;
+
+				@include fluid-props(padding-top padding-bottom, $sm, $xl, 10px, 12px);
+				@include fluid-props(padding-left padding-right, $sm, $xl, 34px, 71px);
+			}
+
+			&--register {
+				font-size: 13px;
+				line-height: 1.31;
+				letter-spacing: normal;
+				color: #8997a5;
+				background-color: #f7f8f9;
+				border: solid 1px #e7eaed;
+				border-left: 0;
+				border-radius: 0 0.25rem 0.25rem 0;
+
+				@include fluid-props(padding-top padding-bottom, $sm, $xl, 10px, 12px);
+				@include fluid-props(padding-left padding-right, $sm, $xl, 26px, 64px);
+			}
+
+			&:hover {
+
+				&:not([disabled]) {
+					color: #fff;
+					background-color: #1a59f7;
+					border-color: #1a59f7;
+				}
+			}
+		}
+
+		.form-control {
+			padding: 0 10px !important;
+		}
+
+		.checkbox {
+
+			label {
+				font-size: 11px;
+				line-height: 1.7;
+				letter-spacing: normal;
+				color: #8795a2;
+			}
+		}
+	}
+
+	.btn-primary {
+
+		&--size {
+			width: 125px;
+			height: 44px;
+			text-align: center;
+			padding: 0;
+		}
+	}
+}
