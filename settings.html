@@ -15,7 +15,7 @@
 
 	<body>
     
-	    <nav class="site-header sticky-top py-3 mb-5">
+	    <nav class="site-header sticky-top py-3">
 		    <div class="container">
 		      	<div class="row mx-3 mx-lg-0">
 			        <div class="col-2 px-0 px-md-3">
@@ -75,73 +75,76 @@
             </ul>
         </nav>
 
-	    <div class="container container--narrow mb-5">
-	    	<div class="row justify-content-center">
-	    		<div class="col-12 mb-2 px-5">
-	    			<h1>Change Email Address</h1>
-	    		</div>
-	    		<div class="w-100"></div>
-	    		<form class="col-12 public-key">
-		    		<div class="col-12 mb-4 p-4 bg-white">
-		    			<div class="form-group row px-2 mb-0 align-items-center">
-							<label for="inputNewEmail" class="col-5 public-key--address mb-0">New email:</label>
-							<div class="col-7">
-							  <input type="text" class="form-control" id="inputNewEmail" placeholder="New email">
-							</div>
-							<div class="w-100 mb-4"></div>
-							<label for="inputPassword" class="col-5 public-key--address mb-0">Password:</label>
-							<div class="col-7">
-							  <input type="text" class="form-control" id="inputPassword" placeholder="Password">
-							</div>
-						</div>
-		    		</div>
-		    		<button type="submit" class="btn btn-primary mb-2 btn-primary--size">Change Email</button>
-		    	</form>
-				<div class="w-100 mb-5"></div>
-		    	<div class="col-12 mb-2 px-5">
-	    			<h1>Change Password</h1>
-	    		</div>
-	    		<div class="w-100"></div>
-	    		<form class="col-12 public-key">
-		    		<div class="col-12 mb-4 p-4 bg-white">
-		    			<div class="form-group row px-2 mb-0 align-items-center">
-							<label for="inputCurrentPassword" class="col-5 public-key--address mb-0">Current password:</label>
-							<div class="col-7">
-							  <input type="text" class="form-control" id="inputCurrentPassword" placeholder="Current password:">
-							</div>
-							<div class="w-100 mb-4"></div>
-							<label for="inputNewPassword" class="col-5 public-key--address mb-0">New password:</label>
-							<div class="col-7">
-							  <input type="text" class="form-control" id="inputNewPassword" placeholder="New password">
-							</div>
-							<div class="w-100 mb-4"></div>
-							<label for="inputRepeatPassword" class="col-5 public-key--address mb-0">Repeat password:</label>
-							<div class="col-7">
-							  <input type="text" class="form-control" id="inputRepeatPassword" placeholder="Repeat your new password">
-							</div>
-						</div>
-		    		</div>
-		    		<button type="submit" class="btn btn-primary mb-2 btn-primary--size">Update Password</button>
-		    	</form>
-				<div class="w-100 mb-5"></div>
-		    	<div class="col-12 mb-2 px-5">
-	    			<h1>Delete Account</h1>
-	    		</div>
-	    		<div class="w-100"></div>
-	    		<form class="col-12 public-key">
-		    		<div class="col-12 mb-4 p-4 bg-white">
-		    			<div class="form-group row px-2 mb-0 align-items-center">
-							<label for="inputPassword" class="col-5 public-key--address mb-0">Password:</label>
-							<div class="col-7">
-							  <input type="text" class="form-control" id="inputPassword" placeholder="Password">
-							</div>
-						</div>
-		    		</div>
-		    		<p class="d-flex align-items-center warning"><img class="mr-2" src="img/warning-sign.svg" alt=""> When you delete your account, lorem ipsum dolor sit amet.</p>
-		    		<button type="submit" class="btn btn-primary mb-2 btn-primary--size">Delete</button>
-		    	</form>
-	    	</div>
-	    </div>
+		<section class="site-content">
+		    <div class="container container--narrow">
+		    	<div class="row mx-3 justify-content-center">
+			    	<section class="block">
+			    		<div class="col-12 block__title">
+			    			<h1>Change Email Address</h1>
+			    		</div>
+				    	<form class="w-100 form form--narrow-inputs">
+				    		<div class="col-12 mb-4">
+				    			<div class="form-group row mb-0 align-items-center">
+									<label for="inputNewEmail" class="col-md-2 pr-0">New email:</label>
+									<div class="col-md-10">
+									  <input type="email" class="form-control" id="inputNewEmail" placeholder="New email">
+									</div>
+									<label for="inputPassword" class="col-md-2 pr-0">Password:</label>
+									<div class="col-md-10">
+									  <input type="text" class="form-control" id="inputPassword" placeholder="Password">
+									</div>
+								</div>
+				    		</div>
+				    		<button type="submit" class="btn mb-2">Change Email</button>
+				    	</form>
+				    </section>
+					
+					<section class="block">
+				    	<div class="col-12 block__title">
+			    			<h1>Change Password</h1>
+			    		</div>
+				    	<form class="w-100 form form--narrow-inputs">
+				    		<div class="col-12 mb-4">
+				    			<div class="form-group row mb-0 align-items-center">
+									<label for="inputCurrentPassword" class="col-md-2 pr-0">Current password:</label>
+									<div class="col-md-10">
+									  <input type="email" class="form-control" id="inputCurrentPassword" placeholder="Current password">
+									</div>
+									<label for="inputNewPassword" class="col-md-2 pr-0">New password:</label>
+									<div class="col-md-10">
+									  <input type="text" class="form-control" id="inputNewPassword" placeholder="New password">
+									</div>
+									<label for="inputRepeatPassword" class="col-md-2 pr-0">Repeat password:</label>
+									<div class="col-md-10">
+									  <input type="text" class="form-control" id="inputRepeatPassword" placeholder="Repeat password">
+									</div>
+								</div>
+				    		</div>
+				    		<button type="submit" class="btn mb-2">Update Password</button>
+				    	</form>
+					</section>
+
+					<section class="block">
+			    		<div class="col-12 block__title">
+			    			<h1>Delete Account</h1>
+			    		</div>
+				    	<form class="w-100 form form--narrow-inputs">
+				    		<div class="col-12 mb-4">
+				    			<div class="form-group row mb-0 align-items-center">
+									<label for="inputPassword" class="col-md-2 pr-0">Password:</label>
+									<div class="col-md-10">
+									  <input type="email" class="form-control" id="inputPassword" placeholder="Password">
+									</div>
+								</div>
+				    		</div>
+				    		<p class="d-flex align-items-center warning"><img class="mr-2" src="img/warning-sign.svg" alt=""> When you delete your account, lorem ipsum dolor sit amet.</p>
+				    		<button type="submit" class="btn mb-2">Delete</button>
+				    	</form>
+			    	</section>
+
+		    	</div>
+		    </div>
+		</section>
 
 	    <footer class="footer">
 			<div class="container">

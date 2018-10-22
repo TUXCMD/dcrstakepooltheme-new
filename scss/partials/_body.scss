@@ -85,9 +85,9 @@
 .status {
 	padding: 5px 8px;
 	border-radius: 5px;
-		background-color: #d4f0fd;
-		font-size: 13px;
-		font-weight: normal;
+	background-color: #d4f0fd;
+	font-size: 13px;
+	font-weight: normal;
 	line-height: 1.31;
 	letter-spacing: normal;
 	color: #0c1e3e;
@@ -149,13 +149,6 @@
 		border-top: 1px solid #edeff1;
 		color: #48566e;
 	}
-}
-
-.warning {
-	font-size: 11px;
-	line-height: 1.27;
-	letter-spacing: normal;
-	color: #fd704a;
 }
 
 .update-btn {
@@ -246,19 +239,6 @@
 
 .bg-checked {
 	background-color: #e9f8fe;
-}
-
-.tooltip-inner {
-	font-size: 11px;
-	padding: 2px 5px;
-	background-color: #e6eaed;
-	color: #091440;
-	border-radius: 2px;
-	box-shadow: 0 2px 3px 0 rgba(9, 20, 64, 0.21);
-}
-
-.tooltip .arrow {
-	display: none !important;
 }
 
 .circle {
