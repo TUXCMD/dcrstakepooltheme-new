@@ -1,47 +1,48 @@
-footer {
+.footer {
+
 	background-color: #091440;
+	position: absolute;
+    width: 100%;
+    bottom: 0;
 
-	.footer {
+	&--content {
+		padding: 30px 0;
 
-		&--content {
-			padding: 30px 0;
+		@include media-breakpoint-down(sm) {
+			padding: 30px;
+		}
+
+		&__text {
+			font-size: 13px;
+			line-height: 1.31;
+			color: #8997a5;
+			overflow-wrap: break-word;
 
 			@include media-breakpoint-down(sm) {
-				padding: 30px;
+				text-align: center !important;
 			}
+		}
 
-			&__text {
-				font-size: 13px;
-				line-height: 1.31;
-				color: #8997a5;
-				overflow-wrap: break-word;
+		&__bg {
+			background-color: rgba(237, 239, 241, 0.1);
+		}
 
-				@include media-breakpoint-down(sm) {
-					text-align: center !important;
-				}
+		&__bgx {
+			background-color: rgba(237, 239, 241, 0.1);
+
+			@include media-breakpoint-down(sm) {
+				background-color: transparent;
 			}
+		}
 
-			&__bg {
-				background-color: rgba(237, 239, 241, 0.1);
-			}
+		blockquote {
+			margin-left: 12px;
+		    padding-left: 14px;
+		    border-left: solid 1px #dbdee0;
+		    overflow-wrap: break-word;
 
-			&__bgx {
-				background-color: rgba(237, 239, 241, 0.1);
-
-				@include media-breakpoint-down(sm) {
-					background-color: transparent;
-				}
-			}
-
-			blockquote {
-				margin-left: 12px;
-			    padding-left: 14px;
-			    border-left: solid 1px #dbdee0;
-			    overflow-wrap: break-word;
-
-			    @include media-breakpoint-down(sm) {
-					text-align: left !important;
-				}
+		    @include media-breakpoint-down(sm) {
+				text-align: left !important;
 			}
 		}
 	}

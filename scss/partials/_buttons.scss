@@ -1,0 +1,26 @@
+input[type="submit"], button[type="submit"] {
+	padding: 14px 19px;
+	border-radius: 5px;
+	background-color: #e7eaed;
+	border-color: #e7eaed;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 1.23;
+	letter-spacing: normal;
+	color: #8997a5;
+
+	&:not([disabled]) {
+
+		&:hover {
+			color: #fff;
+			background-color: #1a59f7;
+			border-color: #1a59f7;
+		}
+	}
+}
+
+input[type="submit"]:disabled {
+	background-color: #e7eaed;
+	border-color: #e7eaed;
+	cursor: not-allowed;
+}

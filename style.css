@@ -6534,9 +6534,6 @@ body {
       body .container.voting h1 a:hover {
         color: #091440;
         cursor: pointer; }
-    body .container.voting .info-icon:hover {
-      opacity: 0.6;
-      cursor: pointer; }
     body .container.voting .col-x {
       width: 158px; }
       @media (min-width: 576px) and (max-width: 768px) {
@@ -6551,24 +6548,6 @@ body {
       @media (min-width: 320px) and (max-width: 374px) {
         body .container.voting .col-x {
           width: 119px; } }
-    body .container.voting input[type="submit"] {
-      padding: 14px 19px;
-      border-radius: 5px;
-      background-color: #e7eaed;
-      border-color: #e7eaed;
-      font-size: 13px;
-      font-weight: 600;
-      line-height: 1.23;
-      letter-spacing: normal;
-      color: #8997a5; }
-      body .container.voting input[type="submit"]:not([disabled]):hover {
-        color: #fff;
-        background-color: #1a59f7;
-        border-color: #1a59f7; }
-    body .container.voting input[type="submit"]:disabled {
-      background-color: #e7eaed;
-      border-color: #e7eaed;
-      cursor: not-allowed; }
   body .container .voting blockquote, body .container .home blockquote {
     padding: 6px 15px;
     border-left: solid 1px #fd704a;
@@ -6803,21 +6782,11 @@ body {
     border-color: #1a59f7; }
   body .public-key input:placeholder-shown {
     border-bottom: 1px solid #c4cbd2; }
-  body .public-key .btn-primary {
-    padding: 14px 19px;
-    border-radius: 5px;
-    background-color: #e7eaed;
-    border-color: #e7eaed;
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 1.23;
-    letter-spacing: normal;
-    color: #8997a5; }
-    body .public-key .btn-primary--size {
-      width: 125px;
-      height: 44px;
-      text-align: center;
-      padding: 0; }
+  body .public-key .btn-primary--size {
+    width: 125px;
+    height: 44px;
+    text-align: center;
+    padding: 0; }
   body .table-scroll-y .table {
     margin-bottom: 0; }
     body .table-scroll-y .table .thead-light th {
@@ -7057,6 +7026,32 @@ body {
   opacity: 0.6;
   cursor: pointer; }
 
+input[type="submit"], button[type="submit"] {
+  padding: 14px 19px;
+  border-radius: 5px;
+  background-color: #e7eaed;
+  border-color: #e7eaed;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.23;
+  letter-spacing: normal;
+  color: #8997a5; }
+  input[type="submit"]:not([disabled]):hover, button[type="submit"]:not([disabled]):hover {
+    color: #fff;
+    background-color: #1a59f7;
+    border-color: #1a59f7; }
+
+input[type="submit"]:disabled {
+  background-color: #e7eaed;
+  border-color: #e7eaed;
+  cursor: not-allowed; }
+
+.icon--info {
+  transition: 0.25s; }
+  .icon--info:hover {
+    opacity: 0.6;
+    cursor: pointer; }
+
 .modal {
   padding-top: 4rem; }
   .modal__close {
@@ -7115,36 +7110,42 @@ body {
       .modal-body {
         max-height: 100vh; } }
 
-footer {
-  background-color: #091440; }
-  footer .footer--content {
+.footer {
+  background-color: #091440;
+  position: absolute;
+  width: 100%;
+  bottom: 0; }
+  .footer--content {
     padding: 30px 0; }
     @media (max-width: 767.98px) {
-      footer .footer--content {
+      .footer--content {
         padding: 30px; } }
-    footer .footer--content__text {
+    .footer--content__text {
       font-size: 13px;
       line-height: 1.31;
       color: #8997a5;
       overflow-wrap: break-word; }
       @media (max-width: 767.98px) {
-        footer .footer--content__text {
+        .footer--content__text {
           text-align: center !important; } }
-    footer .footer--content__bg {
+    .footer--content__bg {
       background-color: rgba(237, 239, 241, 0.1); }
-    footer .footer--content__bgx {
+    .footer--content__bgx {
       background-color: rgba(237, 239, 241, 0.1); }
       @media (max-width: 767.98px) {
-        footer .footer--content__bgx {
+        .footer--content__bgx {
           background-color: transparent; } }
-    footer .footer--content blockquote {
+    .footer--content blockquote {
       margin-left: 12px;
       padding-left: 14px;
       border-left: solid 1px #dbdee0;
       overflow-wrap: break-word; }
       @media (max-width: 767.98px) {
-        footer .footer--content blockquote {
+        .footer--content blockquote {
           text-align: left !important; } }
+
+body {
+  padding-bottom: 300px; }
 
 img + span {
   vertical-align: middle; }
