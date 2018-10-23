@@ -1,3 +1,4 @@
+//mobile menu triggering
 $('#dismiss').on('click', function () {
     $('#sidebar, .menu-trigger').removeClass('active');
 });
@@ -6,6 +7,7 @@ $('#sidebarCollapse').on('click', function () {
     $('#sidebar, .menu-trigger').addClass('active');
 });
 
+//disables the form submit buttons until the inputs are filled in
 function submitState(el) {
 
     var $form = $(el),
@@ -35,6 +37,7 @@ submitState('#Login');
 submitState('#Register');
 submitState('#Password');
 
+//controls tables with selections and checkboxes
 $("#select_all").click(function(){
 
     if ($("input[type='checkbox']").prop("checked")) {
@@ -93,6 +96,8 @@ $('.form-check-input').change(function () {
   }
 });
 
+
+//dataTable setup
 $(document).ready(function () {
 	$('.dtVerticalScroll').DataTable({
 		"scrollY": "251px",
@@ -105,6 +110,8 @@ $(document).ready(function () {
 	$('.dataTables_length').addClass('bs-select');
 });
 
+
+//flickity carousel setup
 $('.main-carousel').flickity({
 	cellAlign: 'left',
 	contain: true,
@@ -117,6 +124,8 @@ $('.main-carousel').flickity({
 	}
 });
 
+
+//carousel dot tooltip setup
 $(document).ready(function() {
   $('.dot').tooltip({
     placement: 'top',

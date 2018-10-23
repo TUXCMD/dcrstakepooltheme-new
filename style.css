@@ -6624,63 +6624,48 @@ input[type="submit"]:disabled {
 .tooltip .arrow {
   display: none !important; }
 
-.voting--white-block__description, .home--white-block__description {
-  color: #596d81; }
-  .voting--white-block__description span, .home--white-block__description span {
-    color: #0c1e3e; }
+.voting__accordion {
+  background: #fff; }
 
-.voting--white-block__agendas, .home--white-block__agendas {
-  color: #48566e; }
-  .voting--white-block__agendas a, .home--white-block__agendas a {
-    font-weight: 600;
-    color: #2970ff; }
-    .voting--white-block__agendas a.mail, .home--white-block__agendas a.mail {
-      color: #48566e; }
+.voting__block {
+  padding: 20px 30px; }
+  .voting__block h2, .voting__block p {
+    margin-bottom: 0; }
+  .voting__block__description {
+    color: #596d81; }
+    .voting__block__description span {
+      color: #0c1e3e; }
+  .voting__block .btn {
+    padding: 2px 5px 2px 18px;
+    font-size: 13px;
+    line-height: 1.23;
+    letter-spacing: normal;
+    color: #2971ff !important;
+    border-radius: 2px;
+    border: 1px solid #2971ff; }
+    .voting__block .btn span {
+      position: absolute;
+      top: -2px;
+      left: 3px; }
 
-.voting--white-block .btn, .home--white-block .btn {
-  padding: 2px 5px 2px 18px;
-  font-size: 13px;
-  line-height: 1.23;
-  letter-spacing: normal;
-  color: #2971ff;
-  border-radius: 2px;
-  border: 1px solid #2971ff; }
-  .voting--white-block .btn span, .home--white-block .btn span {
-    position: absolute;
-    top: -2px;
-    left: 3px; }
-
-.voting--white-block .btn-outline-primary, .home--white-block .btn-outline-primary {
-  margin-right: 20px;
-  padding: 14px 44px;
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 1.23;
-  letter-spacing: normal;
-  color: #2970ff;
-  border-radius: 5px;
-  border: solid 1px #2970ff; }
-  .voting--white-block .btn-outline-primary:hover, .home--white-block .btn-outline-primary:hover {
-    background-color: #2970ff;
-    color: #fff; }
-
-.voting--input-block, .home--input-block {
+.voting__input {
   background-color: #d4f0fd;
-  color: #091440; }
-  .voting--input-block p, .home--input-block p {
+  color: #091440;
+  padding: 15px 30px; }
+  .voting__input p {
     word-wrap: break-word; }
-  .voting--input-block label, .home--input-block label {
+  .voting__input label {
     display: block;
     position: relative;
     padding-left: 22px;
     cursor: pointer; }
-  .voting--input-block input, .home--input-block input {
+  .voting__input input {
     position: absolute;
     opacity: 0;
     cursor: pointer; }
-    .voting--input-block input:checked ~ .checkmark:after, .home--input-block input:checked ~ .checkmark:after {
+    .voting__input input:checked ~ .checkmark:after {
       display: block; }
-  .voting--input-block .checkmark, .home--input-block .checkmark {
+  .voting__input .checkmark {
     position: absolute;
     top: 1px;
     left: 1px;
@@ -6689,9 +6674,9 @@ input[type="submit"]:disabled {
     border: solid 1px #8997a5;
     border-radius: 50%; }
     @media (max-width: 767.98px) {
-      .voting--input-block .checkmark, .home--input-block .checkmark {
+      .voting__input .checkmark {
         top: 3px; } }
-    .voting--input-block .checkmark:after, .home--input-block .checkmark:after {
+    .voting__input .checkmark:after {
       content: "";
       position: absolute;
       display: none;
@@ -6716,9 +6701,11 @@ input[type="submit"]:disabled {
   width: 100%;
   height: 104px;
   background-color: #ffffff;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0;
+  z-index: 999; }
   .update-btn .btn-outline-primary {
-    margin: 0 80px;
     padding: 14px 44px;
     font-size: 13px;
     font-weight: 600;
@@ -6726,10 +6713,21 @@ input[type="submit"]:disabled {
     letter-spacing: normal;
     color: #2970ff;
     border-radius: 5px;
-    border: solid 1px #2970ff; }
+    border: solid 1px #2970ff;
+    margin-left: 40px;
+    margin-right: 40px; }
+    @media screen and (min-width: 576px) {
+      .update-btn .btn-outline-primary {
+        margin-left: calc(40px + 40 * (100vw - 576px) / 864);
+        margin-right: calc(40px + 40 * (100vw - 576px) / 864); } }
+    @media screen and (min-width: 1440px) {
+      .update-btn .btn-outline-primary {
+        margin-left: 80px;
+        margin-right: 80px; } }
     .update-btn .btn-outline-primary:hover {
       background-color: #2970ff;
-      color: #fff; }
+      color: #fff;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1); }
 
 .control {
   font-family: arial;
