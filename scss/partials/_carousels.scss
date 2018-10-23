@@ -1,6 +1,10 @@
 .main-carousel {
 	margin-bottom: 20px;
 
+	&__image-container {
+		background-color: #091440;
+	}
+
 	.carousel-cell {
 		width: 100%;
 		height: 321px;
@@ -20,7 +24,7 @@
 
 	/* position dots in carousel */
 	.flickity-page-dots {
-		left: 20%;
+		left: 22%;
 		bottom: 15px;
 		cursor: pointer;
 		@include media-breakpoint-down(md) {

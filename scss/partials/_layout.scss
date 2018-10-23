@@ -97,6 +97,40 @@
 		}
 	}
 
+	&__content {
+		background-color: #fff;
+		padding: 20px 30px;
+
+		p {
+			color: #48566e;
+			line-height: 1.4;
+		}
+
+		span {
+		    border-radius: 2px;
+		    background-color: #d4f0fd;
+		    padding: 0 5px;
+		    color: #48566e;
+		}
+		
+		.btn-outline-primary {
+			margin-right: 20px;
+		    padding: 14px 44px;
+		    font-size: 13px;
+		    font-weight: 600;
+		    line-height: 1.23;
+		    letter-spacing: normal;
+		    color: #2970ff;
+		    border-radius: 5px;
+		    border: solid 1px #2970ff;
+
+		    &:hover {
+		    	background-color: #2970ff;
+    			color: #fff;
+		    }
+		}
+	}
+
 	&__key {
 		background-color: #fff;
 		padding: 20px 15px;

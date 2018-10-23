@@ -6535,6 +6535,8 @@ input[type="submit"]:disabled {
   /* fill-in selected dot */
   /* icon color */
   /* position outside */ }
+  .main-carousel__image-container {
+    background-color: #091440; }
   .main-carousel .carousel-cell {
     width: 100%;
     height: 321px;
@@ -6549,7 +6551,7 @@ input[type="submit"]:disabled {
       .main-carousel .carousel-cell {
         height: 560px; } }
   .main-carousel .flickity-page-dots {
-    left: 20%;
+    left: 22%;
     bottom: 15px;
     cursor: pointer; }
     @media (max-width: 991.98px) {
@@ -6927,6 +6929,30 @@ input[type="submit"]:disabled {
     .block__description--white {
       background-color: #fff;
       margin-bottom: 20px; }
+  .block__content {
+    background-color: #fff;
+    padding: 20px 30px; }
+    .block__content p {
+      color: #48566e;
+      line-height: 1.4; }
+    .block__content span {
+      border-radius: 2px;
+      background-color: #d4f0fd;
+      padding: 0 5px;
+      color: #48566e; }
+    .block__content .btn-outline-primary {
+      margin-right: 20px;
+      padding: 14px 44px;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.23;
+      letter-spacing: normal;
+      color: #2970ff;
+      border-radius: 5px;
+      border: solid 1px #2970ff; }
+      .block__content .btn-outline-primary:hover {
+        background-color: #2970ff;
+        color: #fff; }
   .block__key {
     background-color: #fff;
     padding: 20px 15px; }
@@ -7236,6 +7262,10 @@ input[type="submit"]:disabled {
       @media screen and (min-width: 1440px) {
         .modal-code p {
           font-size: 11px; } }
+
+.table th,
+.table td {
+  padding: 0.45rem; }
 
 .table .thead-light th {
   background-color: #edeff1;
