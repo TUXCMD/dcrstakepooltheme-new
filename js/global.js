@@ -41,11 +41,13 @@ $("#select_all").click(function(){
         $(':checkbox').prop('checked', false);
         $('table tr').removeClass('bg-checked');
         $(this).text('Select all');
+        $('.update-btn').removeClass("d-flex");
     }
     else {
         $(':checkbox').prop('checked', true);
         $('table tr').addClass('bg-checked');
         $(this).text('Discard all');
+        $('.update-btn').addClass('d-flex');
     }    
 
  });
