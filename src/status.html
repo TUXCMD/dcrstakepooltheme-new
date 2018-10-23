@@ -1,16 +1,14 @@
 <!doctype html>
 <html lang="en">
+  	
   	<head>
-	    <meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	    <meta name="description" content="">
-	    <meta name="author" content="">
-	    <link rel="icon" href="favicon.png">
-
-	    <title>Password Reset</title>
-
-	    <!-- Custom styles for this template -->
-	    <link href="style.css" rel="stylesheet">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="img/favicon.png">
+		<title>Status</title>
+		<link href="styles/style.min.css" rel="stylesheet">
 	</head>
 
 	<body>
@@ -75,31 +73,79 @@
             </ul>
         </nav>
 
-		<section class="site-content site-content--center-align">
-		    <div class="container container--narrow">
-		    	<div class="row justify-content-center">
-	    			<form id="Password" class="col-lg-8 col-11 p-sm-5 px-2 py-5 form block--shadow">
-	    				<div class="mb-1 text-left">
-	    					<a href="#"><img class="arrow-back" src="img/arrow-back.svg" alt=""></a>
-	    				</div>
-	    				<div class="text-center">
-							<h1>Password Reset</h1>
-							<input type="email" id="inputEmail" class="form-control mb-4 w-75 mx-auto" placeholder="Email" required autofocus>
-							<div class="d-flex justify-content-between align-items-center w-75 mx-auto mb-5 checkbox">
-								<label class="control control-checkbox">
-									<input type="checkbox" value="remember-me" class="mr-3"> I’m not a robot 
-									<div class="control_indicator"></div>
-								</label>
-								<img src="img/recaptcha-logo.svg" alt="">
+		<section class="site-content">
+			<div class="container container--narrow">
+		    	<div class="row mx-3">
+		    		<section class="block">
+			    		<div class="col-12 block__title">
+			    			<h1 class="d-flex justify-content-between align-items-center"><span>Status</span> <div class="status">RPC Status: OK</div></h1>
+			    		</div>
+			    		<div class="col-12 mb-3 px-0">
+			    			<div class="table-scroll-y table-responsive text-nowrap">
+					    		<table class="table" cellspacing="0" width="100%">
+									<thead class="thead-light">
+										<tr>
+											<th scope="col" class="text-center">Stakepool Number</th>
+											<th scope="col" class="text-center">GRPC Connection Number</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="table-light">
+											<td class="text-center">0</td>
+											<td class="text-center">Ready</td>
+										</tr>
+										<tr class="table-light">
+											<td class="text-center">1</td>
+											<td class="text-center">Ready</td>
+										</tr>
+										<tr class="table-light">
+											<td class="text-center">2</td>
+											<td class="text-center">Ready</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
-							<input class="btn btn-primary mb-3" type="submit" value="Reset Password">
+			    		</div>
+			    		<div class="col-12 px-0">
+			    			<div class="table-scroll-y table-responsive text-nowrap">
+								<table class="table" cellspacing="0" width="100%">
+									<thead class="thead-light">
+										<tr>
+											<th scope="col" class="text-center">Wallet Number</th>
+											<th scope="col" class="text-center">Connected</th>
+											<th scope="col" class="text-center">DaemonConnected</th>
+											<th scope="col" class="text-center">EnableVoting</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="table-light">
+											<td class="text-center">0</td>
+											<td class="text-center">True</td>
+											<td class="text-center">True</td>
+											<td class="text-center">True</td>
+										</tr>
+										<tr class="table-light">
+											<td class="text-center">1</td>
+											<td class="text-center">True</td>
+											<td class="text-center">True</td>
+											<td class="text-center">True</td>
+										</tr>
+										<tr class="table-light">
+											<td class="text-center">2</td>
+											<td class="text-center">True</td>
+											<td class="text-center">True</td>
+											<td class="text-center">True</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 						</div>
-					</form>
+					</section>
 		    	</div>
 		    </div>
 		</section>
 
-	   	<footer class="footer">
+	    <footer class="footer">
 			<div class="container">
 				<div class="row mx-3 mx-lg-0">
 					<div class="col-md-8 col-12 px-0 px-lg-3 footer__column">
@@ -125,19 +171,13 @@
 			</div>
 		</footer>
 
-		
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script>window.jQuery || document.write('<script src="js/vendor/jquery-slim.min.js"><\/script>')</script>
-		<script src="js/vendor/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/vendor/holder.min.js"></script>
-		<script src="js/global.min.js"></script>
-		<script>
-		  Holder.addTheme('thumb', {
-		    bg: '#55595c',
-		    fg: '#eceeef',
-		    text: 'Thumbnail'
-		  });
-		</script>
+		<script src="scripts/vendor/jquery-slim.min.js"></script>
+	    <script src="scripts/vendor/popper.min.js"></script>
+	    <script src="scripts/vendor/bootstrap.min.js"></script>
+	    <script src="scripts/vendor/flickity.pkgd.min.js"></script>
+	    <script src="scripts/vendor/jquery.dataTables.min.js"></script>
+	    <script src="scripts/vendor/dataTables.bootstrap4.min.js"></script>
+	    <script src="scripts/global.min.js"></script>
+
 	</body>
 </html>
