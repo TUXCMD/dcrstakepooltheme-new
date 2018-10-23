@@ -3,11 +3,16 @@
 Fork/clone the repo and then run
 
 ```sh
-$ gulp
+$ npm install
 ```
-to create the dist folder.
+to install dependencies.
 
 And then run
+
+```sh
+$ gulp
+```
+to build the dist files and
 
 ```sh
 $ gulp watch
