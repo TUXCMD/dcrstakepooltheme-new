@@ -150,6 +150,7 @@
 				line-height: 1.13;
 				color: #8997a5;
 				display: block;
+				transition: 0.25s;
 
 				@include media-breakpoint-down(sm) {
 					padding: 22px 30px 22px;
@@ -162,6 +163,7 @@
 					color: #091440;
 					text-decoration: none;
 					cursor: pointer;
+					transition: 0.25s;
 				}
 			}
 		}
