@@ -12,7 +12,7 @@
 	}
 
 	&-close {
-		margin: -14px 0 4px 0;
+		margin: -20px 0 4px 0;
 		padding: 0;
 		cursor: pointer;
 		-webkit-appearance: none !important;
@@ -20,7 +20,7 @@
 	    background: transparent;
 
 		@include media-breakpoint-down(sm) {
-			margin: 0;
+			//margin: 0;
 		}
 
 		&:focus {
@@ -79,6 +79,7 @@
   		box-shadow: 0 15px 34px 0 rgba(9, 20, 64, 0.21);
   		border: 0;
   		border-radius: 0;
+	    max-height: calc(100vh - 150px);
 	}
 
 	&-title {

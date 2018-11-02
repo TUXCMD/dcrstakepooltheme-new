@@ -21,3 +21,9 @@ html {
 	position: relative;
 	min-height: 100%;
 }
+
+@include media-breakpoint-down(md) {
+	.tooltip {
+        display: none !important;
+    }
+}

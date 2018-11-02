@@ -42,6 +42,14 @@
 		flex: 0;
 		@extend .py-5;
 	}
+
+	&--form-only {
+		height: calc(100vh - 60px);
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    padding: 0 !important;
+	}
 }
 
 .block {
@@ -128,6 +136,11 @@
 		    	background-color: #2970ff;
     			color: #fff;
 		    }
+
+		    &--inverted {
+		    	background-color: #2970ff;
+    			color: #fff;
+		    }
 		}
 	}
 
@@ -210,7 +223,7 @@
 		}
 
 		p {
-	    	color: #48566e;
+	    	color: #596D81;
 		}
 	}
 

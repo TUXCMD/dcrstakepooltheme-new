@@ -8,6 +8,7 @@ input[type="submit"], button[type="submit"] {
 	line-height: 1.23;
 	letter-spacing: normal;
 	color: #8997a5;
+    min-width: 125px;
 
 	&:not([disabled]) {
 
@@ -22,5 +23,6 @@ input[type="submit"], button[type="submit"] {
 input[type="submit"]:disabled {
 	background-color: #e7eaed;
 	border-color: #e7eaed;
+    color: #8997a5;
 	cursor: not-allowed;
 }

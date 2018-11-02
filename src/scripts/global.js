@@ -32,10 +32,13 @@ function submitState(el) {
         $submit.removeAttr('disabled').attr('title', 'click to submit');
       }
     });
-  }
+}
 submitState('#Login');
 submitState('#Register');
-submitState('#Password');
+submitState('#Reset');
+submitState('#ChangeEmail');
+submitState('#ChangePassword');
+submitState('#DeleteAccount');
 
 //controls tables with selections and checkboxes
 $("#select_all").click(function(){

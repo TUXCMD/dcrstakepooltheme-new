@@ -49,11 +49,16 @@
 	    top: 0;
     	height: 100%;
 
+    	p {
+    		color: #48566e;
+    	}
+
     	@include media-breakpoint-up(md) {
     		position: absolute;
 
     		p {
     			text-align: right;
+    			color: #8997a5;
     		}
     	}
 
