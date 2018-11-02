@@ -22,7 +22,7 @@
 
 	.carousel-cell {
 		width: 100%;
-		height: 321px;
+		height: 350px;
 		margin-right: 20px;
 
 		@include media-breakpoint-down(md) {
@@ -44,36 +44,6 @@
 		cursor: pointer;
 		@include media-breakpoint-down(md) {
 			left: auto;
-		}
-	}
-	/* white circles */
-	.flickity-page-dots .dot {
-		width: 10px;
-		height: 10px;
-		opacity: 1;
-		background: #e6eaed;
-		vertical-align: middle;
-
-		&:hover {
-			border: 2px solid #e6eaed;
-			background: #fff;
-		}
-
-		@include media-breakpoint-down(md) {
-			width: 20px;
-			height: 20px;
-		}
-	}
-	/* fill-in selected dot */
-	.flickity-page-dots .dot.is-selected {
-		background: transparent;
-		width: 16px;
-		height: 16px;
-		border: solid 2px #2970ff;
-
-		@include media-breakpoint-down(md) {
-			width: 26px;
-			height: 26px;
 		}
 	}
 
@@ -140,4 +110,83 @@
 
 .tooltip .arrow {
 	display: none !important;
+}
+
+.carousel-nav {
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    text-align: center;
+    list-style: none;
+    
+    @include media-breakpoint-down(md) {
+    	display: flex;
+    	align-items: center;
+    }
+
+    @include media-breakpoint-up(lg) {
+		height: 20px;
+	}
+
+    li {
+		display: inline-block;
+		cursor: pointer;
+	    vertical-align: middle;
+
+		@include media-breakpoint-down(md) {
+			width: 100%;
+		}
+
+		&:first-child {
+			@include media-breakpoint-up(lg) {
+				margin-right: 20px;
+			}
+		}
+    }
+
+    /* white circles */
+	&__dot {
+		&:before {
+			content: '';
+			width: 10px;
+			height: 10px;
+			opacity: 1;
+			background: #e6eaed;
+			vertical-align: middle;
+		    border-radius: 50%;
+		    cursor: pointer;
+		    display: block;
+	        margin: 0 auto;
+
+		    &:hover {
+				border: 2px solid #e6eaed;
+				background: #fff;
+			}
+
+			@include media-breakpoint-down(md) {
+				width: 20px;
+				height: 20px;
+				
+			}
+
+			@include media-breakpoint-up(lg) {
+				margin-right: 20px;
+			}
+		}
+
+		&.is-selected {
+			&:before {
+				content: '';
+				background: transparent;
+				width: 16px;
+				height: 16px;
+				border: solid 2px #2970ff;
+
+				@include media-breakpoint-down(md) {
+					width: 26px;
+					height: 26px;
+				}
+			}
+		}
+	}
 }
