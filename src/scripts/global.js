@@ -35,6 +35,7 @@ function submitState(el) {
 }
 submitState('#Login');
 submitState('#Register');
+submitState('#Password');
 submitState('#Reset');
 submitState('#ChangeEmail');
 submitState('#ChangePassword');

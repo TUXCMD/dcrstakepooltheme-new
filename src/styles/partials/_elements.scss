@@ -56,6 +56,8 @@
 		    position: absolute;
 		    opacity: 0;
 		    cursor: pointer;
+		    margin-right: 0 !important;
+    		width: 5px;
 
 			    &:checked ~ .checkmark:after {
 			    display: block;
@@ -119,21 +121,7 @@
     }
 
 	.btn-outline-primary {
-		padding: 14px 44px;
-		font-size: 13px;
-		font-weight: 600;
-		line-height: 1.23;
-		letter-spacing: normal;
-		color: #2970ff;
-		border-radius: 5px;
-		border: solid 1px #2970ff;
 		@include fluid-props(margin-left margin-right, $sm, $xl, 40px, 80px);
-
-		&:hover {
-			background-color: #2970ff;
-			color: #fff;
-			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
-		}
 	}
 }
 

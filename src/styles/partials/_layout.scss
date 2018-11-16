@@ -123,24 +123,6 @@
 		
 		.btn-outline-primary {
 			margin-right: 20px;
-		    padding: 14px 44px;
-		    font-size: 13px;
-		    font-weight: 600;
-		    line-height: 1.23;
-		    letter-spacing: normal;
-		    color: #2970ff;
-		    border-radius: 5px;
-		    border: solid 1px #2970ff;
-
-		    &:hover {
-		    	background-color: #2970ff;
-    			color: #fff;
-		    }
-
-		    &--inverted {
-		    	background-color: #2970ff;
-    			color: #fff;
-		    }
 		}
 	}
 
@@ -217,13 +199,21 @@
 		text-align: center;
 
 		h1 {
-			@include fluid-props(font-size, $sm, $xl, 24px, 27px);
+			@include fluid-props(font-size, $sm, $xl, 22px, 27px);
 			@include fluid-props(margin-bottom, $sm, $xl, 30px, 40px);
 			line-height: 1.26;
 		}
 
 		p {
 	    	color: #596D81;
+
+	    	a {
+	    		color: #2970ff;
+	    	}
+		}
+
+		a {
+			color: #8795a2;
 		}
 	}
 
@@ -252,8 +242,7 @@
 
 .row {
 	&--stats {
-	    margin-left: -30px;
-	    margin-right: -60px;
+	    margin-right: -50px;
 	}
 
 	&--voting {

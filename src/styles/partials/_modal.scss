@@ -12,7 +12,7 @@
 	}
 
 	&-close {
-		margin: -20px 0 4px 0;
+		margin: 4px 0;
 		padding: 0;
 		cursor: pointer;
 		-webkit-appearance: none !important;
@@ -59,6 +59,10 @@
     			text-align: right;
 	    	}
 
+	    	.modal-close {
+				margin: -20px 0 4px 0;
+			}
+
 	    	img {
 	    		float: right;
 	    	}
@@ -79,7 +83,12 @@
   		box-shadow: 0 15px 34px 0 rgba(9, 20, 64, 0.21);
   		border: 0;
   		border-radius: 0;
-	    max-height: calc(100vh - 150px);
+  		height: calc(100vh - 3.5rem);
+
+  		@include media-breakpoint-up(md) {
+  			max-height: calc(100vh - 150px);
+  			height: auto;
+  		}
 	}
 
 	&-title {

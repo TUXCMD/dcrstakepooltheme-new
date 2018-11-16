@@ -165,6 +165,12 @@
 					cursor: pointer;
 					transition: 0.25s;
 				}
+
+				&.active {
+					@media (min-width: 769px) and (max-width: 1200px) {
+						padding-left: 55px;
+					}
+				}
 			}
 		}
 	}

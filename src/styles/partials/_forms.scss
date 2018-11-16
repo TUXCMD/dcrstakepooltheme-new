@@ -42,7 +42,11 @@
 		border-bottom: 1px solid #c4cbd2;
 		border-radius: 0;
 		cursor: pointer;
-		padding: 0 10px;
+		padding: 0;
+
+		@include media-breakpoint-up(md) {
+			padding: 0 10px;
+		}
 
 		&:hover {
 			box-shadow: none;
@@ -91,7 +95,7 @@
 			line-height: 1.31;
 			letter-spacing: normal;
 			color: #8997a5;
-			background-color: #ffffff;
+			background-color: #f7f8f9;
 			border: solid 1px #e7eaed;
 			border-radius: 0.25rem 0 0 0.25rem;
 
@@ -115,7 +119,7 @@
 			&[disabled] {
 				pointer-events: none;
 				cursor: normal;
-				background-color: #f7f8f9;
+				background-color: #ffffff;
 				color: #091440;
 			}
 		}

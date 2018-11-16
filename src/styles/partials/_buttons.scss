@@ -1,21 +1,21 @@
 input[type="submit"], button[type="submit"] {
 	padding: 14px 19px;
 	border-radius: 5px;
-	background-color: #e7eaed;
-	border-color: #e7eaed;
+	background-color: #2970FF;
+	border-color: #2970FF;
 	font-size: 13px;
 	font-weight: 600;
 	line-height: 1.23;
 	letter-spacing: normal;
-	color: #8997a5;
+	color: #fff;
     min-width: 125px;
 
 	&:not([disabled]) {
 
 		&:hover {
 			color: #fff;
-			background-color: #1a59f7;
-			border-color: #1a59f7;
+			background-color: #1A59F7;
+			border-color: #1A59F7;
 		}
 	}
 }
@@ -25,4 +25,31 @@ input[type="submit"]:disabled {
 	border-color: #e7eaed;
     color: #8997a5;
 	cursor: not-allowed;
+}
+
+.btn-outline-primary {
+	padding: 14px 44px;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 1.23;
+	letter-spacing: normal;
+	color: #2970ff;
+	border-radius: 5px;
+	border: solid 1px #2970ff;
+
+	&:hover {
+		background-color: #2970ff;
+		color: #fff;
+	 	box-shadow: 0 5px 13px 0 rgba(61, 88, 115, 0.2);
+	}
+
+	&--inverted {
+		background-color: #2970ff;
+		color: #fff;
+		box-shadow: 0 5px 13px 0 rgba(61, 88, 115, 0.2);
+
+		&:hover {
+			background-color: #1A59F7;
+		}
+	}
 }
