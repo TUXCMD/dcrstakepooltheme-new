@@ -127,7 +127,7 @@
 		margin-bottom: 1rem;
 
 		p {
-			font-family: 'Source Code Pro', sans-serif;
+			font-family: "dcrstakepool-code", "Courier New", "monospace" !important;
 			@include fluid-props(font-size, $sm, $xl, 9px, 11px);
 			line-height: 1.55;
 			letter-spacing: normal;
