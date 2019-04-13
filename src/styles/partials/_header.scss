@@ -13,6 +13,16 @@
 			color: #091440;
 			border-bottom: 5px solid #2ed8a3;
 		}
+
+		&:after {
+			display: block;
+			content: attr(title);
+			font-weight: bold;
+			height: 1px;
+			color: transparent;
+			overflow: hidden;
+			visibility: hidden;
+		}
 	}
 
 	.logo {
