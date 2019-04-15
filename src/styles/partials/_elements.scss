@@ -255,7 +255,8 @@
 .ticket_accordion {
 
 	& input[type='checkbox']:checked + label + .accordion__contents {
- 		max-height: 1000px;
+ 		max-height: 300px;
+    	overflow-y: scroll;
 	}
 
 	& .accordion__contents {
