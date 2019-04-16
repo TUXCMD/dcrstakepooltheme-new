@@ -1,17 +1,43 @@
-.voting {
+.accordion > input[type='checkbox'] {
+	display: none;
+}
+
+.accordion label {
+	width: 100%;
+	margin: 0;
+}
+
+.accordion label,
+.accordion label * {
+	cursor: pointer;
+}
+
+.accordion__contents {
+	overflow: hidden;
+	max-height: 0px;
+	transition: max-height .3s ease-in-out,
+				padding    .3s ease-in-out;
+	padding: 0;
+}
+
+
+.voting_accordion {
 	
-	&__accordion {
-		background: #fff;
+	background: #fff;
+
+	& input[type='checkbox']:checked + label + .accordion__contents {
+ 		max-height: 200px;
+		padding: 15px 30px;
 	}
 
-	&__block {	
+	& .accordion__toggle {	
 		padding: 20px 30px;
 
 		h2, p {
 			margin-bottom: 0;
 		}
 		
-		&__description {
+		& .description {
 			color: #596d81;
 
 			span {
@@ -36,10 +62,9 @@
 		}
 	}
 
-	&__input {
+	& .accordion__contents {
 		background-color: #d4f0fd;
 		color: #091440;
-		padding: 15px 30px;
 
 		p {
 			word-wrap: break-word;
@@ -226,26 +251,33 @@
 	}
 }
 
-.accordion {
-	&__item {
+.ticket_accordion {
+
+	& input[type='checkbox']:checked + label + .accordion__contents {
+ 		max-height: 300px;
+    	overflow-y: scroll;
+	}
+
+	& .accordion__contents {
+		margin-top: -3px;
+
+		div {
+			@include fluid-props(padding-top padding-bottom, $sm, $xl, 20px, 15px);
+			@include fluid-props(padding-left padding-right, $sm, $xl, 65px, 100px);
+
+			border-bottom: 1px solid #edeff1;
+			background-color: #fff;
+
+			img {
+				@include fluid-props(margin-right, $sm, $xl, 15px, 50px);
+			}
+		}
+	}
+
+	& .accordion__toggle {
 	    background: #fff;
     	border-bottom: 5px solid #f3f5f6;
 
-    	& + .collapse, & + .collapsing {
-    		margin-top: -3px;
-
-    		div {
-    			@include fluid-props(padding-top padding-bottom, $sm, $xl, 20px, 15px);
-				@include fluid-props(padding-left padding-right, $sm, $xl, 65px, 100px);
-
-    			border-bottom: 1px solid #edeff1;
-    			background-color: #fff;
-
-    			img {
-    				@include fluid-props(margin-right, $sm, $xl, 15px, 50px);
-    			}
-    		}
-    	}
 
     	div:not(.arrow-down) {
     		padding: 15px 30px;
