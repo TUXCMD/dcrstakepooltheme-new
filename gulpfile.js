@@ -64,6 +64,13 @@ gulp.task('images', function() {
     .pipe(notify({ message: 'Images task complete' }));
 });
 
+// Fonts
+gulp.task('fonts', function () {
+  return gulp.src('src/styles/fonts/**/*')
+    .pipe(gulp.dest('dist/styles/fonts'))
+    .pipe(notify({ message: 'Fonts task complete' }));
+});
+
 // HTML
 gulp.task('minify', function() {
   return gulp.src('src/**/*.html')
@@ -74,12 +81,12 @@ gulp.task('minify', function() {
 
 // Clean
 gulp.task('clean', function() {
-  return del(['dist/styles', 'dist/scripts', 'dist/img', 'dist']);
+  return del(['dist']);
 });
 
 // Default task
 gulp.task('default', ['clean'], function() {
-  gulp.start('styles', 'vendor', 'global', 'images', 'minify');
+  gulp.start('styles', 'vendor', 'global', 'images', 'fonts', 'minify');
 });
 
 // Watch
@@ -96,6 +103,9 @@ gulp.task('watch', function() {
 
   // Watch html files
   gulp.watch('src/**/*.html', ['minify']);
+
+  // Watch font files
+  gulp.watch('src/styles/fonts/**/*', ['fonts']);
 
   // Create LiveReload server
   livereload.listen();
