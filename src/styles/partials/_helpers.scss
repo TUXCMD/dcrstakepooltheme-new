@@ -18,6 +18,7 @@ img + span {
 }
 
 html {
+	overflow-y: overlay;
 	position: relative;
 	min-height: 100%;
 }
