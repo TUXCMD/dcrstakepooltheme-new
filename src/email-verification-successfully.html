@@ -13,65 +13,61 @@
 
 	<body>
     
-	    <nav class="site-header sticky-top py-3">
-		    <div class="container">
-		      	<div class="row mx-3 mx-lg-0">
-			        <div class="col-2 px-0 px-md-3">
-			        	<a class="py-1 border-0 d-flex justify-content-start align-items-center" href="index.html">
-			        		<div class="logo--logo">
-					          	<svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" fill="none" viewBox="0 0 23 20">
-								    <path fill="#000" fill-opacity="0" d="M0 0h23v19.167H0z"/>
-								    <path fill="#091440" d="M4.792 4.792L0 0h5.175l7.667 7.667H7.667a3.834 3.834 0 1 0 0 7.666h1.917l3.833 3.834h-5.75A7.667 7.667 0 0 1 0 11.5c0-3.11 1.533-5.615 4.792-6.708z"/>
-								    <path fill="#091440" d="M18.208 14.375L23 19.167h-5.175L10.158 11.5h5.175a3.834 3.834 0 0 0 0-7.667h-1.917L9.583 0h5.75A7.667 7.667 0 0 1 23 7.667c0 3.109-1.533 5.615-4.792 6.708z"/>
-								</svg>
-							</div>
-			        		<div class="logo--text">
-								Stakepool<br>
-								<b>Alpha</b>
-							</div>
-				        </a>
-			        </div>
-			        <div class="col-7 px-0">
-			        	<a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="index.html">Home</a>
-				        <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="stats.html">Stats</a>
-				        <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block active" href="connect-to-wallet.html">Connect to Wallet</a>
-				        <a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="settings.html">Settings</a>
-			        </div>
-			        <div class="col-3 px-0 position-relative d-flex justify-content-end">
-			        	<a class="mr-5 pt-2 pb-3 d-none d-xl-inline-block" href="#">Hello, <span class="e-mail">maria@gr.co</span></a>
-			        	<a class="pt-2 pb-3 d-none d-xl-inline-block" href="#">Logout</a>
-			        	<div id="sidebarCollapse" class="wrapper py-1 d-inline-block d-xl-none">
-							<div class="menu-trigger first">
-								<span class="line line-1"></span>
-								<span class="line line-2"></span>
-								<span class="line line-3"></span>
-							</div>
-						</div>
-			        </div>
-			    </div>
-		    </div>
-	    </nav>
-	    <nav id="sidebar" class="d-block d-xl-none">
-            <div id="dismiss">
-                <div class="wrapper py-1">
-					<div class="menu-trigger first active">
-						<span class="line line-1"></span>
-						<span class="line line-2"></span>
-						<span class="line line-3"></span>
-					</div>
-				</div>
+    <nav class="site-header px-3 pt-3">
+        <div class="px-5 pb-3 pb-md-2 float-left">
+          <a class="py-1 border-0 d-flex justify-content-start align-items-center" href="index.html">
+            <div class="logo--logo">
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" fill="none" viewBox="0 0 23 20">
+                <path fill="#000" fill-opacity="0" d="M0 0h23v19.167H0z"/>
+                <path fill="#091440" d="M4.792 4.792L0 0h5.175l7.667 7.667H7.667a3.834 3.834 0 1 0 0 7.666h1.917l3.833 3.834h-5.75A7.667 7.667 0 0 1 0 11.5c0-3.11 1.533-5.615 4.792-6.708z"/>
+                <path fill="#091440" d="M18.208 14.375L23 19.167h-5.175L10.158 11.5h5.175a3.834 3.834 0 0 0 0-7.667h-1.917L9.583 0h5.75A7.667 7.667 0 0 1 23 7.667c0 3.109-1.533 5.615-4.792 6.708z"/>
+              </svg>
             </div>
-            <ul class="mb-5">
-            	<li><a href="#">Hello, <span class="e-mail">maria@gr.co</span></a></li>
-            	<li><a href="index.html">Home</a></li>
-            	<li><a href="stats.html">Stats</a></li>
-            	<li><a class="active" href="connect-to-wallet.html">Connect to Wallet</a></li>
-            	<li><a href="settings.html">Settings</a></li>
-            </ul>
-            <ul>
-            	<li><a href="#">Logout</a></li>
-            </ul>
-        </nav>
+            <div class="logo--text">
+              Stakepool<br>
+              <b>Alpha</b>
+            </div>
+          </a>
+        </div>
+        <div class="float-left pl-2">
+          <a class="mr-5 pt-2 pb-3 d-none d-md-inline-block" href="index.html">Home</a>
+          <a class="mr-5 pt-2 pb-3 d-none d-md-inline-block" href="stats.html">Stats</a>
+          <a class="mr-5 pt-2 pb-3 d-none d-md-inline-block active" href="connect-to-wallet.html">Connect to Wallet</a>
+          <a class="mr-5 pt-2 pb-3 d-none d-md-inline-block" href="settings.html">Settings</a>
+        </div>
+        <div class="pr-5 d-flex float-right">
+          <a class="mb-0 mr-3 pt-2 d-none d-xl-inline-block" href="#">Hello, <span class="e-mail">maria@gr.co</span></a>
+          <a class="pt-2 pb-3 d-none d-md-inline-block" href="#">Logout</a>
+          <div id="sidebarCollapse" class="py-1 d-inline-block d-md-none">
+            <div class="menu-trigger first">
+              <span class="line line-1"></span>
+              <span class="line line-2"></span>
+              <span class="line line-3"></span>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <nav id="sidebar" class="d-block d-md-none">
+      <div id="dismiss">
+        <div class="wrapper py-1">
+          <div class="menu-trigger first active">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </div>
+        </div>
+      </div>
+      <ul class="mb-5">
+        <li><a href="#">Hello, <span class="e-mail">maria@gr.co</span></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="stats.html">Stats</a></li>
+        <li><a class="active" href="connect-to-wallet.html">Connect to Wallet</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
 		
 		<section class="site-content site-content--form-only">
 			<div class="container container--narrow">
