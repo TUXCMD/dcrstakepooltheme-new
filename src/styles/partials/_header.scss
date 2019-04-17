@@ -2,12 +2,15 @@
 	height: 60px;
 	background-color: #f9fafa;
 
-	a {
+	a, p {
 		font-size: 15px;
 		line-height: 1.13;
 		letter-spacing: normal;
 		color: #8997a5;
 
+	}
+
+	a {
 		&:hover, &:focus, &.active {
 			text-decoration: none;
 			color: #091440;
@@ -24,7 +27,7 @@
 			visibility: hidden;
 		}
 	}
-
+	
 	.logo {
 
 		&--logo {
@@ -154,18 +157,21 @@
 
 		li {
 
-			a {
+			a, p {
 				padding: 22px 60px 22px;
 				font-size: 15px;
 				line-height: 1.13;
 				color: #8997a5;
-				display: block;
+					display: block;
 				transition: 0.25s;
+				margin: 0;
 
 				@include media-breakpoint-down(sm) {
 					padding: 22px 30px 22px;
 				}
+			}
 
+			a {
 				&.active, &:hover, &:focus {
 					padding-left: 25px;
 					background-color: #fff;
