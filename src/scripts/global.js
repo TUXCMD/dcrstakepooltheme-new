@@ -42,22 +42,30 @@ submitState('#ChangePassword');
 submitState('#DeleteAccount');
 
 //controls tables with selections and checkboxes
-$("#select_all").click(function(){
 
-    if ($("input[type='checkbox']").prop("checked")) {
-        $(':checkbox').prop('checked', false);
-        $('table tr').removeClass('bg-checked');
-        $(this).text('Select all');
+var selectMsg = "Select all";
+var deselectMsg = "Deselect all";
+
+$("#select_all_ignored").click(toggleCheckBoxes("#ignored_table"));
+$("#select_all_added").click(toggleCheckBoxes("#added_table"));
+
+function toggleCheckBoxes(tableId) {
+  return function(clicked) {
+    var table = $(tableId);
+    if ($(this)[0].text == deselectMsg) {
+        table.find(':checkbox').prop('checked', false);
+        table.find('tr').removeClass('bg-checked');
+        $(this).text(selectMsg);
         $('.update-btn').removeClass("d-flex");
     }
     else {
-        $(':checkbox').prop('checked', true);
-        $('table tr').addClass('bg-checked');
-        $(this).text('Discard all');
+        table.find(':checkbox').prop('checked', true);
+        table.find('tr').addClass('bg-checked');
+        $(this).text(deselectMsg);
         $('.update-btn').addClass('d-flex');
     }    
-
- });
+  };
+}
 
 $(function() {
     $('td:last-child input').change(function() {
